@@ -209,29 +209,29 @@ The following parameters each appear exactly 77 times, representing 1.25% of all
 - Median occurrences: 1
 - Mode (most common frequency): 1
 
-### Top 20 Most Frequent Parameters (Excluding Parameters with 15, 9, 8, and 6 Occurrences)
+### Top 20 Most Frequent Parameters
 | Parameter | Count | % of Total |
 |-----------|-------|------------|
-| NAME | 5 | 0.18% |
-| STATE_NAME | 5 | 0.18% |
-| AREALAND | 4 | 0.14% |
-| AREAWATER | 4 | 0.14% |
-| BASENAME | 4 | 0.14% |
-| FUNCSTAT | 4 | 0.14% |
-| GEOID | 4 | 0.14% |
-| INTPTLAT | 4 | 0.14% |
-| INTPTLON | 4 | 0.14% |
-| POP100 | 4 | 0.14% |
-| HU100 | 4 | 0.14% |
-| BLOCKGROUP_FIPS | 3 | 0.11% |
-| STCOFIPS | 3 | 0.11% |
-| TRACT_FIPS | 3 | 0.11% |
-| VTDI | 3 | 0.11% |
-| CENTLAT | 3 | 0.11% |
-| CENTLON | 3 | 0.11% |
-| MTFCC | 3 | 0.11% |
-| LSADC | 3 | 0.11% |
-| VTD | 3 | 0.11% |
+| OBJECTID | 48 | 1.68% |
+| Shape__Area | 42 | 1.47% |
+| Shape__Length | 42 | 1.47% |
+| POPULATION | 38 | 1.33% |
+| STATE | 36 | 1.26% |
+| COUNTY | 34 | 1.19% |
+| POP_SQMI | 32 | 1.12% |
+| SQMI | 32 | 1.12% |
+| NAME | 28 | 0.98% |
+| POPULATION_2020 | 24 | 0.84% |
+| POP20_SQMI | 24 | 0.84% |
+| STATE_ABBR | 24 | 0.84% |
+| STATE_FIPS | 24 | 0.84% |
+| COUNTY_FIPS | 22 | 0.77% |
+| FIPS | 22 | 0.77% |
+| STATE_NAME | 20 | 0.70% |
+| AREALAND | 18 | 0.63% |
+| AREAWATER | 18 | 0.63% |
+| BASENAME | 16 | 0.56% |
+| FUNCSTAT | 16 | 0.56% |
 
 ### Parameter Groups with Common Frequencies
 
