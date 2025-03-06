@@ -472,6 +472,30 @@ The tool generates comprehensive markdown (.md) reports that provide detailed an
 - **Data Type Analysis**: Distribution of parameter data types
 - **Parameter Co-occurrence Patterns**: Groups of parameters that frequently appear together
 
+### Report Content Details
+
+Each markdown report is structured with the following sections:
+
+1. **Executive Summary**: A high-level overview of the analysis findings
+2. **Methodology**: Description of how the data was collected and analyzed
+3. **Parameter Statistics**: Detailed statistical breakdown including:
+   - Total parameter count
+   - Unique parameter count
+   - Distribution metrics (mean, median, mode)
+   - Frequency histograms
+4. **Naming Convention Analysis**: 
+   - Percentage breakdown of different naming styles
+   - Patterns specific to each API
+   - Recommendations for standardization
+5. **Parameter Relationships**:
+   - Co-occurrence matrices
+   - Correlation analysis
+   - Hierarchical clustering of related parameters
+6. **Appendices**:
+   - Complete parameter lists
+   - Raw data references
+   - Technical implementation details
+
 ### How to View Reports
 
 The markdown reports can be viewed in several ways:
@@ -483,8 +507,37 @@ The markdown reports can be viewed in several ways:
    pandoc output/soda/reports/soda_parameter_analysis.md -o soda_report.html
    ```
 4. **GitHub**: If you push the reports to a GitHub repository, they will be automatically rendered with proper formatting
+5. **Jupyter Notebook**: Import the .md files into Jupyter notebooks for interactive viewing:
+   ```python
+   from IPython.display import Markdown
+   Markdown(filename='output/soda/reports/soda_parameter_analysis.md')
+   ```
+6. **Command Line**: For a quick preview, use tools like `glow` or `mdless`:
+   ```bash
+   # Install glow
+   brew install glow  # macOS
+   apt-get install glow  # Ubuntu/Debian
+   
+   # View report
+   glow output/soda/reports/soda_parameter_analysis.md
+   ```
 
 ### Report Locations
 
 - SODA API Reports: `output/soda/reports/`
-- ArcGIS API Reports: `output/arcgis/reports/` 
+  - Main report: `soda_parameter_analysis.md`
+  - Supplementary reports: `soda_naming_conventions.md`, `soda_data_types.md`
+  
+- ArcGIS API Reports: `output/arcgis/reports/`
+  - Main report: `arcgis_parameter_analysis.md`
+  - Supplementary reports: `arcgis_naming_conventions.md`, `arcgis_data_types.md`
+
+### Customizing Reports
+
+You can customize the generated reports by modifying the report templates in the `scripts/templates/` directory. The templates use Jinja2 syntax and can be adjusted to include additional sections or modify the formatting of existing sections.
+
+To regenerate reports with custom templates:
+
+```bash
+python scripts/generate_reports.py --custom-template my_template.md
+``` 
