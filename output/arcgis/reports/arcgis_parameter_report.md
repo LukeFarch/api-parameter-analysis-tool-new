@@ -2873,12 +2873,12 @@
 | 12 | SHAPE__Length | 11 | 0.39% |
 | 13 | CITY | 9 | 0.32% |
 | 14 | Direction | 9 | 0.32% |
-| 15 | Latitude | 8 | 0.28% |
-| 16 | Longitude | 8 | 0.28% |
+| 15 | Longitude | 8 | 0.28% |
+| 16 | Latitude | 8 | 0.28% |
 | 17 | FIPS | 8 | 0.28% |
 | 18 | City | 8 | 0.28% |
-| 19 | HighwayNumber | 8 | 0.28% |
-| 20 | Highway | 8 | 0.28% |
+| 19 | Highway | 8 | 0.28% |
+| 20 | EndRefPoint | 8 | 0.28% |
 
 ## Visualizations
 

@@ -6,26 +6,26 @@ This analysis shows how many parameters appear a certain number of times.
 
 | Occurrence Count | Number of Parameters | Example Parameters |
 |-----------------|---------------------|-------------------|
-| 1 | 4024 | SPACE, LiquidMed, SolidMed |
+| 1 | 4024 | SPACE, ParcelNo, Syringe |
 | 2 | 640 | REMARKS, PARK_NAME, Notes |
 | 13 | 238 | name, AADTSINGLE, AADTCOMB |
-| 3 | 223 | PARCELNB, STREETNO, LOCCITY |
-| 6 | 210 | phone, location, SPEEDLIM |
-| 4 | 198 | ACCOUNTNO, STREETNAME, STREETSUF |
-| 5 | 100 | Phone, pavementTrafficCategory, treatmentCategory |
-| 83 | 97 | rnocshr, car_all, brn_oth_st |
-| 7 | 86 | ID, TERRAIN, PRISURF |
-| 77 | 51 | tot_l18, age75_79, age15_19 |
-| 19 | 49 | GQ_OT_INST, PCT_OTHER, AGEUNDER18 |
-| 8 | 42 | description, zip, VCRATIO20 |
-| 10 | 34 | GlobalID, FROMMEAS, TOMEAS |
+| 3 | 223 | LOCCITY, PARCELNB, STREETNO |
+| 6 | 210 | location, phone, SPEEDLIM |
+| 4 | 198 | ACCOUNTNO, STREETSUF, STREETNAME |
+| 5 | 100 | Phone, treatmentCategory, fy |
+| 83 | 97 | med_fam_in, car_all, r1000t1249 |
+| 7 | 86 | ID, PRISURF, TERRAIN |
+| 77 | 51 | hhi60_75, age65_69, age35_39 |
+| 19 | 49 | PCT_65PLUS, GQ_CORREC, V_OTHER |
+| 8 | 42 | description, zip, VCRATIO |
+| 10 | 34 | GlobalID, TOMEAS, TPRID |
 | 9 | 32 | Name, bmp, DESCRIPTIO |
 | 11 | 30 | Address, REGION, Shape_STLe |
-| 12 | 17 | source, Q160, Section |
-| 18 | 14 | state, ENDREFPT, REFPT |
-| 20 | 12 | region, TWOPLUS_NH, AGELESS18 |
+| 12 | 17 | source, Range, PM |
+| 18 | 14 | state, AADTDERIV, AADTYR |
+| 20 | 12 | region, NONFAMHH, AGELESS10 |
 | 14 | 8 | POPULATION, NHSDESIG, Status |
-| 39 | 8 | BLACK_NH, WHITE_NH, FEMALE |
+| 39 | 8 | BLACK_NH, OTHER_NH, MALE |
 
 ## Statistics
 

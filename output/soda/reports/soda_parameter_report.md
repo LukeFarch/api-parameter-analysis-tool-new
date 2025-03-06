@@ -6215,8 +6215,8 @@ digital solutions? Additional Text | 1 | 0.0% |
 | 5 | OBJECTID | 73 | 1.18% |
 | 6 | Counties | 70 | 1.14% |
 | 7 | County | 69 | 1.12% |
-| 8 | r600t799 | 65 | 1.06% |
-| 9 | r400t599 | 65 | 1.06% |
+| 8 | r400t599 | 65 | 1.06% |
+| 9 | r600t799 | 65 | 1.06% |
 | 10 | geonum | 61 | 0.99% |
 | 11 | Year | 56 | 0.91% |
 | 12 | geoname | 55 | 0.89% |
@@ -6224,10 +6224,10 @@ digital solutions? Additional Text | 1 | 0.0% |
 | 14 | NAME | 44 | 0.71% |
 | 15 | year | 42 | 0.68% |
 | 16 | BLACK_NH | 39 | 0.63% |
-| 17 | WHITE_NH | 39 | 0.63% |
-| 18 | FEMALE | 39 | 0.63% |
-| 19 | OTHER_NH | 39 | 0.63% |
-| 20 | AGE65PLUS | 39 | 0.63% |
+| 17 | OTHER_NH | 39 | 0.63% |
+| 18 | MALE | 39 | 0.63% |
+| 19 | AGE65PLUS | 39 | 0.63% |
+| 20 | HISPANIC | 39 | 0.63% |
 
 ## Visualizations
 

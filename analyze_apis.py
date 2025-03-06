@@ -256,9 +256,9 @@ def analyze_folder(folder, extract_func, folders, api_type):
 
 def generate_visualizations(param_counts, folders, api_type):
     """Generate visualizations for parameter analysis."""
-    # Convert to DataFrame and exclude parameters with exactly 83 occurrences
+    # Convert to DataFrame and exclude parameters with exactly 83 or 77 occurrences
     all_params_df = pd.DataFrame(param_counts.items(), columns=['Parameter', 'Count'])
-    filtered_params_df = all_params_df[all_params_df['Count'] != 83].sort_values('Count', ascending=False)
+    filtered_params_df = all_params_df[~all_params_df['Count'].isin([83, 77])].sort_values('Count', ascending=False)
     
     # Save all parameters to CSV
     all_params_csv = os.path.join(folders['data'], f"all_{api_type.lower()}_parameters.csv")
@@ -271,7 +271,7 @@ def generate_visualizations(param_counts, folders, api_type):
     plt.figure(figsize=(12, 8))
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis('off')
-    plt.title(f'Most Common {api_type} Parameters (Excluding 83-Occurrence Parameters)')
+    plt.title(f'Most Common {api_type} Parameters (Excluding 83 and 77-Occurrence Parameters)')
     wordcloud_file = os.path.join(folders['visualizations'], f"{api_type.lower()}_parameter_wordcloud.png")
     plt.savefig(wordcloud_file, dpi=300, bbox_inches='tight')
     plt.close()
@@ -286,7 +286,7 @@ def generate_visualizations(param_counts, folders, api_type):
     # Create bar chart
     plt.figure(figsize=(12, 10))
     ax = sns.barplot(x='Count', y='Parameter', data=top_params, palette='viridis')
-    plt.title(f'Top 30 {api_type} Parameters (Excluding 83-Occurrence Parameters)')
+    plt.title(f'Top 30 {api_type} Parameters (Excluding 83 and 77-Occurrence Parameters)')
     plt.xlabel('Frequency')
     plt.ylabel('Parameter Name')
     plt.tight_layout()
@@ -298,7 +298,7 @@ def generate_visualizations(param_counts, folders, api_type):
     # Create interactive bar chart with Plotly
     try:
         fig = px.bar(top_params, x='Count', y='Parameter', 
-                    title=f'Top 30 {api_type} Parameters (Excluding 83-Occurrence Parameters)',
+                    title=f'Top 30 {api_type} Parameters (Excluding 83 and 77-Occurrence Parameters)',
                     labels={'Count': 'Frequency', 'Parameter': 'Parameter Name'},
                     color='Count', color_continuous_scale='Viridis')
         fig.update_layout(yaxis={'categoryorder': 'total ascending'})
@@ -313,7 +313,7 @@ def generate_visualizations(param_counts, folders, api_type):
     plt.figure(figsize=(12, 8))
     counts = filtered_params_df['Count'].values[:100]  # Use filtered parameters
     plt.hist(counts, bins=30, color='skyblue', edgecolor='black')
-    plt.title(f'{api_type} Parameter Distribution (Excluding 83-Occurrence Parameters)')
+    plt.title(f'{api_type} Parameter Distribution (Excluding 83 and 77-Occurrence Parameters)')
     plt.xlabel('Frequency')
     plt.ylabel('Number of Parameters')
     plt.grid(axis='y', alpha=0.75)
@@ -329,7 +329,7 @@ def generate_visualizations(param_counts, folders, api_type):
                   label=top_params_for_treemap['Parameter'], 
                   alpha=0.8, color=plt.cm.viridis(np.linspace(0, 1, len(top_params_for_treemap))))
     plt.axis('off')
-    plt.title(f'Top 50 {api_type} Parameters Treemap (Excluding 83-Occurrence Parameters)')
+    plt.title(f'Top 50 {api_type} Parameters Treemap (Excluding 83 and 77-Occurrence Parameters)')
     treemap_file = os.path.join(folders['visualizations'], f"{api_type.lower()}_parameter_treemap.png")
     plt.savefig(treemap_file, dpi=300, bbox_inches='tight')
     plt.close()
@@ -338,7 +338,7 @@ def generate_visualizations(param_counts, folders, api_type):
     # Create interactive treemap with Plotly
     try:
         fig = px.treemap(top_params_for_treemap, path=['Parameter'], values='Count',
-                        title=f'Top 50 {api_type} Parameters Treemap (Excluding 83-Occurrence Parameters)',
+                        title=f'Top 50 {api_type} Parameters Treemap (Excluding 83 and 77-Occurrence Parameters)',
                         color='Count', color_continuous_scale='RdBu')
         interactive_treemap_file = os.path.join(folders['interactive'], f"{api_type.lower()}_parameter_treemap_interactive.html")
         fig.write_html(interactive_treemap_file)

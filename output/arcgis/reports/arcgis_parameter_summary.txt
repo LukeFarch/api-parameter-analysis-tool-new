@@ -2853,9 +2853,9 @@ TOP 20 MOST FREQUENT PARAMETERS (EXCLUDING COMMON GROUPS):
 12. SHAPE__Length: 11
 13. CITY: 9
 14. Direction: 9
-15. Latitude: 8
-16. Longitude: 8
+15. Longitude: 8
+16. Latitude: 8
 17. FIPS: 8
 18. City: 8
-19. HighwayNumber: 8
-20. Highway: 8
+19. Highway: 8
+20. EndRefPoint: 8
