@@ -131,6 +131,11 @@ During the analysis, we identified two significant groups of parameters that app
 | date | 68 | 1.10% |
 | category | 67 | 1.09% |
 
+#### Top 30 Parameters Visualization
+![Top 30 SODA Parameters (Excluding 83/77 Occurrences)](output/soda/visualizations/soda_top_parameters.png)
+
+The bar chart above visualizes the top 30 most frequent parameters in the SODA API datasets, excluding parameters that occur exactly 83 or 77 times. This visualization helps highlight the diverse range of commonly used parameters across different datasets while filtering out the standardized demographic and socioeconomic parameters.
+
 #### Parameters with Common Frequencies
 
 #### Parameters Occurring 83 Times
