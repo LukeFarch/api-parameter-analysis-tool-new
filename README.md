@@ -530,9 +530,6 @@ I identified several key attribute categories:
 - **Status Filters**: status, type, category
 
 #### Data Source Filters
-I also recognized the importance of filtering by source:
-- **API Source**: SODA vs. ArcGIS
-- **Data Provider**: source, identifier
 - **Data Quality**: completeness, update frequency
 
 ### Filter Prioritization
@@ -615,17 +612,6 @@ Based on my analysis of user relevance and importance, here's how I would priori
 
 8. **Localization Support**: Given the geographic nature of many parameters I identified, I suggest ensuring filters support various regional formats for coordinates, postal codes, and administrative boundaries.
 
-### Dependencies
-
-The implementation of these filters depends on:
-
-1. **Data Availability**: The presence of these parameters in the datasets being accessed
-2. **API Consistency**: The stability and consistency of the APIs being queried
-3. **UI Framework**: The capabilities of the UI framework being used to implement the filters
-4. **Backend Processing**: The ability to translate filter selections into appropriate API queries
-5. **User Research**: Validation of these filter priorities through user testing and feedback
-
-This comprehensive approach to filter categorization and prioritization will ensure the Sustainability Hub provides an intuitive, powerful search experience while accommodating the diverse parameter structures I identified in my API analysis. 
 
 ## API Schema Templates
 
