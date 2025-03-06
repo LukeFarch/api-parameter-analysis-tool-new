@@ -2,6 +2,30 @@
 Soda/*.json
 ArcGis/*.json
 MetaDataSoda/*.json
-MetaDataArcGis/*.json
-# Ignore contents of output directory while preserving structure
+MetaDataArcgis/*.json
+
+# Ignore CSV files in data and output directories
+Soda/*.csv
+ArcGis/*.csv
+output/**/*.csv
+
+# Ignore all contents of output directory and subdirectories
 output/**/*
+output/**/.*
+output/arcgis/**/*
+output/soda/**/*
+output/interactive/**/*
+output/logs/**/*
+output/data/**/*
+
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Example visuals (since they can be regenerated)
+example_visuals/*.png
