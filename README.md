@@ -104,6 +104,9 @@ The API Parameter Analysis Tool is designed to help developers and analysts unde
 - Median occurrences: 1
 - Mode (most common frequency): 1
 
+#### Note on Parameter Filtering
+During the analysis, we identified two significant groups of parameters that appeared with unusually high frequencies (83 and 77 occurrences). These parameters represent standardized demographic, housing, income, and age-related fields that are consistently used across multiple datasets. By filtering out these common groups from our top parameters table, we can better highlight the diverse and unique parameters that characterize different types of datasets. This approach prevents these standardized fields from dominating the frequency analysis and allows us to surface other important parameters that might otherwise be obscured.
+
 #### Top 20 Most Frequent Parameters (Excluding Parameters with 83 and 77 Occurrences)
 | Parameter | Count | % of Total |
 |-----------|-------|------------|
