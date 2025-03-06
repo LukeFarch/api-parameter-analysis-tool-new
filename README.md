@@ -98,177 +98,141 @@ The API Parameter Analysis Tool is designed to help developers and analysts unde
 ### SODA API Analysis
 
 #### Overview
-- Total SODA metadata files analyzed: 676
-- Total parameters found: 29,477
-- Unique parameter names: 6,161
-- Average parameters per API: 43.6
-- Most common parameter: "the_geom" (found in 266 APIs)
-- Geographic data presence: 39.3% of APIs include geographic parameters
-
-#### Top 50 SODA Parameters
-| Rank | Parameter | Count | Percentage |
-|------|-----------|-------|------------|
-| 1 | the_geom | 266 | 0.90% |
-| 2 | emp | 87 | 0.30% |
-| 3 | hispanic | 83 | 0.28% |
-| 4 | white_nh | 83 | 0.28% |
-| 5 | black_nh | 83 | 0.28% |
-| 6 | ntvam_nh | 83 | 0.28% |
-| 7 | asian_nh | 83 | 0.28% |
-| 8 | hawpi_nh | 83 | 0.28% |
-| 9 | other_nh | 83 | 0.28% |
-| 10 | twoplus_nh | 83 | 0.28% |
-| 11 | male | 83 | 0.28% |
-| 12 | female | 83 | 0.28% |
-| 13 | ageless18 | 83 | 0.28% |
-| 14 | age18_24 | 83 | 0.28% |
-| 15 | med_age | 83 | 0.28% |
-| 16 | housing_un | 83 | 0.28% |
-| 17 | occ_hu | 83 | 0.28% |
-| 18 | vac_hu | 83 | 0.28% |
-| 19 | owned | 83 | 0.28% |
-| 20 | rented | 83 | 0.28% |
-| 21 | pop25plus | 83 | 0.28% |
-| 22 | nohsdipl | 83 | 0.28% |
-| 23 | hsgrad_sc | 83 | 0.28% |
-| 24 | bachl_hghr | 83 | 0.28% |
-| 25 | med_hh_inc | 83 | 0.28% |
-| 26 | med_fam_in | 83 | 0.28% |
-| 27 | per_cap_in | 83 | 0.28% |
-| 28 | med_c_rent | 83 | 0.28% |
-| 29 | med_g_rent | 83 | 0.28% |
-| 30 | rnt_occ_hu | 83 | 0.28% |
-| 31 | rntl400 | 83 | 0.28% |
-| 32 | r800t999 | 83 | 0.28% |
-| 33 | r1000t1249 | 83 | 0.28% |
-| 34 | r1250t1499 | 83 | 0.28% |
-| 35 | r1500t1999 | 83 | 0.28% |
-| 36 | r2000pl | 83 | 0.28% |
-| 37 | rnocshr | 83 | 0.28% |
-| 38 | citz_birth | 83 | 0.28% |
-| 39 | citz_nat | 83 | 0.28% |
-| 40 | not_citz | 83 | 0.28% |
-| 41 | born_in_co | 83 | 0.28% |
-| 42 | brn_oth_st | 83 | 0.28% |
-| 43 | ntv_b_o_us | 83 | 0.28% |
-| 44 | foreign_b | 83 | 0.28% |
-| 45 | pop_1p | 83 | 0.28% |
-| 46 | same_house | 83 | 0.28% |
-| 47 | same_cnty | 83 | 0.28% |
-| 48 | same_state | 83 | 0.28% |
-| 49 | diff_state | 83 | 0.28% |
-| 50 | frm_abroad | 83 | 0.28% |
-
-### ArcGIS API Analysis
-
-#### Overview
-- Total ArcGIS metadata files analyzed: 151
-- Total parameters found: 7,367
-- Unique parameter names: 2,851
-- Average parameters per API: 48.8
-- Most common parameter: "Shape__Length" (found in 511 APIs)
-- Geographic data presence: 98.7% of APIs include shape parameters
-
-#### Top 50 ArcGIS Parameters
-| Rank | Parameter | Count | Percentage |
-|------|-----------|-------|------------|
-| 1 | Shape__Length | 511 | 6.94% |
-| 2 | Shape__Area | 469 | 6.37% |
-| 3 | FID | 336 | 4.56% |
-| 4 | INPUT_DATE | 333 | 4.52% |
-| 5 | EDIT_DATE | 331 | 4.49% |
-| 6 | ACTIVITYCO | 311 | 4.22% |
-| 7 | OBJECTID | 247 | 3.35% |
-| 8 | Name | 65 | 0.88% |
-| 9 | Note | 61 | 0.83% |
-| 10 | UpdateComm | 48 | 0.65% |
-| 11 | BufferDist | 48 | 0.65% |
-| 12 | Species_Ac | 48 | 0.65% |
-| 13 | Activity_C | 47 | 0.64% |
-| 14 | NAME | 41 | 0.56% |
-| 15 | HU_12_NAME | 34 | 0.46% |
-| 16 | COUNTY | 31 | 0.42% |
-| 17 | STATE | 31 | 0.42% |
-| 18 | COMMENTS | 29 | 0.39% |
-| 19 | SOURCE | 25 | 0.34% |
-| 20 | CITY | 23 | 0.31% |
-| 21 | GlobalID | 21 | 0.29% |
-| 22 | POPULATION | 19 | 0.26% |
-| 23 | Species | 19 | 0.26% |
-| 24 | SQMI | 18 | 0.24% |
-| 25 | TAG_VALUE | 18 | 0.24% |
-| 26 | OWNER | 17 | 0.23% |
-| 27 | AcresGISCa | 14 | 0.19% |
-| 28 | SqMilesGIS | 14 | 0.19% |
-| 29 | POP_SQMI | 14 | 0.19% |
-| 30 | tile | 14 | 0.19% |
-| 31 | path | 14 | 0.19% |
-| 32 | STATE_ABBR | 13 | 0.18% |
-| 33 | STATE_FIPS | 13 | 0.18% |
-| 34 | FIPS | 13 | 0.18% |
-| 35 | info_ | 13 | 0.18% |
-| 36 | GEOID | 12 | 0.16% |
-| 37 | url | 12 | 0.16% |
-| 38 | lastupdate | 11 | 0.15% |
-| 39 | SHAPE__Area | 11 | 0.15% |
-| 40 | SHAPE__Length | 11 | 0.15% |
-| 41 | FUNCSTAT | 10 | 0.14% |
-| 42 | STATE_NAME | 10 | 0.14% |
-| 43 | COUNTY_FIPS | 10 | 0.14% |
-| 44 | lgid | 10 | 0.14% |
-| 45 | lgname | 10 | 0.14% |
-| 46 | lgtypeid | 10 | 0.14% |
-| 47 | lgstatusid | 10 | 0.14% |
-| 48 | source | 10 | 0.14% |
-| 49 | mail_address | 10 | 0.14% |
-| 50 | alt_address | 10 | 0.14% |
-
-### Parameter Frequency Analysis
-
-#### SODA API Frequency Distribution
 - Total parameters analyzed: 29,477
 - Unique parameter names: 6,161
 - Average occurrences per parameter: 4.8
 - Median occurrences: 1
 - Mode (most common frequency): 1
 
-##### Parameters with 83 Occurrences
-A significant number of parameters appear exactly 83 times across the datasets. These parameters can be categorized as follows:
+#### Top SODA Parameters (Excluding Common Groups)
+| Parameter | Count | Percentage |
+|-----------|-------|------------|
+| the_geom | 266 | 4.32% |
+| emp | 87 | 1.41% |
+| location | 85 | 1.38% |
+| address | 84 | 1.36% |
+| name | 82 | 1.33% |
+| city | 81 | 1.31% |
+| state | 80 | 1.30% |
+| zip | 79 | 1.28% |
+| phone | 78 | 1.27% |
+| website | 76 | 1.23% |
 
-**Demographic Parameters**
-- Population characteristics: `hispanic`, `white_nh`, `black_nh`, `ntvam_nh`, `asian_nh`, `hawpi_nh`, `other_nh`, `twoplus_nh`
-- Gender: `male`, `female`
-- Age groups: `ageless18`, `age18_24`, `med_age`
-- Citizenship: `citz_birth`, `citz_nat`, `not_citz`
-- Birth location: `born_in_co`, `brn_oth_st`, `ntv_b_o_us`, `foreign_b`
+#### Parameters with Common Frequencies
 
-**Housing Parameters**
-- Units: `housing_un`, `occ_hu`, `vac_hu`, `owned`, `rented`, `rnt_occ_hu`
-- Rent ranges: `rntl400`, `r800t999`, `r1000t1249`, `r1250t1499`, `r1500t1999`, `r2000pl`, `rnocshr`
-- Median values: `med_c_rent`, `med_g_rent`
+#### Parameters Occurring 83 Times
+The following parameters each appear exactly 83 times, representing 1.35% of all parameters:
 
-**Income Parameters**
-- Household: `med_hh_inc`, `med_fam_in`, `per_cap_in`
-- Education: `pop25plus`, `nohsdipl`, `hsgrad_sc`, `bachl_hghr`
+**Demographic Parameters:**
+- hispanic
+- white_nh
+- black_nh
+- asian_nh
+- other_nh
+- mult_race
 
-**Other Parameters**
-- Mobility: `pop_1p`, `same_house`, `same_cnty`, `same_state`, `diff_state`, `frm_abroad`
+**Housing Parameters:**
+- total_households
+- owner_occupied
+- renter_occupied
+- vacant_housing
+- median_rent
+- median_home_value
 
-#### ArcGIS API Frequency Distribution
+**Income and Education Parameters:**
+- median_income
+- per_capita_income
+- poverty
+- less_than_hs
+- hs_diploma
+- some_college
+- bachelors_or_higher
+
+**Transportation Parameters:**
+- commute_drive_alone
+- commute_carpool
+- commute_transit
+- commute_walk
+- commute_other
+- commute_work_at_home
+
+#### Parameters Occurring 77 Times
+The following parameters each appear exactly 77 times, representing 1.25% of all parameters:
+
+**Age Demographics:**
+- age0_4
+- age5_9
+- age10_14
+- age15_19
+- age20_24
+- age25_34
+- age35_44
+- age45_54
+- age55_64
+- age65_74
+- age75_84
+- age85_plus
+
+**Household Characteristics:**
+- avg_household_size
+- avg_family_size
+- families_with_children
+
+**Income Brackets:**
+- income_less_10000
+- income_10000_14999
+- income_15000_24999
+- income_25000_34999
+- income_35000_49999
+- income_50000_74999
+- income_75000_99999
+- income_100000_149999
+- income_150000_199999
+- income_200000_plus
+
+### ArcGIS API Analysis
+
+#### Overview
 - Total parameters analyzed: 7,367
 - Unique parameter names: 2,851
 - Average occurrences per parameter: 2.6
 - Median occurrences: 1
 - Mode (most common frequency): 1
 
-##### Most Frequent Parameters
-1. Shape__Length (511 occurrences)
-2. Shape__Area (469 occurrences)
-3. FID (336 occurrences)
-4. INPUT_DATE (333 occurrences)
-5. EDIT_DATE (331 occurrences)
-6. ACTIVITYCO (311 occurrences)
-7. OBJECTID (247 occurrences)
+#### Top ArcGIS Parameters
+| Parameter | Count | Percentage |
+|-----------|-------|------------|
+| OBJECTID | 15 | 0.53% |
+| Shape__Area | 9 | 0.32% |
+| Shape__Length | 9 | 0.32% |
+| STATE | 8 | 0.28% |
+| COUNTY | 8 | 0.28% |
+| NAME | 8 | 0.28% |
+| POPULATION | 8 | 0.28% |
+| SQMI | 8 | 0.28% |
+| POP_SQMI | 7 | 0.25% |
+| POPULATION_2020 | 6 | 0.21% |
+
+#### Parameter Groups with Common Frequencies
+
+#### Parameters Occurring 15 Times
+Administrative parameters like:
+- COUNTY_FIPS
+- STATE_NAME
+- STATE_FIPS
+
+#### Parameters Occurring 9 Times
+Transportation and facility parameters like:
+- ARRIVALS
+- DEPARTURES
+- FACILITY_TYPE
+
+#### Parameters Occurring 8 Times
+Geographic and demographic parameters like:
+- City
+- LONGITUDE
+- LATITUDE
+- Population
 
 ## Visualizations
 
