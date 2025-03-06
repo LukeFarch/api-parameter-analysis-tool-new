@@ -6,26 +6,26 @@ This analysis shows how many parameters appear a certain number of times.
 
 | Occurrence Count | Number of Parameters | Example Parameters |
 |-----------------|---------------------|-------------------|
-| 1 | 4024 | SPACE, SolidMed, LiquidMed |
-| 2 | 640 | PARK_NAME, REMARKS, Notes |
+| 1 | 4024 | SPACE, LiquidMed, SolidMed |
+| 2 | 640 | REMARKS, PARK_NAME, Notes |
 | 13 | 238 | name, AADTSINGLE, AADTCOMB |
 | 3 | 223 | PARCELNB, STREETNO, LOCCITY |
 | 6 | 210 | phone, location, SPEEDLIM |
 | 4 | 198 | ACCOUNTNO, STREETNAME, STREETSUF |
-| 5 | 100 | Phone, fy, highway |
-| 83 | 97 | hispanic, white_nh, black_nh |
-| 7 | 86 | ID, ACCESS_, PRISURF |
-| 77 | 51 | pop, ageless5, age5_9 |
-| 19 | 49 | PCT_HISP, PCT_WHITE, PCT_BLACK |
-| 8 | 42 | description, zip, SEG_LENGTH |
+| 5 | 100 | Phone, pavementTrafficCategory, treatmentCategory |
+| 83 | 97 | rnocshr, car_all, brn_oth_st |
+| 7 | 86 | ID, TERRAIN, PRISURF |
+| 77 | 51 | tot_l18, age75_79, age15_19 |
+| 19 | 49 | GQ_OT_INST, PCT_OTHER, AGEUNDER18 |
+| 8 | 42 | description, zip, VCRATIO20 |
 | 10 | 34 | GlobalID, FROMMEAS, TOMEAS |
 | 9 | 32 | Name, bmp, DESCRIPTIO |
 | 11 | 30 | Address, REGION, Shape_STLe |
 | 12 | 17 | source, Q160, Section |
-| 18 | 14 | state, REFPT, ENDREFPT |
-| 20 | 12 | region, HAWPI_NH, TWOPLUS_NH |
+| 18 | 14 | state, ENDREFPT, REFPT |
+| 20 | 12 | region, TWOPLUS_NH, AGELESS18 |
 | 14 | 8 | POPULATION, NHSDESIG, Status |
-| 39 | 8 | HISPANIC, WHITE_NH, BLACK_NH |
+| 39 | 8 | BLACK_NH, WHITE_NH, FEMALE |
 
 ## Statistics
 

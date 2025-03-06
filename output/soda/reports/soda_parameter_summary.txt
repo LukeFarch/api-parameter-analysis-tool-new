@@ -5,106 +5,6170 @@ Total SODA metadata files analyzed: 676
 Total parameters found: 29,477
 Unique parameter names: 6,161
 
-TOP 100 PARAMETERS:
+PARAMETER GROUPS WITH COMMON FREQUENCIES:
 ----------------------------------------
 
-1. the_geom: 266 (0.9%)
-2. emp: 87 (0.3%)
-3. hispanic: 83 (0.28%)
-4. white_nh: 83 (0.28%)
-5. black_nh: 83 (0.28%)
-6. ntvam_nh: 83 (0.28%)
-7. asian_nh: 83 (0.28%)
-8. hawpi_nh: 83 (0.28%)
-9. other_nh: 83 (0.28%)
-10. twoplus_nh: 83 (0.28%)
-11. male: 83 (0.28%)
-12. female: 83 (0.28%)
-13. ageless18: 83 (0.28%)
-14. age18_24: 83 (0.28%)
-15. med_age: 83 (0.28%)
-16. housing_un: 83 (0.28%)
-17. occ_hu: 83 (0.28%)
-18. vac_hu: 83 (0.28%)
-19. owned: 83 (0.28%)
-20. rented: 83 (0.28%)
-21. pop25plus: 83 (0.28%)
-22. nohsdipl: 83 (0.28%)
-23. hsgrad_sc: 83 (0.28%)
-24. bachl_hghr: 83 (0.28%)
-25. med_hh_inc: 83 (0.28%)
-26. med_fam_in: 83 (0.28%)
-27. per_cap_in: 83 (0.28%)
-28. med_c_rent: 83 (0.28%)
-29. med_g_rent: 83 (0.28%)
-30. rnt_occ_hu: 83 (0.28%)
-31. rntl400: 83 (0.28%)
-32. r800t999: 83 (0.28%)
-33. r1000t1249: 83 (0.28%)
-34. r1250t1499: 83 (0.28%)
-35. r1500t1999: 83 (0.28%)
-36. r2000pl: 83 (0.28%)
-37. rnocshr: 83 (0.28%)
-38. citz_birth: 83 (0.28%)
-39. citz_nat: 83 (0.28%)
-40. not_citz: 83 (0.28%)
-41. born_in_co: 83 (0.28%)
-42. brn_oth_st: 83 (0.28%)
-43. ntv_b_o_us: 83 (0.28%)
-44. foreign_b: 83 (0.28%)
-45. pop_1p: 83 (0.28%)
-46. same_house: 83 (0.28%)
-47. same_cnty: 83 (0.28%)
-48. same_state: 83 (0.28%)
-49. diff_state: 83 (0.28%)
-50. frm_abroad: 83 (0.28%)
-51. wrkrs_16pl: 83 (0.28%)
-52. car_all: 83 (0.28%)
-53. car_alone: 83 (0.28%)
-54. car_carpoo: 83 (0.28%)
-55. public_trn: 83 (0.28%)
-56. pt_bus: 83 (0.28%)
-57. pt_other: 83 (0.28%)
-58. bike: 83 (0.28%)
-59. walk: 83 (0.28%)
-60. tr_other: 83 (0.28%)
-61. wrk_home: 83 (0.28%)
-62. w_16pl_nh: 83 (0.28%)
-63. t_less_10: 83 (0.28%)
-64. t_10_19: 83 (0.28%)
-65. t_20_29: 83 (0.28%)
-66. t_30_39: 83 (0.28%)
-67. t_40_59: 83 (0.28%)
-68. t_60_pl: 83 (0.28%)
-69. pop_3pl: 83 (0.28%)
-70. enrolled: 83 (0.28%)
-71. preschool: 83 (0.28%)
-72. kndrgrtn: 83 (0.28%)
-73. gr_1_4: 83 (0.28%)
-74. gr_5_8: 83 (0.28%)
-75. gr_9_12: 83 (0.28%)
-76. undergrad: 83 (0.28%)
-77. grad_prof: 83 (0.28%)
-78. n_enrolled: 83 (0.28%)
-79. med_yr_blt: 83 (0.28%)
-80. b1990_1999: 83 (0.28%)
-81. b1980_1989: 83 (0.28%)
-82. b1970_1979: 83 (0.28%)
-83. b1960_1969: 83 (0.28%)
-84. b1950_1959: 83 (0.28%)
-85. b1940_1949: 83 (0.28%)
-86. b1939_e: 83 (0.28%)
-87. med_hm_val: 83 (0.28%)
-88. own_occ_hu: 83 (0.28%)
-89. v_l_50k: 83 (0.28%)
-90. v50k_100k: 83 (0.28%)
-91. v100k_150k: 83 (0.28%)
-92. v150k_200k: 83 (0.28%)
-93. v200k_250k: 83 (0.28%)
-94. v250k_300k: 83 (0.28%)
-95. v300k_400k: 83 (0.28%)
-96. v400k_500k: 83 (0.28%)
-97. v500k_750k: 83 (0.28%)
-98. v750k_1m: 83 (0.28%)
-99. v_1m_plus: 83 (0.28%)
-100. laborforce: 78 (0.26%)
+Parameters occurring 83 times (97 parameters):
+- age18_24
+- ageless18
+- asian_nh
+- b1939_e
+- b1940_1949
+- b1950_1959
+- b1960_1969
+- b1970_1979
+- b1980_1989
+- b1990_1999
+- bachl_hghr
+- bike
+- black_nh
+- born_in_co
+- brn_oth_st
+- car_all
+- car_alone
+- car_carpoo
+- citz_birth
+- citz_nat
+- diff_state
+- enrolled
+- female
+- foreign_b
+- frm_abroad
+- gr_1_4
+- gr_5_8
+- gr_9_12
+- grad_prof
+- hawpi_nh
+- hispanic
+- housing_un
+- hsgrad_sc
+- kndrgrtn
+- male
+- med_age
+- med_c_rent
+- med_fam_in
+- med_g_rent
+- med_hh_inc
+- med_hm_val
+- med_yr_blt
+- n_enrolled
+- nohsdipl
+- not_citz
+- ntv_b_o_us
+- ntvam_nh
+- occ_hu
+- other_nh
+- own_occ_hu
+- owned
+- per_cap_in
+- pop25plus
+- pop_1p
+- pop_3pl
+- preschool
+- pt_bus
+- pt_other
+- public_trn
+- r1000t1249
+- r1250t1499
+- r1500t1999
+- r2000pl
+- r800t999
+- rented
+- rnocshr
+- rnt_occ_hu
+- rntl400
+- same_cnty
+- same_house
+- same_state
+- t_10_19
+- t_20_29
+- t_30_39
+- t_40_59
+- t_60_pl
+- t_less_10
+- tr_other
+- twoplus_nh
+- undergrad
+- v100k_150k
+- v150k_200k
+- v200k_250k
+- v250k_300k
+- v300k_400k
+- v400k_500k
+- v500k_750k
+- v50k_100k
+- v750k_1m
+- v_1m_plus
+- v_l_50k
+- vac_hu
+- w_16pl_nh
+- walk
+- white_nh
+- wrk_home
+- wrkrs_16pl
+
+Parameters occurring 77 times (51 parameters):
+- age10_14
+- age15_19
+- age20_24
+- age25_29
+- age30_34
+- age35_39
+- age40_44
+- age45_49
+- age50_54
+- age55_59
+- age5_9
+- age60_64
+- age65_69
+- age70_74
+- age75_79
+- age80_84
+- age85pl
+- ageless5
+- armedfrcs
+- avghhsize
+- b2000_2009
+- blt_2010_p
+- civ_lf
+- civ_ni_pop
+- disabled
+- familyhh
+- hhi100_125
+- hhi125_150
+- hhi150_200
+- hhi200_pl
+- hhi20_30
+- hhi30_40
+- hhi40_50
+- hhi50_60
+- hhi60_75
+- hhi75_100
+- hhi_l20k
+- hhldr_naln
+- hhldralone
+- households
+- nonfamhh
+- not_lf
+- pop
+- pop16_pls
+- pov_65pl
+- pov_l18
+- ps_bel150
+- ps_below
+- ps_uni
+- puni_65pl
+- tot_l18
+
+Parameters occurring 20 times (12 parameters):
+- AGELESS10
+- AGELESS18
+- BACHL_HGHR
+- ENROLLED
+- HAWPI_NH
+- HHLDRALONE
+- HHLDR_NALN
+- NONFAMHH
+- PRESCHOOL
+- TWOPLUS_NH
+- UNDERGRAD
+- region
+
+Parameters occurring 19 times (49 parameters):
+- AGEUNDER10
+- AGEUNDER18
+- AMERIND_NH
+- AVG_FAM
+- AVG_HH
+- FAMILY_HH
+- GQ_COLLEGE
+- GQ_CORREC
+- GQ_INST
+- GQ_MILTRY
+- GQ_NONINST
+- GQ_NURS
+- GQ_OT_INST
+- GQ_O_NONI
+- GQ_POP
+- HAWPAC_NH
+- HH_ALONE
+- HH_N_NONR
+- HH_W_NONR
+- HUSB_WIFE
+- MED_FEMALE
+- MED_MALE
+- MULT_NH
+- NON_FAM
+- OCCUPIED
+- OTH_FAMILY
+- PCT_65PLUS
+- PCT_AMIND
+- PCT_ASIAN
+- PCT_BLACK
+- PCT_FEM
+- PCT_HAWPI
+- PCT_HISP
+- PCT_MULT
+- PCT_OCC
+- PCT_OTHER
+- PCT_OWN
+- PCT_RENT
+- PCT_U10
+- PCT_U18
+- PCT_VAC
+- PCT_WHITE
+- RENTER
+- VACANT
+- V_FORRENT
+- V_FORSALE
+- V_MIGRANT
+- V_OTHER
+- V_SEASONAL
+
+Parameters occurring 18 times (14 parameters):
+- AADT
+- AADTDERIV
+- AADTYR
+- CITY
+- ENDREFPT
+- Election Type
+- FIPS
+- NAME10
+- REFPT
+- county
+- gid
+- r400T599
+- r600T799
+- state
+
+Parameters occurring 13 times (238 parameters):
+- AADTCOMB
+- AADTSINGLE
+- ADMINCLASS
+- AGE18_24
+- AGE25_34
+- AGE35_44
+- AGE45_64
+- AGE_0_9
+- AGE_10_19
+- AGE_20_29
+- AGE_30_39
+- AGE_40_49
+- AGE_50_59
+- AGE_60_69
+- AGE_70_79
+- AGE_80_PL
+- ALAND
+- AVGHHSIZE
+- AWATER
+- B1939_E
+- B1940_1949
+- B1950_1959
+- B1960_1969
+- B1970_1979
+- B1980_1989
+- B1990_1999
+- BIKE
+- BORN_IN_CO
+- BRN_OTH_ST
+- CAR_ALL
+- CAR_ALONE
+- CAR_CARPOO
+- CITZ_BIRTH
+- CITZ_NAT
+- DIFF_STATE
+- FAMILYHH
+- FOREIGN_B
+- FRM_ABROAD
+- GEOID_1
+- GOVLEVEL
+- GRAD_PROF
+- GR_1_4
+- GR_5_8
+- GR_9_12
+- Grade Level
+- HSGRAD_SC
+- KNDRGRTN
+- LOGRECNO
+- Location Accuracy
+- MAGE18_24
+- MAGE25_34
+- MAGE35_44
+- MAGE45_64
+- MAGE65PLUS
+- MAGELESS10
+- MAGELESS18
+- MAGE_0_9
+- MAGE_10_19
+- MAGE_20_29
+- MAGE_30_39
+- MAGE_40_49
+- MAGE_50_59
+- MAGE_60_69
+- MAGE_70_79
+- MAGE_80_PL
+- MASIAN_NH
+- MAVGHHSIZE
+- MB1939_E
+- MB1940_194
+- MB1950_195
+- MB1960_196
+- MB1970_197
+- MB1980_198
+- MB1990_199
+- MBACHL_HGH
+- MBIKE
+- MBLACK_NH
+- MBORN_IN_C
+- MBRN_OTH_S
+- MCAR_ALL
+- MCAR_ALONE
+- MCAR_CARPO
+- MCITZ_BIRT
+- MCITZ_NAT
+- MDIFF_STAT
+- MED_C_RENT
+- MED_FAM_IN
+- MED_G_RENT
+- MED_HH_INC
+- MED_HM_VAL
+- MED_YR_BLT
+- MENROLLED
+- MFAMILYHH
+- MFEMALE
+- MFOREIGN_B
+- MFRM_ABROA
+- MGRAD_PROF
+- MGR_1_4
+- MGR_5_8
+- MGR_9_12
+- MHAWPI_NH
+- MHHLDRALON
+- MHHLDR_NAL
+- MHISPANIC
+- MHOUSEHOLD
+- MHOUSING_U
+- MHSGRAD_SC
+- MKNDRGRTN
+- MMALE
+- MMED_AGE
+- MMED_C_REN
+- MMED_FAM_I
+- MMED_G_REN
+- MMED_HH_IN
+- MMED_HM_VA
+- MMED_YR_BL
+- MNOHSDIPL
+- MNONFAMHH
+- MNOT_CITZ
+- MNTVAM_NH
+- MNTV_B_O_U
+- MN_ENROLLE
+- MOCC_HU
+- MOTHER_NH
+- MOWNED
+- MOWN_OCC_H
+- MPER_CAP_I
+- MPOP25PLUS
+- MPOP_1P
+- MPOP_3PL
+- MPRESCHOOL
+- MPS_BELOW
+- MPS_Uni
+- MPT_BUS
+- MPT_OTHER
+- MPUBLIC_TR
+- MR1000T124
+- MR1250T149
+- MR1500T199
+- MR2000PL
+- MR400T599
+- MR600T799
+- MR800T999
+- MRENTED
+- MRNOCSHR
+- MRNTL400
+- MRNT_OCC_H
+- MSAME_CNTY
+- MSAME_HOUS
+- MSAME_STAT
+- MTR_OTHER
+- MTWOPLUS_N
+- MT_10_19
+- MT_20_29
+- MT_30_39
+- MT_40_59
+- MT_60_PL
+- MT_LESS_10
+- MUNDERGRAD
+- MV100K_150
+- MV150K_200
+- MV200K_250
+- MV250K_300
+- MV300K_400
+- MV400K_500
+- MV500K_750
+- MV50K_100K
+- MV750K_1M
+- MVAC_HU
+- MV_1M_PLUS
+- MV_L_50K
+- MWALK
+- MWHITE_NH
+- MWRKRS_16P
+- MWRK_HOME
+- MW_16PL_NH
+- NOHSDIPL
+- NOT_CITZ
+- NTVAM_NH
+- NTV_B_O_US
+- N_ENROLLED
+- OCC_HU
+- OWNED
+- OWN_OCC_HU
+- PER_CAP_IN
+- POP25PLUS
+- POP_1P
+- POP_3PL
+- PS_BELOW
+- PS_Uni
+- PT_BUS
+- PT_OTHER
+- PUBLIC_TRN
+- R1000T1249
+- R1250T1499
+- R1500T1999
+- R2000PL
+- R400T599
+- R600T799
+- R800T999
+- RENTED
+- RNOCSHR
+- RNTL400
+- RNT_OCC_HU
+- ROUTENAME
+- SAME_CNTY
+- SAME_HOUSE
+- SAME_STATE
+- SEGMDIR
+- SPECIALSYS
+- THRULNQTY
+- TR_OTHER
+- T_10_19
+- T_20_29
+- T_30_39
+- T_40_59
+- T_60_PL
+- T_LESS_10
+- URBAN
+- V100K_150K
+- V150K_200K
+- V200K_250K
+- V250K_300K
+- V300K_400K
+- V400K_500K
+- V500K_750K
+- V50K_100K
+- V750K_1M
+- VAC_HU
+- V_1M_PLUS
+- V_L_50K
+- Votes
+- WALK
+- WRKRS_16PL
+- WRK_HOME
+- W_16PL_NH
+- month
+- name
+
+Parameters occurring 12 times (17 parameters):
+- BUILTYR
+- COUNTYEAR
+- FundID
+- GISID
+- HPMSID
+- JURSPLIT
+- MTFCC
+- OPERATION
+- PM
+- Q160
+- Range
+- STATEFP
+- Section
+- Township
+- UTM x
+- entityId
+- source
+
+Parameters occurring 11 times (30 parameters):
+- ABBREV_NAM
+- Active Voters
+- Address
+- Ballots Cast
+- COUNTYFP
+- GQ_JUVENL
+- LGSTATUS_I
+- LGTYPE_ID
+- LSAD
+- PHONE
+- POP2010
+- PREV_NAME
+- Precinct
+- Q40
+- REGION
+- Shape_STLe
+- UTM y
+- V_R_NOTOCC
+- V_S_NOTOCC
+- area
+- date
+- lastupdate
+- lgid
+- lobbyistFirstName
+- lobbyistLastName
+- lobbyistName
+- lobbyistZip
+- primaryLobbyistID
+- quarter
+- runDate
+
+Parameters occurring 10 times (34 parameters):
+- 2012 % Advanced
+- 2012 % No Score
+- 2012 % Proficient
+- 2012 Advanced Count
+- 2012 No Score Count
+- 2012 Proficient Count
+- 2012 Total Count
+- ALT_ADDRES
+- AREALAND
+- AREAWATR
+- Candidate
+- DD
+- DHV
+- FROMMEAS
+- GlobalID
+- Latitude
+- Longitude
+- MAIL_ADDRE
+- MAIL_CITY
+- MAIL_STATE
+- MAIL_ZIP
+- NAME00
+- NOTES
+- OFFPKTRK
+- PCTOFFPKSU
+- School
+- TOMEAS
+- TPRID
+- WDID
+- YR20FACTOR
+- ZIP
+- Zip Code
+- ein
+- zip_code
+
+Parameters occurring 9 times (32 parameters):
+- AADTTRUCKS
+- ADJ_PS_Pov
+- ADJ_PS_Uni
+- BLT_2000_P
+- DESCRIPTIO
+- Election
+- Inactive Voters
+- MADJ_PS_Po
+- MADJ_PS_Un
+- MBLT_2000_
+- MLOGRECNO
+- MPOP0711
+- NAMEACS
+- Name
+- PCTOFFPKCO
+- PCTPKCOMB
+- PCTPKSU
+- POP0711
+- ROADTERRAI
+- ROUTECAPAC
+- Total Voters
+- Total Voters Turnout %
+- Zip
+- annualLobbyistRegistrationID
+- areaname
+- bmp
+- businessname1
+- businessname2
+- ctf
+- documentId
+- statename
+- taxyr
+
+Parameters occurring 8 times (42 parameters):
+- 2012 % Part Prof
+- 2012 % Prof & Adv
+- 2012 % Unsat
+- 2012 Part Prof Count
+- 2012 Unsat Count
+- ADDRESS
+- ADDRESS_ID
+- Agency
+- CALYR
+- District No
+- FORESTROUT
+- FUNCCLASSI
+- FUNCSTAT
+- LOC_CODE
+- Modified
+- Month
+- NAMESF1
+- OBJECTID_1
+- PKTRK
+- POP2000
+- Q10
+- SEG_LENGTH
+- School No. 
+- TOFEATURE
+- TRACT
+- TRACTCE
+- VCRATIO
+- VCRATIO20
+- V_RS_N_OCC
+- areatyname
+- description
+- fein
+- firstName
+- lastName
+- middleName
+- periodtype
+- reportDueDate
+- reportMonth
+- stateabbrv
+- stfips
+- type
+- zip
+
+Parameters occurring 7 times (86 parameters):
+- % Free and Reduced Lunch
+- ACCESS_
+- COMMENTS
+- Category
+- CoordsEW
+- CoordsNS
+- County Name
+- EDLA
+- Email
+- FAMHH
+- FHHLDR_N_H
+- FOREIGN
+- FUNCSTAT00
+- GRADE_1_4
+- GRADE_5_8
+- GRADE_9_12
+- GRADSCH
+- GUID
+- HHLDS
+- HOUSINGU
+- HSGRAD_PL
+- ID
+- INTPTLAT00
+- INTPTLON00
+- IN_POVERTY
+- KINDRGRTN
+- LOCATION
+- MARCOUPFAM
+- MEDCRENT
+- MEDFAMINC
+- MEDGRENT
+- MEDHHINC
+- MEDVAL
+- MEDYRBLT
+- MHHLDR_N_W
+- MTFCC00
+- NATIVE
+- NOTINSCH
+- NO_HS_DIPL
+- NTV_AM_NH
+- OCCHU
+- OTH_FAM
+- OWN
+- Office
+- PCTASIAN
+- PCTBLACK
+- PCTFOREIGN
+- PCTHAW
+- PCTHISP
+- PCTNATIVE
+- PCTNTVAM
+- PCTOCC
+- PCTOTHER
+- PCTOWN
+- PCTRENT
+- PCTVAC
+- PCTWHITE
+- PCT_65PL
+- PCT_BACHPL
+- PCT_FEMALE
+- PCT_HSPLUS
+- PCT_L10
+- PCT_L18
+- PCT_NODIPL
+- PCT_PVRTY
+- PCT_RURHU
+- PCT_TWOP
+- PCT_URBHU
+- PERCAPINC
+- POP3PLUS
+- POP_SF3
+- PRIIRI
+- PRISURF
+- PVRTY_UNI
+- RENT
+- RURALHU
+- STATEFP00
+- TERRAIN
+- THRULNWD
+- TTLPOP25PL
+- URBANHU
+- VACHU
+- areatype
+- con_dist
+- lobbyistFirmName
+- period
+
+Parameters occurring 6 times (210 parameters):
+- 2011 % Advanced
+- 2011 % No Score
+- 2011 % Proficient
+- 2011 Advanced Count
+- 2011 No Score Count
+- 2011 Proficient Count
+- 2011 Total Count
+- Actual
+- Application Date
+- Budget (in millions)
+- Business Name
+- CITY_NAME
+- CURVES_A
+- CURVES_B
+- CURVES_C
+- CURVES_D
+- CURVES_E
+- CURVES_F
+- Completion Date
+- CoordsEW Dir
+- CoordsNS Dir
+- DATE_
+- GRADES_A
+- GRADES_B
+- GRADES_C
+- GRADES_D
+- GRADES_E
+- GRADES_F
+- HOVTYPE
+- IRI
+- License Type
+- Long Range Goal
+- NAMELSAD10
+- No Votes
+- PKPARK
+- PRIPSI
+- PRISURFWD
+- RRXID
+- RUNLENGTH_FROM
+- RUNLENGTH_TO
+- SEASONALGR
+- SEGMPREFIX
+- SHAPE_len
+- SIGHTDIST
+- SPEEDLIM
+- SUBNAME
+- SURFWD
+- Shape__Len
+- UABName
+- WIDENFEAS
+- Yes Votes
+- ZIPCODE
+- ZONE_
+- age25_34
+- age35_44
+- age45_64
+- age65plus
+- age_0_9
+- age_10_19
+- age_20_29
+- age_30_39
+- age_40_49
+- age_50_59
+- age_60_69
+- age_70_79
+- age_80_pl
+- ageless10
+- bedrm_1
+- bedrm_2
+- bedrm_3
+- bedrm_4
+- bedrm_5_pl
+- blt_2000_p
+- fiscalYear
+- in_poverty
+- location
+- long
+- mage18_24
+- mage25_34
+- mage35_44
+- mage45_64
+- mage65plus
+- mage_0_9
+- mage_10_19
+- mage_20_29
+- mage_30_39
+- mage_40_49
+- mage_50_59
+- mage_60_69
+- mage_70_79
+- mage_80_pl
+- mageless10
+- mageless18
+- mailingCity
+- mailingState
+- masian_nh
+- mb1939_e
+- mb1940_194
+- mb1950_195
+- mb1960_196
+- mb1970_197
+- mb1980_198
+- mb1990_199
+- mbachl_hgh
+- mbedrm_1
+- mbedrm_2
+- mbedrm_3
+- mbedrm_4
+- mbedrm_5_p
+- mbike
+- mblack_nh
+- mblt_2000_
+- mborn_in_c
+- mbrn_oth_s
+- mcar_all
+- mcar_alone
+- mcar_carpo
+- mcitz_birt
+- mcitz_nat
+- mdiff_stat
+- menrolled
+- mfemale
+- mforeign_b
+- mfrm_abroa
+- mgr_1_4
+- mgr_5_8
+- mgr_9_12
+- mgrad_prof
+- mhawpi_nh
+- mhispanic
+- mhousing_u
+- mhsgrad_sc
+- min_povert
+- mkndrgrtn
+- mmale
+- mmed_age
+- mmed_c_ren
+- mmed_fam_i
+- mmed_g_ren
+- mmed_hh_in
+- mmed_hm_va
+- mmed_yr_bl
+- mn_enrolle
+- mno_bdrms
+- mnohsdipl
+- mnot_citz
+- mntv_b_o_u
+- mntvam_nh
+- mocc_hu
+- mother_nh
+- mown_occ_h
+- mowned
+- mper_cap_i
+- mpop25plus
+- mpop_1p
+- mpop_3pl
+- mpreschool
+- mpt_bus
+- mpt_other
+- mpublic_tr
+- mpvrty_un
+- mr1000t124
+- mr1250t149
+- mr1500t199
+- mr2000pl
+- mr400t599
+- mr600t799
+- mr800t999
+- mrented
+- mrnocshr
+- mrnt_occ_h
+- mrntl400
+- msame_cnty
+- msame_hous
+- msame_stat
+- mt_10_19
+- mt_20_29
+- mt_30_39
+- mt_40_59
+- mt_60_pl
+- mt_less_10
+- mtr_other
+- mtwoplus_n
+- mundergrad
+- mv100k_150
+- mv150k_200
+- mv200k_250
+- mv250k_300
+- mv300k_400
+- mv400k_500
+- mv500k_750
+- mv50k_100k
+- mv750k_1m
+- mv_1m_plus
+- mv_l_50k
+- mvac_hu
+- mw_16pl_nh
+- mwalk
+- mwhite_nh
+- mwrk_home
+- mwrkrs_16p
+- no_bdrms
+- periodyear
+- pertypdesc
+- phone
+- precipitation
+- pvrty_un
+- relhumidity
+- subRegion
+- suffix
+
+Parameters occurring 5 times (100 parameters):
+- 2013 % Advanced
+- 2013 % No Score
+- 2013 % Proficient
+- 2013 Advanced Count
+- 2013 No Score Count
+- 2013 Proficient Count
+- 2013 Total Count
+- ASSET_CLAS
+- ApplicationYear
+- BASETHICK
+- BASETYPE
+- BLOCK
+- CLASS_CATE
+- CODE
+- COUNTSTATIONID
+- COUSUB
+- CSAFP
+- Case ID
+- CaseType
+- Comments
+- DVMT
+- Desciption
+- Designated Basin
+- District Number
+- FIPSCITY
+- FLEXTHICK
+- FROMDESC
+- FROM_DESCR
+- FUNCCLASSID
+- GIS_ASSET_
+- GREENTIME
+- INFOR_ASSE
+- LTTURNLN
+- Location 1
+- Location 1 (address)
+- Location 1 (city)
+- Location 1 (state)
+- Location 1 (zip)
+- MEDIAN
+- MEDIANWD
+- Management District
+- NAAQSID
+- NAMELSAD00
+- PRIOUTSHLD
+- PRITHRULNW
+- Parcel Number
+- Phone
+- Phone 
+- Planner
+- RECEPTION_
+- RIGIDTHICK
+- ROUTESIGN
+- RTTURNLN
+- RUNLENGTH1
+- RUNLENGTH_
+- Region
+- SIGNALQTY
+- SIGNALTYPE
+- STATUS
+- STOPQTY
+- STRID
+- SURFNAME
+- SURF_TYPE
+- School Number
+- Shape_STAr
+- Shape__Are
+- Subject
+- TODESC
+- TOLLTYPE
+- TO_DESCR
+- UR00
+- Water Source
+- age
+- airmass
+- airtemperature
+- avgwinddirection10m
+- avgwindspeed10m
+- estimate
+- ethnicity
+- fy
+- gender
+- globalhorizontal
+- highway
+- latitude
+- length
+- licenseNumber
+- longitude
+- mailingZipCode
+- pavementTrafficCategory
+- peakwindspeed10m
+- precipitationaccumulated
+- principalCity
+- principalState
+- snId
+- solicitationNoticeId
+- solicitorName
+- stationpressure
+- title
+- treatmentCategory
+- zipCode
+
+Parameters occurring 4 times (198 parameters):
+- 2011 % Part Prof
+- 2011 % Prof & Adv
+- 2011 % Unsat
+- 2011 Part Prof Count
+- 2011 Unsat Count
+- 2013 % Part Prof
+- 2013 % Prof & Adv
+- 2013 % Unsat
+- 2013 Part Prof Count
+- 2013 Unsat Count
+- ACCOUNTNO
+- ACRES
+- ADDRESS__1
+- ARMEDFRCS
+- Acres
+- Amount
+- B2000_2009
+- BEGINX
+- BEGINY
+- BLKGRP
+- BLKGRPCE
+- BLT_2010_P
+- BUFF_DIST
+- CIV_LF
+- CIV_NI_P
+- CIV_NI_POP
+- CLASSFP
+- CLASSFP00
+- COLLECTOR
+- COUNTYFP00
+- Candidate/Yes or No
+- CurveLen
+- DBAs
+- DISABLED
+- Data Source
+- EMP
+- ENDX
+- ENDY
+- Elevation
+- Expiration Date
+- FORESTROUTE
+- FROMFEATUR
+- FROMFEATURE
+- Facility ID
+- GIS_ID
+- GradeLen
+- HHI100_125
+- HHI125_150
+- HHI150_200
+- HHI20_30
+- HHI30_40
+- HHI40_50
+- HHI50_60
+- HHI60_75
+- HHI75_100
+- HHI_200_PL
+- HHI_L20K
+- HOURS
+- HOVLNQTY
+- INSURED
+- ISDIVIDED
+- ISRAMP
+- LABORFORCE
+- LOGRECNO_1
+- LRS_DATE
+- LSAD00
+- Latdecdeg
+- License #
+- Longdecdeg
+- MARMEDFRCS
+- MB2000_201
+- MBLT_2010_
+- MCIV_LF
+- MCIV_NI_P
+- MCIV_NI_PO
+- MDISABLED
+- MEMP
+- MHHI100_12
+- MHHI125_15
+- MHHI150_20
+- MHHI20_30
+- MHHI30_40
+- MHHI40_50
+- MHHI50_60
+- MHHI60_75
+- MHHI75_100
+- MHHI_200_P
+- MHHI_L20K
+- MINSURED
+- MLABORFORC
+- MNOT_INS
+- MNOT_LF
+- MPO
+- MPOID
+- MPOP0812
+- MPOP16_PLS
+- MPOV_65PL
+- MPOV_L18
+- MPS_BEL150
+- MPUNI_65PL
+- MPUNI_L18
+- MUNEMP
+- NAME_1
+- NONCTRLQTY
+- NOT_INS
+- NOT_LF
+- Operation Types
+- Organization Name
+- Owner
+- PLACE
+- POP0812
+- POP16_PLS
+- POV_65PL
+- POV_L18
+- PRIIRIDATE
+- PRIMARY_WD
+- PRIOUTSH_1
+- PRIRUTTING
+- PRITREATME
+- PRIYRREHAB
+- PROJECT_ID
+- PSI
+- PS_BEL150
+- PUNI_65PL
+- PUNI_L18
+- PW_CONTAIN
+- PW_COVER
+- Phase
+- Priority No
+- ROW_WIDTH
+- Receipt
+- SAPLONGID
+- SAPRECID
+- SECOND_WD
+- SHAPE_AREA
+- SHAPE_LEN
+- SHAPE_Leng
+- SQFT
+- STREETNAME
+- STREETSUF
+- SUBDIVISIO
+- SW_CONTAIN
+- SW_COVER
+- Shape_len
+- Source
+- TOLLID
+- TPR
+- TRKRESTRIC
+- TRKRESTRICT
+- TYPE
+- Title
+- Type
+- UNEMP
+- YEAR_BUILT
+- ZONETYPE
+- address
+- azimuthangle
+- centerLength
+- charityName
+- cond
+- country
+- crbk
+- curve
+- depth
+- diffusehorizontal
+- dir
+- directnormal
+- dl
+- entityName
+- envZ
+- fatg
+- filingType
+- funCl
+- geo
+- housing__1
+- hwy
+- industry
+- iri
+- last_edite
+- licenseType
+- mailingAddress
+- mhousing_1
+- mpop1014
+- mtcD
+- mtcY
+- nhs
+- numLanes
+- pGrp
+- pTyp
+- principalAddress
+- principalZipCode
+- rut
+- sales
+- stateAgency
+- status
+- trafZ
+- tran
+- zenithangle
+
+Parameters occurring 3 times (223 parameters):
+- ADDRESS1
+- ADDRESS2
+- ADDRESS_LI
+- Adult Cats: Adoption
+- Adult Cats: Died
+- Adult Cats: Missing / Stolen
+- Adult Cats: Owner Relinquished
+- Adult Cats: Owner Requested Euthanasia upon intake
+- Adult Cats: Returned To Owner (RTO)
+- Adult Cats: Shelter Euthanasia
+- Adult Cats: Stray
+- Adult Cats: Transfer in from Out of State organization
+- Adult Cats: Transfer in from another Colorado organization
+- Adult Dogs: Adoption
+- Adult Dogs: Died
+- Adult Dogs: Other live outcomes (ie: tnr/snr)
+- Adult Dogs: Owner Relinquished
+- Adult Dogs: Owner Requested Euthanasia
+- Adult Dogs: Owner Requested Euthanasia upon intake
+- Adult Dogs: Returned To Owner (RTO)
+- Adult Dogs: Stray
+- Adult Dogs: Transfer in from Out of State organization
+- Appropriation Date
+- Associated Case Numbers
+- BOOK
+- Basin
+- Bill Number
+- Birds: Adoption
+- Birds: Died
+- Birds: Owner Relinquished
+- Birds: Owner Requested Euthanasia
+- Birds: Owner Requested Euthanasia upon intake
+- Birds: Returned To Owner (RTO)
+- Birds: Shelter Euthanasia
+- Birds: Stray
+- Birds: Transfer in from Out of State organization
+- Birds: Transfer in from another Colorado organization
+- Bottom Perforated Casing
+- CBSA
+- CBSAFP
+- COMMENT
+- CONDONAME
+- CO_FIPS
+- CSA
+- Candidate Votes
+- DAMID
+- DATAFILE
+- DIRECTION
+- Dam Height
+- Dam Name
+- Description
+- Drainage Area
+- EMAIL
+- Expire Date
+- FULL_ADDRE
+- Facility Name:
+- Finished Basement
+- GEOIDBG
+- GNIS ID
+- GNIS_ID
+- HPMS_YRADD
+- HPMS_YRINS
+- HUC8
+- HUTF_INSPY
+- HUTF_PROJY
+- INTERSECTI
+- Issue
+- Juvenile Cats: Other Live Outcomes (ie:tnr / snr)
+- Juvenile Cats: Owner Relinquished
+- Juvenile Cats: Owner Requested Euthanasia upon intake
+- Juvenile Cats: Returned To Owner (RTO)
+- Juvenile Cats: Shelter Euthanasia
+- Juvenile Cats: Transfer in from Out of State organization
+- Juvenile Cats: Transfer in from another Colorado organization
+- Juvenile Dogs: Died
+- Juvenile Dogs: Owner Requested Euthanasia
+- Juvenile Dogs: Owner Requested Euthanasia upon intake
+- Juvenile Dogs: Returned To Owner (RTO)
+- Juvenile Dogs: Shelter Euthanasia
+- Juvenile Dogs: Stray
+- Juvenile Dogs: Transfer in from Out of State organization
+- Juvenile Dogs: Transfer in from another Colorado organization
+- LATITUDE
+- LOCCITY
+- LONGITUDE
+- Length
+- License Number
+- License Status
+- MEDIANSF
+- NAICS
+- Office/Ballot Issue
+- Office/Issue/Judgeship
+- Other: Adoption
+- Other: Died
+- Other: Owner Relinquished
+- Other: Owner Requested Euthanasia
+- Other: Owner Requested Euthanasia upon intake
+- Other: Returned To Owner (RTO)
+- Other: Shelter Euthanasia
+- Other: Stray
+- Other: Transfer in from Out of State organization
+- Other: Transfer in from another Colorado organization
+- PAGE
+- PARCELNB
+- PHOTO
+- POR End
+- POR Start
+- PRIFAULTIN
+- PRIINSHLDW
+- Permit
+- Population
+- Primary Contact
+- Primary Name
+- Priority Date
+- ROAD_TYPE
+- ROUTESIGNQ
+- Rabbits: Adoption
+- Rabbits: Died
+- Rabbits: Owner Relinquished
+- Rabbits: Owner Requested Euthanasia
+- Rabbits: Owner Requested Euthanasia upon intake
+- Rabbits: Returned To Owner (RTO)
+- Rabbits: Shelter Euthanasia
+- Rabbits: Stray
+- Rabbits: Transfer in from Out of State organization
+- Rabbits: Transfer in from another Colorado organization
+- Report Month
+- Report Year
+- Resolution
+- SDUNI
+- SECINSHLDW
+- SFA
+- STREET ADDRESS
+- STREETNO
+- SUBCODE
+- SUFFIX
+- SURFACE_TY
+- Shape_Length
+- Sm Mammal: Adoption
+- Sm Mammal: Died
+- Sm Mammal: Owner Relinquished
+- Sm Mammal: Owner Requested Euthanasia
+- Sm Mammal: Owner Requested Euthanasia upon intake
+- Sm Mammal: Returned To Owner (RTO)
+- Sm Mammal: Shelter Euthanasia
+- Sm Mammal: Stray
+- Sm Mammal: Transfer in from Out of State organization
+- Sm Mammal: Transfer in from another Colorado organization
+- State Code
+- Stream
+- Stream Mile
+- Street Address
+- Structure Type
+- SystemID
+- TOLLCHARGE
+- Top Perforated Casing
+- Turnout
+- Unfinished Basement
+- VolumeGrou
+- WEB_LINK
+- WIDENOBSTA
+- WIDENOBSTACLE
+- Well Depth
+- Year Built
+- ZONE_CODE
+- ZONING
+- ad
+- address1
+- address2
+- ageDesc
+- agency
+- averageRent
+- averageVacancy
+- buildingName
+- calendarYear
+- clientName
+- clientZip
+- comments
+- count
+- created_da
+- created_us
+- department
+- division
+- dlIdx
+- energyType
+- energyUsage
+- entityFormDate
+- entityStatus
+- entityType
+- expirationDate
+- geostr
+- gross_sales
+- institutionLevel
+- institutionLevelId
+- institutionName
+- institutionType
+- last_edi_1
+- lat
+- licensePrefix
+- loc
+- location (address)
+- location (city)
+- location (state)
+- location (zip)
+- mailingAddress2
+- mailingCountry
+- objectId
+- override
+- prelim
+- race
+- recordCount
+- residency
+- residencyId
+- retail_sales
+- signLocationGUId
+- state_net_taxable_sales
+- state_sales_tax
+- streetAddress
+- studentLevel
+- suppress
+- taxType
+- website
+- zipcode
+
+Parameters occurring 2 times (640 parameters):
+- % Free and Reduced Lunch (School Only)
+- 12_month_revenue
+- 2011 % Partially Proficient 
+- 2011 % Proficient & Advanced
+- 2011 % Unsatisfactory
+- 2011 Partially Proficient Count
+- 2011 Unsatisfactory Count
+- 2012 % Partially Proficient 
+- 2012 % Proficient & Advanced
+- 2012 % Unsatisfactory
+- 2012 Partially Proficient Count
+- 2012 Unsatisfactory Count
+- ACCOUNT_NU
+- ACCTTYPE
+- ACTIVE_OR_HISTORIC
+- ADDRESS_LINE1
+- ADDRESS_LINE2
+- AGENCYURL
+- APRDIST
+- AREAID
+- Abuse/Physical
+- Abuse/Verbal
+- Account
+- Address (address)
+- Address (city)
+- Address (state)
+- Address (zip)
+- Adjudication Date
+- Admin No
+- Admin Scenario
+- Adult Cats: AVG LOS
+- Adult Cats: Beginning Count
+- Adult Cats: Beginning Foster Count
+- Adult Cats: Foster Count
+- Adult Cats: Other Live Outcomes (ie: tnr / snr)
+- Adult Cats: Other: TNR / Protective Custody / Returns / Disaster Relief
+- Adult Cats: Owner Requested Euthanasia 
+- Adult Cats: Transfer or Rescue out to an Out of State organization
+- Adult Cats: Transfer or Rescue out to another Colorado organization
+- Adult Dogs: AVG LOS
+- Adult Dogs: Beginning Foster Count
+- Adult Dogs: Ending Count
+- Adult Dogs: Foster Count
+- Adult Dogs: Missing / Stolen
+- Adult Dogs: Other: TNR / Protective Custody / Returns / Disaster Relief
+- Adult Dogs: Shelter Euthanasia 
+- Adult Dogs: Transfer in from another Colorado organization  
+- Adult Dogs: Transfer or Rescue out to an Out of State organization
+- Adult Dogs: Transfer or Rescue out to another Colorado organization
+- AgeGroup
+- AnchorName
+- AreaAcres
+- Assigned To
+- BMP
+- BNDRY_LAST_MODIFIED_DATE
+- BUILT
+- BUSINESSNA
+- Base Of Grout
+- Baths
+- Bedrooms
+- Birds: AVG LOS
+- Birds: Beginning Count
+- Birds: Beginning Foster Count
+- Birds: Ending Count
+- Birds: Foster Count
+- Birds: Other Live Outcomes(ie: tnr / snr)
+- Birds: Other: TNR / Protective Custody / Returns / Disaster Relief
+- Birds: Transfer or Rescue out to an Out of State organization
+- Birds: Transfer or Rescue out to another Colorado organization
+- Boulder
+- Boulder Blank Code
+- Bounding Structure
+- Bounding WDID
+- Brain Injury
+- Burns
+- BusinessName
+- CAICategor
+- CAREOF
+- CCRR
+- CDOT Segment
+- CITY_CODE
+- CLASSCD1_D
+- CLASSCD2_D
+- CLASSCD3_D
+- CLASSCD4_D
+- CLASSCD5_D
+- CNECTAFP
+- COMMDIST
+- COMMENTS_DISTRICT_SPECIFIC
+- COMMENTS_LEGISLATIVE_PROCESS
+- CONDOUNIT
+- CONGDIST
+- CONTACT
+- COUNTYDESC
+- COUSUBFP
+- COUSUBNS
+- CREATION_ORDINANCE
+- CURR_STIP
+- Case Number
+- Change from Previous Year
+- ComID
+- Comment
+- Concrete Slab Only
+- Cond
+- Condo Age
+- Crbk
+- Curve
+- DEEDTYPE
+- DHTRK
+- DISTRICT
+- DISTRICT_ID
+- DISTRICT_NAME
+- DIVISION
+- DIVISION00
+- DL
+- DL_Idx
+- DNI
+- DWR Abbrev
+- Dam Length
+- Date Signed
+- Date Time Set
+- Decreed Uses
+- Denver
+- Denver Blank Code
+- Department
+- Depth
+- Descriptio
+- Design
+- Dir
+- District 
+- Diverted Drugs
+- Doing Business As
+- ECC
+- ELEV
+- EXTENT
+- Econ. Disadvant. Completers Total
+- Econ. Disadvant. Completion Rate
+- Econ. Disadvant. Final Grad Base
+- Econ. Disadvant. Graduates Total
+- Econ. Disadvant. Graduation Rate
+- Electric Baseboard
+- Elevation Accuracy
+- Emp
+- Enabled
+- Enclosed Porch
+- Env_Z
+- Exemptions
+- Expiration
+- Exterior Const.
+- FACILITYID
+- FCode
+- FDate
+- FEATURECOD
+- FEDIMPCODE
+- FEDIMPDESC
+- FENCED
+- FID
+- FILE_LINK
+- FType
+- FULLADDR
+- FULLADDRES
+- Facility Category
+- Facility Name
+- Facility Type
+- Fatg
+- Fireplace
+- Fireplace Insert
+- Floor Furnace
+- Flooring Carpet
+- Flooring Ceramic Tile
+- Flooring Resilient
+- FlowDir
+- Forced Air
+- Fun_Cl
+- Funding Source
+- Future_AAD
+- GEOCOMP
+- GEOIDBLOCK
+- GEOIDTR
+- GNIS_Name
+- GapFlag
+- Garage Attached/Detached
+- Garage Basement Double
+- Garage Basement Single
+- Garage Built in 1st Floor
+- Garage Common Wall/ Attached
+- Garage Spaces
+- Gender
+- Gifted-Talented Completers Total
+- Gifted-Talented Completion Rate
+- Gifted-Talented Final Grad Base
+- Gifted-Talented Graduates Total
+- Gifted-Talented Graduation Rate
+- Gross Sales Blank Code
+- HIGRADE
+- HPMSStruct
+- HPMSYear
+- HPMS_COMME
+- HPMS_UPDAT
+- HUC8 Name
+- HUTF_INSPYR
+- HUTF_PROJYR
+- Heat Elec Radiant
+- Homeless Completers Total
+- Homeless Completion Rate
+- Homeless Final Grad Base
+- Homeless Graduates Total
+- Homeless Graduation Rate
+- Hotwater Baseboard
+- Hwy
+- IDKey
+- INSPYR
+- INTERSECTION
+- IOP
+- IRIDATE
+- IRISYear
+- Industry
+- Institutions
+- Iri
+- Juvenile Cats: AVG LOS
+- Juvenile Cats: Adoption 
+- Juvenile Cats: Beginning Count
+- Juvenile Cats: Beginning Foster Count
+- Juvenile Cats: Died 
+- Juvenile Cats: Ending Count
+- Juvenile Cats: Foster Count
+- Juvenile Cats: Missing / Stolen
+- Juvenile Cats: Other: TNR / Protective Custody / Returns / Disaster Relief
+- Juvenile Cats: Owner Requested Euthanasia 
+- Juvenile Cats: Stray 
+- Juvenile Cats: Transfer or Rescue out to an Out of State organization
+- Juvenile Cats: Transfer or Rescue out to another Colorado organization
+- Juvenile Dogs: AVG LOS
+- Juvenile Dogs: Adoption 
+- Juvenile Dogs: Beginning Count
+- Juvenile Dogs: Beginning Foster Count
+- Juvenile Dogs: Ending Count
+- Juvenile Dogs: Foster Count
+- Juvenile Dogs: Missing / Stolen
+- Juvenile Dogs: Other: TNR / Protective Custody / Returns / Disaster relief
+- Juvenile Dogs: Owner Relinquished 
+- Juvenile Dogs: Transfer or Rescue out to an Out of State organization
+- Juvenile Dogs: Transfer or Rescue out to another Colorado organization
+- LAGENT
+- LANEQ
+- LAST_UPDAT
+- LEGAL_END_DATE
+- LEGAL_START_DATE
+- LENGTH
+- LENGTH_MIL
+- LOC_ERROR
+- LOGRADE
+- LOT
+- LOT_1
+- LRS_FC_NAME
+- Last Inspection Date
+- Latitude, Longitude
+- LengthKM
+- Licensee Name
+- Limited English Proficient Completers Total
+- Limited English Proficient Completion Rate
+- Limited English Proficient Final Grad Base
+- Limited English Proficient Graduates Total
+- Limited English Proficient Graduation Rate
+- Location Number
+- Location Structure Name
+- Location WDID
+- Long
+- MEMI
+- MHSPACE
+- Migrant Completers Total
+- Migrant Completion Rate
+- Migrant Final Grad Base
+- Migrant Graduates Total
+- Migrant Graduation Rate
+- Model
+- Mtc_D
+- Mtc_Y
+- NBHD_NAME
+- NCTADVFP
+- NECTAFP
+- NEIGHBORHO
+- NEP
+- Neglect
+- Nhs
+- Normal Storage
+- Notes
+- Num_Lanes
+- NumberOfCases
+- OPERDAYS
+- OPERHOURS
+- ORIG_ENDREFPT
+- ORIG_REFPT
+- ORIG_ROUTE
+- ORPHANED
+- OWNTYPE
+- ObjectID
+- Order No
+- Org. Code
+- Organization Code
+- Original Effective Date
+- Other Dam Names
+- Other: AVG LOS
+- Other: Beginning Count
+- Other: Beginning Foster Count
+- Other: Ending Count
+- Other: Foster Count
+- Other: Missing / Stolen 
+- Other: Other Live Outcomes (ie: tnr / snr)
+- Other: TNR / Protective Custody / Returns / Disaster Relief
+- Other: Transfer or Rescue out to an Out of State organization
+- Other: Transfer or Rescue out to another Colorado organization
+- Outlet Description
+- PACFA License Number:
+- PARCEL_NUM
+- PARK_NAME
+- PAVEEXCEPT
+- PAVESEGID
+- PAVETYPE
+- POSTAL_CIT
+- POSTMODIFI
+- PREMODIFIE
+- PRICURVECL
+- PRICURVECLASS
+- PRIFATIGUE
+- PRIGRADECL
+- PRIGRADECLASS
+- PRISLABCRA
+- PRISLABCRACK
+- PRITHRULNQ
+- PROJYR
+- PROJ_PSPID
+- PROVIDER NAME
+- PROVIDER SERVICE TYPE
+- PSR
+- P_Grp
+- P_Typ
+- Parcel
+- ParcelNumb
+- Period
+- Physical Status
+- PlaceName
+- Plan Type
+- Previous Adj Date
+- PrimarySec
+- Priority Admin No
+- Priority Structure Name
+- Priority WDID
+- Pueblo
+- Pueblo Blank Code
+- QC
+- Quality
+- RANGE
+- RDCF
+- RDCR
+- RDCS
+- REGION00
+- REMARKS
+- ROADTERRAIN
+- Rabbits: AVG LOS
+- Rabbits: Beginning Count
+- Rabbits: Beginning Foster Count
+- Rabbits: Ending Count
+- Rabbits: Foster Count
+- Rabbits: Missing / Stolen 
+- Rabbits: Other Live Outcomes ( ie: tnr / snr)
+- Rabbits: Other: TNR / Protective Custody / Returns / Disaster Relief
+- Rabbits: Transfer or Rescue out to an Out of State organization
+- Rabbits: Transfer or Rescue out to another Colorado organization
+- Rank
+- ReachCode
+- Reptiles: AVG LOS
+- Reptiles: Adoption
+- Reptiles: Beginning Count
+- Reptiles: Beginning Foster Count
+- Reptiles: Died
+- Reptiles: Ending Count
+- Reptiles: Foster Count
+- Reptiles: Other Live Outcomes (ie: tnr / snr)
+- Reptiles: Other: TNR / Protective Custody / Returns / Disaster Relief
+- Reptiles: Owner Relinquished
+- Reptiles: Owner Requested Euthanasia
+- Reptiles: Owner Requested Euthanasia upon intake
+- Reptiles: Returned To Owner (RTO)
+- Reptiles: Shelter Euthanasia
+- Reptiles: Stray
+- Reptiles: Transfer in from Out of State organization
+- Reptiles: Transfer in from another Colorado organization
+- Reptiles: Transfer or Rescue out to an Out of State organization
+- Reptiles: Transfer or Rescue out to another Colorado organization
+- Retail Sales Blank Code
+- Rut
+- SAPPROJECT
+- SAPPROJECTDESCRIPTION
+- SAPPROJECTSTATUS
+- SAPPROJECTTYPE
+- SAPPROJE_1
+- SCHOOL DISTRICT
+- SDTYP
+- SECTHRULNQ
+- SECTION_
+- SEGPREFIX
+- SFLA
+- SHAPE_Area
+- SHORT_NAME
+- SIC
+- SNAP
+- SOURCE
+- SPECIAL_FEE_TYPE
+- STATE_NAME
+- STREET
+- STREETDIR
+- STREET_ID
+- STREET_TYP
+- STUSPS00
+- SUBTYPEFIE
+- SURF
+- SWSI
+- SWSI Previous Year
+- SampleGrou
+- School Year
+- Seasonal Limits
+- Service Fee Allowed
+- ServiceLev
+- Set Comments
+- Shape_ST_1
+- Shape_ST_2
+- Shape__Area
+- Shape__Length
+- Shape_area
+- Site Name
+- Sm Mammal: AVG LOS
+- Sm Mammal: Ending Count
+- Sm Mammal: Foster Count
+- Sm Mammal: Other Live Outcomes (ie: tnr / snr)
+- Sm Mammal: Other: TNR / Protective Custody / Returns / Disaster Relief
+- Sm Mammal: Transfer or Rescue out to an Out of State organization
+- Sm Mammal: Transfer or Rescue out to another Colorado organization
+- Small Mammal: Beginning Count
+- Small Mammal: Beginning Foster Count
+- State Net Taxable Sales Blank Code
+- State Sales Tax Blank Code
+- Station Name
+- StatusDate
+- StreetName
+- Structure Name
+- Students with Disabilities Completers Total
+- Students with Disabilities Completion Rate
+- Students with Disabilities Final Grad Base
+- Students with Disabilities Graduates Total
+- Students with Disabilities Graduation Rate
+- Sub Floor Only
+- Surface Area
+- TAX_EXEMPT
+- TAX_EXEM_1
+- TAX_NUMBER
+- TIME
+- TOTAL LICENSED CAPACITY
+- TOWNSHIP
+- TRACTCE00
+- TRAIL_NAME
+- TREATMENTDEPTH
+- Title 1 Completers Total
+- Title 1 Completion Rate
+- Title 1 Final Grad Base
+- Title 1 Graduates Total
+- Title 1 Graduation Rate
+- Total
+- Traf_Z
+- Tran
+- UNITNUMBER
+- UNITS
+- UNSDLEA
+- USER_COMME
+- USGS Station ID
+- UTME
+- UTMN
+- Units
+- Use Tax Rate
+- WATER
+- WBAreaComI
+- WEB_LINK_STATE_DOLA
+- WEEDLISTCA
+- Well Name
+- Wood Deck
+- Woodstove
+- X_COORD
+- YRADD
+- YRINSPECT
+- YRREHAB
+- Y_COORD
+- ZCONSTRTDA
+- ZCTA5
+- ZTP_ARRA_P
+- ZZACTLETDA
+- ZZAC_AD_DT
+- ZZCONEXDAT
+- ZZCONSHD_E
+- ZZEST_PCD
+- ZZF_IMP_CD
+- ZZPROJ_END
+- ZZSHELF_DT
+- Zoning
+- account
+- actionreferenceid
+- actiontype
+- actiontypecode
+- adjusted
+- ageMax
+- ageMin
+- age_num
+- aopeng
+- aopenr
+- aopent
+- apartmentType
+- avgwinddirectionstddev10m
+- avgwindspeedstddev10m
+- azimuthAngle
+- benchmark
+- billInformation
+- billNumber
+- birth_sex
+- buildingAge
+- buildingSize
+- businessName
+- businessType
+- business_sector
+- caseNumber
+- charitySignedDate
+- classification
+- coBased
+- codetitle
+- commercialPrice
+- county_fips
+- created_date
+- created_user
+- crime_against
+- dataStatus
+- dataType
+- dateLastConfirmed
+- degreeLevel
+- disability_status
+- disciplineCompleteDate
+- disciplineEffectiveDate
+- doingBusinessAs
+- education_level
+- entityid
+- estemp
+- facilityId
+- fax
+- fileId
+- fileid
+- filingDate
+- filingStatus
+- geocodeStatus
+- geoid10
+- growrate
+- incident_date
+- incident_hour
+- indcode
+- indcodty
+- industrialPrice
+- industryTradeType
+- intersectionDirections
+- last_edited_date
+- last_edited_user
+- licenseExpirationDate
+- licenseFirstIssueDate
+- licenseLastRenewedDate
+- licenseStatus
+- licenseeName
+- lobbyistAddress
+- lobbyistCity
+- lobbyistDesignation
+- lobbyistMiddleName
+- lobbyistPhone
+- lobbyistState
+- lobbyistSuffix
+- mailingAddress1
+- matincode
+- matincodty
+- matintitle
+- matoccode
+- matoccodty
+- matocctitl
+- mpop1519
+- mtcPreservation
+- naics
+- nchg
+- notes
+- num_retailers
+- num_returns
+- occ
+- offense_category_name
+- offense_name
+- organizationName
+- ownership
+- pavementManagementMatch
+- paymentProcessedDate
+- pchg
+- pctestind
+- pctestocc
+- pctprojind
+- pctprojocc
+- perioddesc
+- periodid
+- policeDistrict
+- pop1317
+- pop1418
+- pop1519
+- population
+- precipitationAccumulated
+- principalAddress2
+- principalCountry
+- programAction
+- projemp
+- recordId
+- recordstatus
+- recordstatuscode
+- registrantType
+- registrationEndDate
+- releasedate
+- residentialPrice
+- route
+- signLocationId
+- siteAddress
+- site_name
+- stationPressure
+- street
+- streetDirection
+- streetName
+- totalPopulation
+- totalPrice
+- totalSales
+- updatedAt
+- utilityName
+- utilityNumber
+- veteran_status
+- zenithAngle
+- zipcode4
+
+Parameters occurring 1 times (4024 parameters):
+- % Free and Reduced Lunch 
+- % Free and Reduced Lunch (school level only)
+- %Absolute Reduction
+- ** End of Adult Cat section **
+- ** End of Adult Dog section **
+- ** End of Birds section **
+- ** End of Juvenile Cats section **
+- ** End of Juvenile Dog section **
+- ** End of Rabbits section **
+- ** End of Reptiles & Amphibians section **
+- ** End of Small Mammal section **
+- 01a
+- 01b
+- 01c
+- 01d
+- 01e
+- 01f
+- 02a
+- 02b
+- 02c
+- 02d
+- 02e
+- 02f
+- 02g
+- 03a
+- 03b
+- 03c
+- 03d
+- 03e
+- 03f
+- 03g
+- 04a
+- 04b
+- 04c
+- 05a
+- 05b
+- 05c
+- 05d
+- 06a
+- 06b
+- 06c
+- 07 % Advanced
+- 07 % Not Scored
+- 07 % Partially Proficient
+- 07 % Proficient
+- 07 % Proficient & Advanced
+- 07 % Unsatisfactory
+- 07 Advanced Count
+- 07 Not Scored Count
+- 07 Partially Proficient Count
+- 07 Proficient Count
+- 07 Total Count
+- 07 Unsatisfactory Count
+- 07a
+- 07b
+- 07c
+- 08 % Advanced
+- 08 % Not Scored
+- 08 % Partially Proficient
+- 08 % Proficient
+- 08 % Proficient & Advanced
+- 08 % Unsatisfactory
+- 08 Advanced Count
+- 08 Not Scored Count
+- 08 Partially Proficient Count
+- 08 Proficient Count
+- 08 Total Count
+- 08 Unsatisfactory Count
+- 08a
+- 08b
+- 08c
+- 09 % Not Scored
+- 09 % Partially Proficient
+- 09 % Proficient
+- 09 % Proficient & Advanced
+- 09 % Unsatisfactory
+- 09 Advanced Count
+- 09 Not Scored Count
+- 09 Partially Proficient  Count
+- 09 Proficient Count
+- 09 Total Count
+- 09 Unsatisfactory Count
+- 09% Advanced
+- 09a
+- 09b
+- 10 % Advanced
+- 10 % Not Scored
+- 10 % Partially Proficient
+- 10 % Proficient
+- 10 % Proficient & Advanced
+- 10 % Unsatisfactory
+- 10 Advanced Count
+- 10 Not Scored Count
+- 10 Partially Proficient  Count
+- 10 Proficient Count
+- 10 Total Count
+- 10 Unsatisfactory Count
+- 10a
+- 10c
+- 11a
+- 11b
+- 11c
+- 12a
+- 12b
+- 12c
+- 12d
+- 13a
+- 13b
+- 13c
+- 14a
+- 14b
+- 14c
+- 14d
+- 14e
+- 14f
+- 14g
+- 14h
+- 14i
+- 15a
+- 15b
+- 1st Tax Rate Footnote
+- 2010 % Advanced
+- 2010 % No Score
+- 2010 % Partially Proficient 
+- 2010 % Proficient
+- 2010 % Proficient & Advanced
+- 2010 % Unsatisfactory
+- 2010 Advanced Count
+- 2010 No Score Count
+- 2010 Partially Proficient Count
+- 2010 Proficient Count
+- 2010 Total Count
+- 2010 Unsatisfactory Count
+- 2013 % Partially Proficient 
+- 2013 % Proficient & Advanced
+- 2013 % Unsatisfactory
+- 2013 Partially Proficient Count
+- 2013 Unsatisfactory Count
+- 2017 NAICS code (NAICS2017)
+- 2nd Tax Rate
+- 2nd Tax Rate Footnote
+- 3rd Tax Rate
+- 3rd Tax Rate Footnote
+- AADT20
+- ACCESS
+- ACCESSIBIL
+- ACTIVE VOTERS
+- ADA_ACCESS
+- ADDRESS_NU
+- ADDRESS_SO
+- ADDRESS_TY
+- ADU_s
+- AGA Region
+- AIMS_SUBCO
+- AIRCRAFTOP
+- AIRPORTHOU
+- AIRPORTTYP
+- ALAND10
+- ALIAS
+- AMCH4t
+- AMENDMENT
+- AMOUNT
+- ANGLE
+- ANNUALOPS_
+- ANNUALPASS
+- ANOMALY_ST
+- AONSITECONTAINED
+- API ID
+- API Query URL
+- APPENDAGE
+- APPRAISED1
+- APPRAISED_
+- APPRAISE_1
+- ARCRACLANDFILL
+- ARCRASURFACEIM
+- AREA
+- AREANAME
+- AR_CASE_NO
+- ASAL_INSTR
+- ASSESSED_I
+- ASSESSED_L
+- ASSESSED_T
+- ASSET_COND
+- ASSOCCITY
+- AVG_HORZ_P
+- AWARD DATE
+- AWATER10
+- Aboveground Biomass
+- AbstCode
+- Abstract Code
+- Abuse/Sex
+- Abuse/Sexual
+- AccelaID
+- Accessibil
+- Account Date
+- Account Description
+- Acres1
+- Action
+- Action Taken by The Governor
+- ActionDate
+- ActionType
+- ActiveVoters
+- Activity Date
+- Actual  (per 100 million miles traveled)
+- Actual (minutes)
+- Actual Fatalities
+- Actual Serious Injuries
+- Actual Value
+- Adams
+- Adams Blank Code
+- Additional Metadata
+- AddrFull
+- AddrLastLi
+- AddrNum
+- AddressID
+- AddressNum
+- Adjudication Type
+- Admininstr
+- Administrator
+- Admissions
+- Adult Cats
+- Adult Cats: Ending Count
+- Adult Cats: Ending Count 
+- Adult Cats: In Foster Care Count 1/1/2017
+- Adult Cats: In Foster Care Count 12/31/2017
+- Adult Cats: In Shelter Count as of 1/1/2017
+- Adult Cats: In Shelter Count as of 12/31/2017
+- Adult Cats: Notes
+- Adult Cats: Other live outcomes (ie: tnr/snr)
+- Adult Cats: Other: TNR/Protective Custody/Returns/Disaster Relief
+- Adult Cats: Owner Requested Euthanasia
+- Adult Cats: Transferred out to another Colorado organization
+- Adult Cats: Transferred to an out of state organization
+- Adult Dogs
+- Adult Dogs: Beginning Count
+- Adult Dogs: Beginning Count 
+- Adult Dogs: In Foster Care Count 1/1/2017
+- Adult Dogs: In Foster Care Count 12/31/2017
+- Adult Dogs: In Shelter Count as of  1/1/2017
+- Adult Dogs: In Shelter Count as of 12/31/2017
+- Adult Dogs: Missing/Stolen
+- Adult Dogs: Notes
+- Adult Dogs: Other: TNR/Protective Custody/Returns/Disaster Relief
+- Adult Dogs: Shelter Euthanasia
+- Adult Dogs: Transfer in from another Colorado organization
+- Adult Dogs: Transferred out to another Colorado organization
+- Adult Dogs: Transferred to an out of state organization
+- Age Group
+- AgeGroup 
+- Agency Data Series Page
+- Agency Program Page
+- Aggravated assault
+- Aggravated assault rate
+- AlignmentDesc
+- AltPt Authorization
+- AltPt Wells
+- Among the local community I can depend on people to help me if I need them.
+- Among the local community with whom I work most every day, I feel there is a sense of camaraderie.
+- Anesthesia Complication
+- Anesthesia Complications
+- Annual
+- Annual Target
+- Annual payroll ($1,000) (PAYANN)
+- Applicable Information Quality Guideline Designation
+- Applicant Name
+- Applicat_1
+- Applicatio
+- Application Type
+- ApplicationDate
+- Applies to
+- Appropriation
+- Appropriation Type
+- ApprovalDate
+- Approved
+- April
+- Aquifer Other
+- Aquifer Picks
+- Aquifer1
+- Aquifer2
+- Aquifers
+- Arapahoe
+- Arapahoe Blank Code
+- Area
+- Area Description
+- AreaSqKm
+- AreaSqMile
+- Area_sq_mi
+- ArrestYear 
+- Arvada
+- Arvada Blank Code
+- Assessed Value
+- AssistanceType
+- Associated Aquifers
+- Associated Meters
+- Associated Permits
+- Associated Uses
+- Associated WDID
+- At the present time, I am enthusiastically pursuing my goals.
+- August
+- Aurora
+- Aurora Blank Code
+- AwardDescription
+- AwardeeOrRecipientLegalEntityName
+- Awards
+- B1_PER_ID1
+- B1_PER_ID2
+- B1_PER_ID3
+- B1_PER_SUB_TYPE
+- BACODE
+- BALLOTS CAST
+- BCC_ACTION
+- BDYCK
+- BFN
+- BG
+- BIA
+- BICYCLE_IN
+- BKGPIDFP00
+- BLD_PCT
+- BLKGRPCE00
+- BLKNUM
+- BLOCK_GROU
+- BNA
+- BOCC_DATE
+- BONSITEOTHER
+- BORDERINGC
+- BOT
+- BOTHERLANDFILLS
+- BOTHERSURFACEI
+- BRANCH
+- BSDV_PCT
+- BSLDEM10M
+- BUDG_RANGE
+- BUILDING
+- BUILDING_I
+- BUILDING_T
+- Bakedgoods
+- Ballot Issue
+- Base Value
+- BaseElevat
+- Beans
+- Belowground Biomass
+- Binge drinking (5 or more drinks in one sitting)
+- Birds
+- Birds: In Foster Care Count 1/1/2017
+- Birds: In Foster Care Count 12/31/2017
+- Birds: In Shelter Count as of 1/1/2017
+- Birds: In Shelter Count as of 12/31/2017
+- Birds: Missing / Stolen
+- Birds: Missing / Stolen 
+- Birds: Missing/Stolen 
+- Birds: Notes:
+- Birds: Other Live Outcomes(ie: tnr/snr)
+- Birds: Other: TNR/Protective Custody/Returns/Disaster Relief
+- Birds: Transferred out to another Colorado organization
+- Birds: Transferred to an out of state organization
+- Births to teens ages 15-17 (births per 1,000 population, 2006)
+- Boundaries
+- Bounding Coordinates
+- Burglary
+- Burglary rate
+- Business Address
+- Business Contact and Phone
+- Business Type
+- BusinessType
+- BusinessTypes
+- CAICateg_1
+- CAPACITY
+- CAPID
+- CARCINOGEN
+- CAS
+- CASE_NUMBE
+- CASE_NUM_1
+- CCCAP AUTHORIZATION STATUS
+- CCCAP CASE COUNT_D1
+- CCCAP CHILD COUNT_D1
+- CCCAP FA EXP DATE_D1
+- CCCAP FA EXP DATE_D2
+- CCCAP FA STATUS_D1
+- CCCAP FA STATUS_D2
+- CCCAP FISCAL AGREEMENT STATUS
+- CCCAP TOTAL AUTH_D1
+- CCCAP TOTAL AUTH_D2
+- CCCAP_AMOUNT_PAID_D1
+- CD
+- CENSUS_TRA
+- CENTERX
+- CENTERY
+- CFDA_Number
+- CHEMICAL
+- CINs
+- CITY_1
+- CITY_CODE_
+- CITY_FIPS
+- CIU Code
+- CLASS
+- CLASSCD1
+- CLASSCD2
+- CLASSCD3
+- CLASSCD4
+- CLASSCD5
+- CLASSIFICA
+- CLASSIFICATION
+- CLEANAIRACTCHEMICAL
+- CNPY
+- CNTYIDFP00
+- CNTY_NAME
+- CNT_ZONE_
+- CODE_OLD
+- COFFSITECONTAIN
+- COGCC API
+- COMMDISTID
+- COMMUNITY
+- COMPANY
+- COMPLETE_S
+- COM_GROSS_
+- COM_NET_AR
+- COM_ORIG_Y
+- COM_STRUCT
+- CONDOCODE
+- CONGESTED
+- CONTACTS
+- CONTRACT_N
+- CONVEYAN00
+- CONVEYANCE
+- COPROJYEAR
+- COSBIDFP00
+- COSURFTYPE
+- COTHICKNES
+- COUNCIL_DISTRICT
+- COUNTYNS
+- COUSUBFP00
+- CPI00
+- CREATE_DAT
+- CREATE_MET
+- CREATE_USE
+- CREATION_D
+- CREATION_U
+- CR_ID
+- CTIDFP00
+- CURVE_UPDATEYR
+- CY
+- C_AWARD
+- C_EXEC
+- C_EXPIRE
+- CamaID
+- Capacity (gallons)
+- Cascls
+- Case No
+- Centennial
+- Centennial Blank Code
+- Change from Previous Month
+- Cheese
+- Childhood obesity (ages 2-14)
+- Chronic Hepatitis B  (Incidence rates per 100,000 population)
+- Cigarette
+Excise Tax
+- Cigarette smoking
+- Citation
+- City Sales Tax Rate
+- Claimant
+- Class
+- Clearing Date
+- ClosedDate
+- Closure Date
+- Closure_Date
+- Clothing and footwear
+- Code
+- Coffee
+- Collection Method
+- Collection Mode
+- Colorado
+- Colorado Springs
+- Colorado Springs Blank Code
+- Commingled Acres
+- Commingled Approp
+- Commingled Authorization
+- Commingled Wells
+- Company
+- Company Name
+- CompanyNam
+- Component ID
+- Component NEP
+- Component Name
+- Component Type
+- Component Volume
+- Condition
+- Contact
+- Contact Email
+- Contact Information
+- Contact Name
+- Contacts
+- Content type
+- Coordinate System Disclaimer
+- CoordsEW dir
+- CoordsNS dir
+- Country
+- County Id
+- County Population
+- County Sales Tax Rate
+- County Seat
+- County in which City is Located
+- CountyName
+- County 
+- Cov_Recep
+- Crafts
+- CreatedDate
+- Creation Date
+- Credit
+- Creek Front
+- Crest Elevation
+- CropRes
+- Current Restrictions
+- Current Status
+- Currentness Reference
+- Customer Description
+- D10
+- D25
+- D50
+- D75
+- D90
+- DATA_SOURC
+- DATA_SOURCE
+- DATECREATE
+- DATEMODIFI
+- DATE_DISSO
+- DATE_END
+- DATE_FORME
+- DATE_START
+- DBA
+- DCL12
+- DENSITY
+- DEPTH
+- DESCRIPT_1
+- DESCRPTN
+- DIAMETER
+- DIR_NAME
+- DISTRICT_I
+- DIVISION10
+- DLGNAME
+- DMV_ID
+- DMV_OFFICE
+- DNS_A
+- DNS_AVG
+- DNS_B
+- DOCFEE
+- DOC_CTRL_NUM
+- DOFFSITEOTHERR
+- DOING BUSINESS AS
+- DRMS Permit No
+- DRNAREA
+- DU
+- DUP_STREET
+- D_CLASS
+- D_CLASS_CN
+- Dam Type
+- Data Collection Instrument
+- Data Dictionary
+- Data Governance Plan
+- Data Quality Certification
+- Data Quality Certified
+- Dataset Title
+- Dataset Type
+- Date
+- Date Amended
+- Date Created
+- Date Issued
+- Date Notice Sent
+- Date Released
+- Date Time
+- Date Time Released
+- Date Updated
+- Date issued
+- Date of Inital Publish
+- Date of Initial Dataset Creation
+- Date of Most Recent Update
+- DateApprov
+- DateApproved
+- Day
+- Day of the Week
+- Days Under SEO Review
+- Dead Wood
+- Death
+- Deaths
+- December
+- Decreed Units
+- Denver Basin Aquifer
+- Derived View
+- Descript
+- Designer
+- Director
+- Division
+- DocketLink
+- DocketType
+- DocumentTi
+- Domain
+- Douglas
+- Douglas Blank Code
+- Downloads
+- Downstream Town
+- DrainID
+- DrawLayerC
+- DrawRoadLa
+- Durable goods
+- During last three years, did the following factor interfere with your business's ability to adapt to change? - Difficulties in obtaining government grants or subsides
+- During last three years, did the following factor interfere with your business's ability to adapt to change? - Lack of skilled employees
+- During last three years, did the following factor interfere with your business's ability to adapt to change? - Legislation/regulation that generated excessive burden (please explain)
+- During last three years, did the following factor interfere with your business's ability to adapt to change? - Legislation/regulation that generated excessive burden -  Additional Text
+- During last three years, did the following factor interfere with your business's ability to adapt to change? - Other (please explain)
+- During last three years, did the following factor interfere with your business's ability to adapt to change? - Production costs too high
+- During last three years, did the following factor interfere with your business's ability to adapt to change? - Too much competition in your market
+- During last three years, did the following factor interfere with your business's ability to adapt to change? - Uncertain market demand for your business
+- During last three years, did the following interfere with your business's ability to adapt to change? - Lack of access to external funding
+- During last three years, did the following interfere with your business's ability to adapt to change? - Lack of internal funding
+- EAP
+- EAP Date
+- EAP Inundation Map
+- EFFECTIVE1
+- EFFECTIVE_
+- EIA_name
+- EL7500
+- ELEMENTALMETALINCLUDED
+- ELEVMAX
+- ELIGIBLE
+- EMERGENCY_
+- EMPSIZ
+- ENERGYRECOVEROF
+- ENERGYRECOVERON
+- ENFORCE_VA
+- ENTITY_NAME
+- EXEMPT_AMT
+- EXISITNGTR
+- EXPIRATION DATE
+- EXPIRATION_DATE
+- EXPIRES
+- EarlyVotes
+- Eat fewer than 5 fruits and vegetables per day
+- Economically Disadvantaged Instances of Mobility
+- Economically Disadvantaged Mobile Student Count
+- Economically Disadvantaged Mobility Incidence Rate
+- Economically Disadvantaged Pupil Count
+- Economically Disadvantaged Stability Rate
+- Economically Disadvantaged Stable Student Count
+- Economically Disadvantaged Student Mobility Rate
+- Edited
+- Editor
+- Effective Age
+- Eggs
+- El Paso
+- El Paso Blank Code
+- Employee
+- Employment
+- Encephalitis
+- English Language Learners Instances of Mobility
+- English Language Learners Mobile Student Count
+- English Language Learners Mobility Incidence Rate
+- English Language Learners Pupil Count
+- English Language Learners Stability Rate
+- English Language Learners Stable Student Count
+- English Language Learners Student Mobility Rate
+- Entity
+- Entity ID
+- Entity Name
+- Equip Malfunction/Misuse
+- Equipment Malfunction
+- Established
+- Event Date
+- Event Location
+- Event Number
+- Ex Acres
+- ExpAcres Acres
+- ExpAcres Approp
+- ExpAcres Authorized
+- ExpAcres Priority
+- Expected Update Frequency
+- ExpectedDate
+- Expense Description
+- ExpenseCategory
+- ExpenseSubCategory
+- ExpirationDate
+- ExpireDate
+- FA City
+- FA Zip Code
+- FAA_AGL
+- FAA_ORS
+- FAA_jdate
+- FACILITIES
+- FACILITYNAME
+- FACILITY_T
+- FATALITIES
+- FATALITY_1
+- FATALITY_M
+- FC01
+- FC02
+- FC03
+- FC04
+- FC05
+- FC06
+- FC07
+- FC08
+- FC09
+- FC10
+- FC11
+- FC12
+- FC13
+- FC14
+- FC15
+- FC16
+- FC17
+- FC18
+- FC19
+- FC20
+- FC21
+- FC22
+- FC23
+- FC24
+- FC25
+- FC26
+- FC27
+- FC28
+- FC29
+- FC30
+- FC31
+- FC32
+- FC33
+- FC34
+- FC35
+- FC36
+- FC37
+- FC38
+- FC39
+- FC40
+- FC41
+- FC42
+- FC43
+- FC44
+- FC45
+- FC46
+- FC47
+- FC48
+- FC49
+- FC50
+- FC51
+- FC52
+- FC53
+- FC54
+- FC55
+- FC56
+- FCA_DATE
+- FEATURE
+- FEATURE_KE
+- FEDERALFACILITY
+- FGDC Compliance (Geospatial Only)
+- FID_Resour
+- FID_Zoning
+- FIELD_NUMB
+- FIELD_SIZE
+- FIELD_TIER
+- FILING
+- FILING_COD
+- FIPS Code
+- FIPS State and County Code
+- FIPS_COUNT
+- FIPS_STATE
+- FIRST_OCCU
+- FLOOR
+- FOLIO_DUP_
+- FORMTYPE
+- FRNCOD
+- FRSID
+- FUGITIVEAIR
+- FULL_NAME
+- FUNCCLASS
+- FUNC_LEVEL
+- FUND_SOURC
+- FY15-21_Fuel_Reduction_GHG
+- FY15-21_Fuel_Reduction_inGallons
+- FY15-21_Fuel_Reduction_inGallons_GHG-Metric-Ton
+- FY15-21_Fuel_Reduction_inGallons_GHG-kg
+- FY15-21_Fuel_Reduction_inGallons_perVehicle
+- FY15_Bio-Fuel
+- FY15_Diesel
+- FY15_Ethanol
+- FY15_GHG_Metric_ Tons
+- FY15_GHG_Total
+- FY15_MMBtus
+- FY15_NG
+- FY15_Number_of_Vehicles
+- FY15_Petroleum_Gallons_perVehicle
+- FY15_Propane
+- FY15_Total_Petroleum_ Gallons
+- FY15_Unleaded
+- FY16_Bio-Fuel
+- FY16_Diesel
+- FY16_Ethanol
+- FY16_GHG_Metric_ Tons
+- FY16_GHG_Total
+- FY16_MMBtus
+- FY16_NG
+- FY16_Number_of_Vehicles
+- FY16_Petroleum_Gallons_perVehicle
+- FY16_Propane
+- FY16_Total_Petroleum_ Gallons
+- FY16_Unleaded
+- FY17_Bio-Fuel
+- FY17_Diesel
+- FY17_Ethanol
+- FY17_GHG_Metric_ Tons
+- FY17_GHG_Total
+- FY17_MMBtus
+- FY17_NG
+- FY17_Number_of_Vehicles
+- FY17_Petroleum_Gallons_perVehicle
+- FY17_Propane
+- FY17_Total_Petroleum_ Gallons
+- FY17_Unleaded
+- FY18_Bio-Fuel
+- FY18_Diesel
+- FY18_Ethanol
+- FY18_GHG_Metric_ Tons
+- FY18_GHG_Total
+- FY18_MMBtus
+- FY18_NG
+- FY18_Number_of_Vehicles
+- FY18_Petroleum_Gallons_perVehicle
+- FY18_Propane
+- FY18_Total_Petroleum_ Gallons
+- FY18_Unleaded
+- FY19_Bio-Fuel
+- FY19_Diesel
+- FY19_Ethanol
+- FY19_GHG_Metric_ Tons
+- FY19_GHG_Total
+- FY19_MMBtus
+- FY19_NG
+- FY19_Number_of_Vehicles
+- FY19_Petroleum_Gallons_perVehicle
+- FY19_Propane
+- FY19_Total_Petroleum_ Gallons
+- FY19_Unleaded
+- FY20_Bio-Fuel
+- FY20_Diesel
+- FY20_GHG_Metric_ Tons
+- FY20_GHG_Total
+- FY20_MMBtus
+- FY20_NG
+- FY20_Number_of_Vehicles
+- FY20_Petroleum_Gallons_perVehicle
+- FY20_Propane
+- FY20_Total_Petroleum_ Gallons
+- FY20_Unleaded
+- FY20__Ethanol
+- FY21_Bio-Fuel
+- FY21_Diesel
+- FY21_Ethanol
+- FY21_GHG_Metric_ Tons
+- FY21_GHG_Total
+- FY21_MMBtus
+- FY21_NG
+- FY21_Number_of_Vehicles
+- FY21_Petroleum_Gallons_perVehicle
+- FY21_Propane
+- FY21_Total_Petroleum_ Gallons
+- FY21_Unleaded
+- F_NEIGH_GI
+- FaceValueOfDirectLoanOrLoanGuarantee
+- Facility Physical Street Address
+- Fall 07 % Free & Reduced Lunch
+- Fall 09 % Free & Reduced Lunch
+- Fall'10 Enrollment
+- Fall'11 Enrollment
+- Fall'12 Enrollment
+- FatCrackPe
+- FatCrackPercent
+- Fax 
+- February
+- Federal Land
+- Federal Regulations
+- FederalActionObligation
+- Female
+- Fever
+- Field Name
+- Field Names, comma delimited
+- Field Type
+- File Size at Recent Update
+- Final consumption expenditures of nonprofit institutions serving households (NPISHs)
+- Financial services and insurance
+- First Beneficial Use
+- First-quarter payroll ($1,000) (PAYQTR1)
+- Fiscal Year
+- Fixed
+- Flag
+- Flow Amounts
+- Flow Meter
+- Flowers
+- Food and beverages purchased for off-premises consumption
+- Food services and accommodations
+- Footnotes:
+- Forcible rape
+- Forcible rape rate
+- Forecasted Runoff NEP
+- ForestRes
+- Fort Collins
+- Fort Collins Blank Code
+- Frequency
+- Frequency of Update
+- Fruits
+- FullAddres
+- FullName
+- FullZipCod
+- Fullstreet
+- FundingSourceDescription
+- Furnishings and durable household equipment
+- GEOCBSA
+- GEOCODE_CO
+- GEOCODE_TY
+- GEOCOUSUB
+- GEOCSA
+- GEOID00
+- GEOIDCOUSU
+- GEOIDPLACE
+- GEOIDTRACT
+- GEOPLACE
+- GEOSD
+- GEO_LAT
+- GEO_LON
+- GEO_X
+- GEO_Y
+- GHI
+- GIS Latitude
+- GIS Longitude
+- GIS_ACRES
+- GIS_X
+- GIS_Y
+- GOLF_NAME
+- GOLF_TYPE
+- GOVERNING BODY
+- GPS_DATE
+- GPS_LENGTH
+- GPS_TIME
+- GRADE_UPDATEYR
+- GRANTEE
+- GRASS_PCT
+- GRILLS
+- Garage
+- GasFieldCode
+- Gasoline and other energy goods
+- Gender 
+- GeoFIPS
+- GeoName
+- Geographic Area Name (NAME)
+- Geographic Coverage
+- Gifted & Talented Instances of Mobility
+- Gifted & Talented Mobile Student Count
+- Gifted & Talented Mobility Incidence Rate
+- Gifted & Talented Pupil Count
+- Gifted & Talented Stability Rate
+- Gifted & Talented Stable Student Count
+- Gifted & Talented Student Mobility Rate
+- GlobalWshd
+- Gonorrhea (Incidence rates per 100,000 population)
+- Goods
+- Grains
+- Granularity
+- Greeley
+- Greeley Blank Code
+- Gross Emission Intensity
+- Gross Sales
+- Gross output of nonprofit institutions
+- HANDLING
+- HARMFUL_EV
+- HARMFUL__1
+- HARMFUL__2
+- HCSI
+- HDBRCH
+- HIGRADE10
+- HIV/AIDS (Incidence rates per 100,000 population)
+- HORIZONTALDATUM
+- HOUSEHO_20
+- HOUSE_PHON
+- HPMSCracki
+- HPMS_Access_Control
+- HPMS_Surface_Type
+- HUCID
+- Have asthma
+- Have diabetes
+- Have high blood pressure
+- Hazard Class
+- Health Care Provider
+- Health Factors Rank
+- Health Factors Z Score
+- Health Outcomes Rank
+- Health Outcomes Z Score
+- Health care
+- Heat and Air Cond
+- Height
+- Herbs
+- High Value Dataset
+- High school graduation rate
+- Homeless Instances of Mobility
+- Homeless Mobile Student Count
+- Homeless Mobility Incidence Rate
+- Homeless Pupil Count
+- Homeless Stability Rate
+- Homeless Stable Student Count
+- Homeless Student Mobility Rate
+- Honey
+- Horizontal Accuracy
+- Horizontal Coordinate System
+- Hours
+- HouseNumber
+- Household consumption expenditures (for services)
+- Housing and utilities
+- How do you currently measure the performance of your business?
+- How has your profit increased or decreased over the last year?
+- How have your sales increased or decreased over the last year?
+- HumanName
+- HydroID
+- I am able to implement new technology solutions and programs successfully into my business operations (either myself or with assistance).
+- I am able to use multiple methods of marketing (email, social media, phone service) to engage/support my customers.
+- I am feeling optimistic about the future of my business.
+- I consider the people I work with in the local community to be my friends even outside of work.
+- I frequently seek new ways and avenues of growing my business (new delivery methods, new technology, etc.).
+- I get constructive feedback about my business from the local community.
+- I0b
+- I6H100Y
+- IMPACT
+- IMPASD
+- IMP_PCT
+- INCIDENT_A
+- INCIDENT_I
+- INDUSTRYSECTOR
+- INDUSTRYSECTORCODE
+- INSPECTOR_
+- INTPTLAT10
+- INTPTLON10
+- INVENTORY_DATE
+- IRSDeterminationDate
+- ISNHS
+- IS_CONDO
+- Id
+- If my primary method of serving my customers was disrupted, I could adapt and change my means of  customer delivery.
+- Image
+- Improvement
+- In 2021, did your business introduce new or significantly improved company processes regarding administration and management activities?
+- In 2021, did your business introduce new or significantly improved company processes regarding information and communication systems (including hardware, software and data processing)?
+- In 2021, did your business introduce new or significantly improved company processes regarding logistics, delivery or distribution methods?
+- In 2021, did your business introduce new or significantly improved company processes regarding marketing methods for promotion, packaging, pricing, product placement or after sales services?
+- In 2021, did your business introduce new or significantly improved company processes regarding methods for producing goods?
+- In 2021, did your business introduce new or significantly improved company processes regarding methods for providing services?
+- In 2021, did your business introduce new or significantly improved company processes? Additional Text
+- In general, I believe Colorado’s local and state government motives and intentions are good toward business owners like me.
+- In my experience, I can depend on Colorado’s local and state government to be open and upfront with me as a small business owner.
+- Incarceration Rate
+- Incarceration Rate (per 100,000)
+- IncidentYear
+- Infant mortality (infant deaths per 1,000 live births)
+- InspDate
+- Inspector
+- Installation Date
+- Intersecti
+- Inundation Map Date
+- Issue Date
+- Item_Description
+- JOUR_BK
+- JOUR_PG
+- JURISDICTI
+- Jams
+- January
+- Jefferson
+- Jefferson Blank Code
+- Job Description
+- JobsRetained
+- Join_Count
+- Judicial District
+- Juices
+- July
+- June
+- Jurisdicti
+- Jurisdiction
+- Juvenile Cats
+- Juvenile Cats: Adoption
+- Juvenile Cats: Died
+- Juvenile Cats: In Foster Care Count 1/1/2017
+- Juvenile Cats: In Foster Care Count 12/31/2017
+- Juvenile Cats: In Shelter Count as of 1/1/2017
+- Juvenile Cats: In Shelter Count as of 12/31/2017
+- Juvenile Cats: Missing/Stolen
+- Juvenile Cats: Notes
+- Juvenile Cats: Other: TNR/Protective Custody/Returns/Disaster Relief
+- Juvenile Cats: Owner Requested Euthanasia
+- Juvenile Cats: Stray
+- Juvenile Cats: Transferred out to another Colorado organization
+- Juvenile Cats: Transferred to an out of state organization
+- Juvenile Dogs
+- Juvenile Dogs: Adoption
+- Juvenile Dogs: In Foster Care Count 1/1/2017
+- Juvenile Dogs: In Foster Care Count 12/31/2017
+- Juvenile Dogs: In Shelter Count as of 1/1/2017
+- Juvenile Dogs: In Shelter Count as of 12/31/2017
+- Juvenile Dogs: Missing/Stolen
+- Juvenile Dogs: Notes
+- Juvenile Dogs: Other live outcomes (ie tnr / snr)
+- Juvenile Dogs: Other live outcomes (ie tnr / snr) 
+- Juvenile Dogs: Other live outcomes (ie tnr/snr) 
+- Juvenile Dogs: Other: TNR/Protective Custody/Returns/Disaster relief
+- Juvenile Dogs: Owner Relinquished
+- Juvenile Dogs: Transferred out to another Colorado organization
+- Juvenile Dogs: Transferred to an out of state organization
+- Keywords
+- LABEL
+- LANDACT
+- LANDASD
+- LANDFILLS
+- LANDSQFT
+- LANDTREATMENT
+- LAND_AREA
+- LAST_OCCUR
+- LAT
+- LAT_Y
+- LAYER
+- LAYER_NAME
+- LBCSCode
+- LEGACY_FNA
+- LEGACY_SNA
+- LEGAL
+- LEGAL_DESC
+- LFGCH4t
+- LGTBQ_status
+- LICENSE NUMBER
+- LICENSE TYPE
+- LICENSED CENTER INFANT CAPACITY
+- LICENSED CENTER PRESCHOOL CAPACITY
+- LICENSED CENTER TODDLER CAPACITY
+- LICENSED HOME CAPACITY
+- LICENSED NYO CAPACITY
+- LICENSED PRESCHOOL AND SCHOOL AGE CAPACITY
+- LICENSED RESIDENT CAMP CAPACITY
+- LICENSED SCHOOL AGE CAPACITY
+- LICENSEE NAME
+- LICENSE_STATUS
+- LICENSE_SUB_TYPE
+- LICENSE_TYPE
+- LIGHTING
+- LIGHTS
+- LIGHT_COND
+- LINK
+- LOCATION_CODE
+- LOCATION_NAME
+- LOC_ID
+- LOGRADE10
+- LONG-LAT
+- LONG-LAT (address)
+- LONG-LAT (city)
+- LONG-LAT (state)
+- LONG-LAT (zip)
+- LONG_
+- LONG_X
+- LOTS
+- LOT_COUNT
+- LSAD10
+- LT UTM East
+- LT UTM North
+- Lake UTM East
+- Lake UTM North
+- Lakewood
+- Lakewood Blank Code
+- Land Type
+- Larceny- theft rate
+- Larceny-theft
+- Larimer
+- Larimer Blank Code
+- Last Inspection Outcome
+- Last Inspection Purpose
+- Last Update Date (data)
+- Last Updated
+- LastUpdateDate
+- LawCategory
+- LawClass
+- Legacy Event ID
+- LegalEntityAddressLine1
+- LegalEntityAddressLine2
+- LegalEntityCityName
+- LegalEntityCongressionalDistrict
+- LegalEntityCountryCode
+- LegalEntityForeignCityName
+- LegalEntityForeignPostalCode
+- LegalEntityForeignProvinceName
+- LegalEntityStateCode
+- LegalEntityZIP5
+- Legend
+- Lender
+- Less: Receipts from sales of goods and services by nonprofit institutions
+- License
+- License & Other Fees Total ⁶
+- License Expires On
+- License Fee Amount
+- License Fee Amount 2
+- License Fee Amount 3
+- License Fee Footnote
+- License ID
+- Line Leak Detector Type
+- Link
+- LiquidMed
+- Litter
+- LoadDate
+- LoanAmount
+- LoanRange
+- Local Government Entity
+- Location Rating
+- Location Type
+- LocationGroup
+- Log Bottom
+- Log Date
+- Log Top
+- Log Type
+- Long Description
+- Long Range Goal (minutes)
+- Long Range Goal (per 100 million miles traveled)
+- Longmont
+- Longmont Blank Code
+- Low birth weight births
+- Lower Terminus
+- M
+- M 1
+- M 10
+- M 11
+- M 12
+- M 13
+- M 14
+- M 15
+- M 16
+- M 17
+- M 18
+- M 19
+- M 2
+- M 20
+- M 21
+- M 22
+- M 23
+- M 24
+- M 25
+- M 26
+- M 27
+- M 3
+- M 4
+- M 5
+- M 6
+- M 7
+- M 8
+- M 9
+- M7D10Y
+- M7D2Y
+- M7D50Y
+- MAILABLE
+- MAINT_DIST
+- MAJOR
+- MAPNO
+- MAPNUM
+- MAP_NUM
+- MAP_TEXT
+- MAXX
+- MAXY
+- MAX_Servic
+- MAX_WiredS
+- MEM_STATUS
+- METAL
+- METALCATEGORY
+- METDIVFP
+- MILEAGE
+- MILITARY
+- MILL_LEVY
+- MINBELEV
+- MINX
+- MINY
+- MMETAL
+- MMETAL 1
+- MNONMETAL
+- MNONMETAL 1
+- MODIFY_DAT
+- MODIFY_USE
+- MUNICIPALI
+- MW_turbine
+- MailVotes
+- Male 
+- Maple
+- March
+- Max Decreed Rate
+- MaximumDailyDelivery(Mcf)
+- May
+- Mean
+- Mean Electricity Generation Potential
+- Mean Wage
+- Meaning of Employment size of establishments (EMPSZES_LABEL)
+- Meaning of Legal form of organization code (LFO_LABEL)
+- Meaning of NAICS code (NAICS2017_LABEL)
+- Measurement By
+- Measurement Date
+- Meat
+- Med_Blank_Code
+- Med_Sales
+- Median household income
+- Medical Blank Code
+- Medical Marijuana Tax (2.9%)
+- Medical Sales Tax
+- Meningitis
+- Mental health was not good 8 or more days (in the past 30 days)
+- Merchant
+- Merchant_State
+- Mesa
+- Mesa Blank Code
+- MetaSource
+- Migrant Instances of Mobility
+- Migrant Mobile Student Count
+- Migrant Mobility Incidence Rate
+- Migrant Pupil Count
+- Migrant Stability Rate
+- Migrant Stable Student Count
+- Migrant Student Mobility Rate
+- Minimum Wage
+- Misappropriation of Property
+- Missing Person
+- Missing Resident/Person
+- Mobile Hookup
+- Modality Id
+- Modality Name
+- Module
+- Monthly Release Date
+- Motor vehicle theft
+- Motor vehicle theft rate
+- Motor vehicles and parts
+- Murder and non-negligent Manslaughter
+- Murder and non-negligent manslaughter rate
+- Mushrooms
+- My company can currently meet the demands of my customers.
+- My company can easily get information about business assistance programs.
+- My company communicates regularly with other businesses in the area similar to my own.
+- My company has decreased employee pay in the last 12 months.
+- My company has enough cash on hand to meet my business needs for the next 12 months.
+- My company has had higher involuntary employee turnover (termination due to economic hardship) than normal in the last 12 months.
+- My company has had higher voluntary employee turnover (quitting) than normal in the last 12 months.
+- My company has increased employee pay in the last 12 months.
+- My company is connected to organizations or associations designed to help businesses like mine.
+- My company is currently seeking additional funding (outside of current sources) to run my business.
+- My company often invests in online/digital security tools to protect company and customer data.
+- My company often uses and seeks new technology to assist and complete our work.
+- My company often uses and seeks new technology to connect with customers.
+- My company plans on hiring more people in the next 12 months.
+- My company receives advice/mentorship from external advisors (formal or informal).
+- My company receives good and timely information when regulations change.
+- My company would be able to continue to operate if there was another lockdown today.
+- My company’s current ability to meet customer needs is negatively impacted by external forces (e.g., suppliers, environmental).
+- My company’s operations are efficient and can adjust rapidly (as needed).
+- My customers have the resources and stability to continue buying my service / product.
+- My employees have access to affordable housing within a reasonable commute (within 30 minutes or 50 miles)
+- My employees have access to essential on the job education and training.
+- My employees have the necessary skillsets and knowledge required to make my business successful.
+- My local community has an urgent need for small businesses like mine to be successful.
+- NAICS 1
+- NAICS 2
+- NAICS 3
+- NAICS 4
+- NAICSCode
+- NAICS_EXT
+- NAVIGATION
+- NBHD_ID
+- NBR_NAME
+- NCICCODE
+- NCICCODE 
+- NEARCITY
+- NEARHWY
+- NEARRECREA
+- NEIGHBOR
+- NEIGHBOR_1
+- NEWS_LINK
+- NID ID
+- NTEECode1
+- NTEECode2
+- NTEECode3
+- NUMBER_EMPLOYEES
+- NUMSCANS
+- NUM_TABLES
+- Name_Alias
+- Net APEX Absolute
+- Net APEX Conditional
+- Net Absolute
+- Net Conditional
+- Net Emissions Intensity (Sources and Sinks)
+- Newest Record in Dataset
+- Nicotine Products
+Excise Tax ²
+- No Further Action Type
+- No health insurance
+- No physical activity
+- Non Buildable
+- Non-Profit Organization
+- NonFederalFundingAmount
+- NonProfit
+- Nondurable goods
+- November
+- Null Meaning
+- NumSuf
+- Number of Active Tanks
+- Number of Cigarette  Wholesalers ¹
+- Number of Institutions
+- Number of Nicotine Products Distributors ¹
+- Number of Patients
+- Number of Patients Reporting Condition
+- Number of Retailers
+- Number of Returns
+- Number of Tobacco Products Distributors ¹
+- Number of employees (EMP)
+- Number of establishments (ESTAB)
+- NumberOfArrests
+- NumberSuff
+- Nursery
+- Nuts
+- OBJECTID_2
+- OBJECTID_3
+- OBJECTID_4
+- OFFENSE_CO
+- OFFENSE_ID
+- OFFENSE__1
+- OFFICIAL_S
+- OFFSITEENERGYRECOVERYT
+- OFFSITERECYCLEDTOTAL
+- OFFSITERELEASETOTAL
+- OFFSITETREATEDTOTAL
+- OID_
+- OITIndex
+- ONETIMERELEASE
+- ONSITERELEASETOTAL
+- ORIG_FID
+- ORTHOMAPLA
+- OTHERDISPOSAL
+- OTHERQTY
+- OVERLAP
+- OWCH4t
+- OWNER_AD_1
+- OWNER_CITY
+- OWNER_STAT
+- OWNER_ZIP
+- Obese (BMI>=30)
+- Occupance
+- Occupancy Second Type
+- Occupation
+- Occupation Code
+- October
+- Office/Question
+- Oldest Record in Dataset
+- On important matters that impact the wellbeing of my business, I believe Colorado’s local and state government have high integrity.
+- OpenDate
+- OperationTypes
+- Opername
+- Organic
+- Organization
+- OriginalEffectiveDate
+- OriginalLoanSubsidyCost
+- Other
+- Other Ridership
+- Other durable goods
+- Other nondurable goods
+- Other services
+- Other: In Foster Care Count 1/1/2017
+- Other: In Foster Care Count as of 12/31/2017
+- Other: In Shelter Count as of 1/1/2017
+- Other: In Shelter Count as of 12/31/2017
+- Other: Missing / Stolen
+- Other: Notes:
+- Other: Other Live Outcomes (ie: tnr/snr)
+- Other: TNR/Protective Custody/Returns/Disaster Relief
+- Other: Transferred out to another Colorado organization
+- Other: Transferred to an out of state organization
+- Other: What animals are you reporting for?
+- Outlet Capacity
+- Outlet Inspection
+- Outlet Size
+- Outlet Type
+- Over the last 2 years, my company has received Federal funds and/or Grants, allowing my business to remain open. Without this support, we would have closed.
+- Overall Conditions
+- Overfill Prevention
+- Override Value
+- Overweight (BMI>=25)
+- Owner Address
+- Owner City
+- Owner State
+- Owner Zip
+- OwnerName
+- P.O. Box
+- PADD
+- PARCELNB_1
+- PARCELNUM
+- PARCELSEQ
+- PARCEL_ACR
+- PARCEL_ID
+- PARCEL_SOU
+- PARENT
+- PARENTCODBNUM
+- PARENTCONAME
+- PARENT_ID
+- PARKING_NO
+- PARK_LOCAT
+- PARTFLG00
+- PASS
+- PATH_TYPE
+- PATROL
+- PCICBSA
+- PCICBSA00
+- PCINECTA
+- PCINECTA00
+- PCTDHCOMB
+- PCTDHSU
+- PCTOFFPKCOMB
+- PE
+- PE Desc
+- PEDESTRIAN
+- PERCENTCRA
+- PFAS
+- PG_CODE
+- PHYS_ADDRE
+- PHYS_CITY
+- PHYS_STATE
+- PHYS_ZIP
+- PICNIC_TIE
+- PID
+- PIT
+- PK10
+- PK100
+- PK2
+- PK200
+- PK25
+- PK5
+- PK50
+- PK500
+- PLACEFP
+- PLACEFP00
+- PLACENS
+- PLAT
+- PLCIDFP00
+- POINT_X
+- POINT_Y
+- POI_NAME
+- POLYGONID
+- POOL_NAME
+- POOL_TYPE
+- POP_2010
+- POR Count
+- POSTAL_ZIP
+- POSTDIRECT
+- POSTTYPE
+- POTWTOTALTRANSFERS
+- POTWTRNSRLSE
+- POTWTRNSTRT
+- POWER
+- PPB_Calc
+- PRATX
+- PRECINCT
+- PRECINCT_I
+- PRECIP
+- PREDIRECTI
+- PREFIX
+- PRETYPE
+- PRICURVE
+- PRIDLCLASS
+- PRIFATIGUECRACK
+- PRIFAULTING
+- PRIGRADE
+- PRIINSHLDWD
+- PRIMARYNAICS
+- PRIMARYSIC
+- PRIMARY_KEY
+- PRIMARY_US
+- PRIOUTSHLDWD
+- PRIPSR
+- PRIRDL
+- PRITHRULNWD
+- PRITRANSCR
+- PRITRANSCRACK
+- PRITREATMENTDEPTH
+- PRODUCTIONRATIO
+- PRODUCTIONWSTE
+- PROD_RATIO_OR_ACTIVITY
+- PROGRAMS
+- PROJECTID
+- PROJECTTY
+- PROJ_DESC
+- PROJ_NAME
+- PROJ_NO
+- PROJ_STATU
+- PROP_CLASS
+- PROVIDER ID
+- PSE_BFN
+- PSE_NAME
+- PTPS_CAP
+- PTPS_P_AC
+- PUD_Name
+- PUD_Name_1
+- Parcel Name
+- ParcelNo
+- Parent UID
+- Pass or Fail
+- Payee
+- PaymentDate
+- PaymentId
+- Payment_Date
+- Peak
+- Percent Ownership
+- Percent of Patients
+- Percent of Patients Reporting Condition - Total is more than 100% as some patients use Marijuana for more than 1 condition
+- Percent of population living below poverty
+- Percent_Reduction_FY15-FY21
+- Percent_Reduction_FY20-FY21
+- Percent_Renewables
+- PeriodOfPerformanceCurrentEndDate
+- PeriodOfPerformanceStartDate
+- Permit Category
+- Permit Expires
+- Permit Issued
+- Permit No
+- Permit Suf
+- PermitSubType
+- PermitTupe
+- Personal consumption expenditures
+- PetFood
+- PhaseNO
+- Phone #
+- Phone Number
+- PhotometerTWC500
+- Pipename
+- Piping Corrosion Protection
+- Piping Corrosion Protection at Dispenser
+- Piping Corrosion Protection at Tank
+- Piping Material
+- Piping Release Detection Method (Primary)
+- Piping Release Detection Method (Secondary)
+- Piping System
+- Piping Type
+- Piping Wall Type
+- Plan ID
+- Plan Name
+- Plan Status
+- Plan WDID
+- Plants
+- PlowAltRou
+- PlowPriori
+- PlowRout_1
+- PlowRouteD
+- PlowRouteN
+- PollVotes
+- PopChg1017
+- PositionDesc
+- Positional Accuracy
+- PostDir
+- PostType
+- Postal Code
+- Poultry
+- PreDir
+- PreType
+- PreferredH
+- Prefix
+- Prepared
+- PrimMill
+- Primary Content Provider
+- PrimaryCod
+- PrimaryPlaceOfPerformanceCode
+- PrimaryPlaceOfPerformanceCongressionalDistrict
+- PrimaryPlaceOfPerformanceCountryCode
+- PrimaryPlaceOfPerformanceForeignLocationDescription
+- PrimaryPlaceOfPerformanceZIP+4
+- PrimaryUse
+- Prior Adjudication Date
+- Privacy and Confidentiality
+- Product
+- Program Identifier
+- ProgramArea
+- Program_Area
+- Progress
+- Prohibited
+- Project
+- Project Type
+- ProjectDescription
+- ProjectId
+- ProjectType
+- Property Crime Rate
+- Property Crime Total
+- Property Type
+- Property View
+- Property crime rate
+- Property crime total
+- ProvVotes
+- Provider Address
+- Provider ID
+- Provider Type
+- Provider name
+- Public
+- Publication Name
+- Publication Stage
+- Published Version Name
+- Published Version UID
+- Publisher
+- Publishing Department
+- Pump Installed
+- Pump Rate
+- PurchaseOrder
+- Purchase_Amount
+- Purchase_Type
+- Purpose
+- Purposes
+- Q1
+- Q11
+- Q12
+- Q2
+- Q3
+- Q4
+- Q5
+- Q6
+- Q7
+- Q8
+- Q9
+- QRIS RATING LEVEL
+- QUALITY RATING
+- QUALITY RATING EFFECTIVE DATE
+- QUALITY RATING EXPIRATION DATE
+- Q_Among the local community I can depend on people to help me if I need them.
+- Q_Among the local community with whom I work most every day, I feel there is a sense of camaraderie.
+- Q_At the present time, I am enthusiastically pursuing my goals.
+- Q_How do you currently measure the performance of your business?
+- Q_How has your profit increased or decreased over the last year?
+- Q_How have your sales increased or decreased over the last year?
+- Q_I am able to implement new technology solutions and programs successfully into my business operations (either myself or with assistance).
+- Q_I am able to use multiple methods of marketing (email, social media, phone service) to engage/support my customers.
+- Q_I am feeling optimistic about the future of my business.
+- Q_I consider the people I work with in the local community to be my friends even outside of work.
+- Q_I frequently seek new ways and avenues of growing my business (new delivery methods, new technology, etc.).
+- Q_I get constructive feedback about my business from the local community.
+- Q_If my primary method of serving my customers was disrupted, I could adapt and change my means of customer delivery.
+- Q_In general, I believe Colorado’s local and state government motives and intentions are good toward business owners like me.
+- Q_In my experience, I can depend on Colorado’s local and state government to be open and upfront with me as a small business owner.
+- Q_My company can currently meet the demands of my customers.
+- Q_My company can easily get information about business assistance programs.
+- Q_My company communicates regularly with other businesses in the area similar to my own.
+- Q_My company has enough cash on hand to meet my business needs for the next 12 months.
+- Q_My company has had higher involuntary employee turnover (termination due to economic hardship) than normal in the last 12 months.
+- Q_My company has had higher voluntary employee turnover (quitting) than normal in the last 12 months.
+- Q_My company is connected to organizations or associations designed to help businesses like mine (e.g. chamber of commerce, Colorado Bioscience Association).
+- Q_My company is currently seeking additional funding (outside of current sources) to run my business.
+- Q_My company often invests in online/digital security tools to protect company and customer data.
+- Q_My company often uses and seeks new technology to assist and complete our work.
+- Q_My company often uses and seeks new technology to connect with customers.
+- Q_My company plans on hiring more people in the next 12 months.
+- Q_My company receives advice/mentorship from external advisors (formal or informal).
+- Q_My company receives good and timely information when regulations change.
+- Q_My company would be able to continue to operate if there was another lockdown today.
+- Q_My company’s current ability to meet customer needs is negatively impacted by external forces (e.g., suppliers, environmental).
+- Q_My company’s operations are efficient and can adjust rapidly (as needed).
+- Q_My customers have the resources and stability to continue buying my service / product.
+- Q_My employees have access to essential on the job education and training.
+- Q_My employees have the necessary skillsets and knowledge required to make my business successful.
+- Q_My local community has an urgent need for small businesses like mine to be successful.
+- Q_On important matters that impact the wellbeing of my business, I believe Colorado’s local and state government have high integrity.
+- Q_Right now, I expect things to work out for the best for my business.
+- Q_Right now, I see myself as being pretty successful.
+- Q_There are lots of ways around any problem that I am facing now.
+- Q_There is destructive competition within my local community.
+- Q_To get along in the local community I have to hide aspects of my identity that are important to me.
+- Q_To what degree was your business affected by the pandemic and related lockdowns?
+- Q_What is your monthly spend for your website and digital solutions for Customer Growth?
+- Q_What is your monthly spend for your website and digital solutions for Employee Recruitment?
+- Q_What is your monthly spend for your website and digital solutions for Online/Digital Security?
+- Q_What is your monthly spend for your website and digital solutions for Operational Efficiency?
+- Q_What is your monthly spend for your website and digital solutions for Other?
+- Q_What is your monthly spend for your website and digital solutions for Other? 1
+- Q_What is your monthly spend for your website and digital solutions for Point of Sale Solutions?
+- Q_What is your monthly spend for your website and digital solutions for Website Design and Maintenance?
+- Q_What would help make your business more resilient to changes and/or disruptions?
+- Qa
+- Quarter
+- RAILROAD
+- RANDOM
+- RCVR_TYPE
+- REACH
+- RECEPTION1
+- RECEPTNUM
+- RECORDED
+- RECORDID
+- RECPT_DATE
+- RECPT_NO
+- RECYCLINGOFFSIT
+- RECYCLINGONSITE
+- REFCD
+- REF_PT
+- REGION10
+- RELATEDOID
+- RELEASES
+- RELIEF
+- REPORTED_D
+- REPORT_DATE
+- RESO_NO
+- RESTROOM
+- RESULT
+- RES_ABOVE_
+- RES_ORIG_Y
+- RLF_YN
+- RME Public School Capital Construction Assistance Fund
+- RME Public School Fund
+- RMS General Fund
+- RMS General Fund Blank Code
+- RMS Local Government Distribution
+- RMS Marijuana Tax Cash Fund
+- RMS Public School Fund
+- RMS Public School Fund Blank Code
+- ROAD_CONDI
+- ROAD_CONTO
+- ROAD_DESCR
+- ROAD_LOCAT
+- ROAD_PCT
+- ROUTESIGNQUAL
+- ROUTE_1
+- RROWNER1
+- RROWNER2
+- RR_CLASS
+- RTD Ridership
+- RUNWAYLENG
+- RUNWAYS
+- RUNWAYSURF
+- RV Hookup
+- Rabbits
+- Rabbits: In Foster Care Count 1/1/2017
+- Rabbits: In Foster Care Count as of 12/31/2017
+- Rabbits: In Shelter Count as of 1/1/2017
+- Rabbits: In Shelter Count as of 12/31/2017
+- Rabbits: Missing / Stolen
+- Rabbits: Notes:
+- Rabbits: Other Live Outcomes ( ie: tnr/snr)
+- Rabbits: Other: TNR/Protective Custody/Returns/Disaster Relief
+- Rabbits: Transferred out to another Colorado organization
+- Rabbits: Transferred to an out of state organization
+- Race & Ethnicity
+- RaceCode
+- RaceCode 
+- RaceEthnicity
+- Rec_Blank_Code
+- Rec_Sales
+- Rec_YR
+- Received
+- Reception
+- Record ID
+- Record Type
+- RecordType
+- Recreation services
+- Recreational goods and vehicles
+- Reference_number
+- Rejected
+- Related Datasets
+- Release Cause
+- Release Comments
+- Release Date
+- Release Number
+- Release Record Link
+- Release Record Type
+- Release Source
+- Release Type
+- Renewable_kWh
+- Renewal
+- Renewal Created
+- Renewal Status
+- ReportState
+- Reported Condition
+- Representative
+- Reptiles
+- Reptiles & Amphibians: Adoption
+- Reptiles & Amphibians: Died
+- Reptiles & Amphibians: In Foster Care Count 1/1/2017
+- Reptiles & Amphibians: In Foster Care Count as of 12/31/2017
+- Reptiles & Amphibians: In Shelter Count as of 1/1/2017
+- Reptiles & Amphibians: In Shelter Count as of 12/31/2017
+- Reptiles & Amphibians: Missing/Stolen 
+- Reptiles & Amphibians: Other Live Outcomes (ie: tnr/snr)
+- Reptiles & Amphibians: Other: TNR/Protective Custody/Returns/Disaster Relief
+- Reptiles & Amphibians: Owner Relinquished
+- Reptiles & Amphibians: Owner Requested Euthanasia
+- Reptiles & Amphibians: Owner Requested Euthanasia upon intake
+- Reptiles & Amphibians: Returned To Owner (RTO)
+- Reptiles & Amphibians: Shelter Euthanasia
+- Reptiles & Amphibians: Stray
+- Reptiles & Amphibians: Transfer in from Out of State organization
+- Reptiles & Amphibians: Transfer in from another Colorado organization
+- Reptiles & Amphibians: Transferred out to another Colorado organization
+- Reptiles & Amphibians: Transferred to an out of state organization
+- Reptiles: Missing / Stolen
+- Reptiles: Missing / Stolen 
+- Reptiles: Notes:
+- Reservoir Name
+- Reservoir Storage NEP
+- Reservoir Temperature
+- Reservoir Volume
+- ReservoirCode
+- Retail Blank Code
+- Retail Marijuana Excise (RME) Tax Total (15%)		
+- Retail Marijuana Sales Tax (RMS)
+- Retail Marijuana Tax (2.9%)
+- Retail Sales
+- Retail Sales Tax
+- Revised
+- Right now, I expect things to work out for the best for my business.
+- Right now, I see myself as being pretty successful.
+- Road Maintained
+- Road Type
+- RoadTypeDesc
+- Robbery
+- Robbery rate
+- Routing & Approval
+- RowId
+- SALEDT
+- SALEP
+- SALES_VOLUME
+- SALE_DATE
+- SALE_MONTH
+- SALE_PRICE
+- SALE_YEAR
+- SATimeStam
+- SATimeStamp
+- SAUID
+- SCALE
+- SCENICID
+- SCHEDNUM
+- SCHOOL DISTRICT OPERATED PROGRAM
+- SEASONALGROUPID
+- SECCURVE
+- SECCURVECLASS
+- SECGRADE
+- SECGRADECLASS
+- SECTION
+- SECURITY_GUARD_BFN
+- SEGMID_1
+- SERIOUSLY1
+- SERIOUSLY_
+- SERIOUSL_1
+- SERVICES_P
+- SERV_PROV_
+- SFMNP
+- SF_Percent_Total
+- SHADE
+- SHAPE_Length
+- SHAPE_area
+- SHAPEarea
+- SHAPElen
+- SHARED_DRI
+- SHELTER
+- SIC 1
+- SIC 2
+- SIC 3
+- SIC 4
+- SIGNED
+- SITE_DESIGNATION
+- SITE_ID
+- SITE_NUMBE
+- SITUSZIP
+- SITUS_ADDR
+- SITUS_AD_1
+- SITUS_AD_2
+- SITUS_AD_3
+- SITUS_AD_4
+- SITUS_CITY
+- SITUS_STAT
+- SITUS_STR1
+- SITUS_STR_
+- SITUS_ST_1
+- SITUS_ST_2
+- SITUS_ST_3
+- SITUS_ST_4
+- SITUS_ST_5
+- SITUS_UNIT
+- SITUS_UN_1
+- SITUS_X_CO
+- SITUS_Y_CO
+- SITUS_ZIP
+- SPACE
+- SPECIES_BO
+- SPECIES_CO
+- SPRAYEQUIP
+- SQFT IMP
+- SQFT IMP2
+- SRSID
+- SRUF
+- ST
+- STACKAIR
+- STANDARDPARENTCONAME
+- STATEFP10
+- STATENS
+- STATE_1
+- STATION
+- STATIONNAM
+- STATIONNUM
+- STATION_NU
+- STATION_TY
+- STATUTE
+- STEMS
+- STORE_NAME
+- STORE_TYPE
+- STRAP
+- STREETADDRESS
+- STREETTYPE
+- STREET_NAM
+- STREET_NO
+- STREET_NUM
+- STREET_N_1
+- STREET_N_2
+- STUSPS
+- STUSPS10
+- STWAT_ID
+- STX_GEO_AR
+- SUBDIV
+- SUBDIV_NO
+- SUBMJRNAME
+- SUBNUM
+- SURFACEIMPNDMNT
+- SURVEYDATE
+- SURVEYOR
+- SWET
+- SWSI Previous Month
+- SYSTEM_STA
+- Safe Storage
+- Sales Tax Total (2.9%)
+- School 
+- School Code
+- School Name
+- Seafood
+- SecMill
+- Secondary Content Editor
+- Secondary Content Provider
+- SegmentK_1
+- September
+- Serial Number
+- Serious Injuries per 100 million Vehicle miles traveled)
+- Service
+- Service Desc.
+- Service Fee
+- Service Fee Allowed Footnote
+- Service Fee Notes
+- Services
+- Shape
+- Shapearea
+- Shapelen
+- Share of U.S.
+- Single Row
+- Site Address
+- Site_Name
+- SizeOfDot
+- Sm Mammal: In Foster Care Count as of 12/31/2017
+- Sm Mammal: In Shelter Count as of 12/31/2017
+- Sm Mammal: Missing / Stolen
+- Sm Mammal: Missing / Stolen 
+- Sm Mammal: Missing/Stolen 
+- Sm Mammal: Notes:
+- Sm Mammal: Other Live Outcomes (ie: tnr/snr)
+- Sm Mammal: Other: TNR/Protective Custody/Returns/Disaster Relief
+- Sm Mammal: Transferred out to another Colorado organization
+- Sm Mammal: Transferred to an out of state organization
+- Small Mammal
+- Small Mammal: In Foster Care Count 1/1/2017
+- Small Mammal: In Shelter Count as of 1/1/2017
+- Soap
+- Soil Organic Carbon
+- SolidMed
+- Source Update Schedule
+- SourceData
+- SourceFeat
+- SourceOrig
+- Southern Exposure
+- Spatial Reference wkid
+- Special Use
+- Species
+- Spillway Capacity
+- Spillway Height
+- Spillway Width
+- Spinal Cord Injury
+- Spine Cord Injury
+- Sponsors
+- SqMiles
+- Square_Footage
+- St
+- Staff
+- Stage
+- Start Date
+- State Share of Retail Sales Tax
+- State Share of Retail Sales Tax	Blank Code
+- State Taxable Sales
+- State or Local
+- StateCode
+- States
+- Static Water Level
+- Static Water Level Date
+- Station Status
+- Station Type
+- StatudId
+- Statutory
+- Stewardship Plan
+- Stories
+- Stream Flow NEP
+- Street
+- StreetDirection
+- StreetPo_1
+- StreetPost
+- StreetPreD
+- StreetPreT
+- Street_no
+- Structure Name AKAs
+- StructureI
+- StructureT
+- Students
+- Students with Disabilities Instances of Mobility
+- Students with Disabilities Mobile Student Count
+- Students with Disabilities Mobility Incidence Rate
+- Students with Disabilities Pupil Count
+- Students with Disabilities Stability Rate
+- Students with Disabilities Stable Student Count
+- Students with Disabilities Student Mobility Rate
+- Sub-Agency
+- SubAddress
+- SubDate
+- Subcategory1
+- Subcategory2
+- SubdivCode
+- Subdivisio
+- Submitted Date
+- Subtype
+- Suffix
+- Suggested by Public
+- Syringe
+- TARGET_FID
+- TAXABLE_AM
+- TAXYEAR
+- TAX_AREA
+- TAX_DIST
+- TAX_DIST_1
+- TAX_DIST_2
+- TAX_DIST_3
+- TAX_DIST_4
+- TAX_DIST_5
+- TAX_DIST_B
+- TAX_DIST_C
+- TAX_DIST_D
+- TAX_DIST_F
+- TAX_DIST_G
+- TAX_DIST_L
+- TAX_DIST_M
+- TAX_DIST_P
+- TAX_DIST_R
+- TAX_DIST_S
+- TAX_DIST_U
+- TAX_DIST_W
+- TAX_EXEM_2
+- TEMP
+- TEST
+- TIER
+- TNMID
+- TOLLMAINTOPS
+- TOP
+- TOP_TRAFFI
+- TOTAL
+- TOTALRELEASES
+- TOTALTRANSFER
+- TOT_UNITS
+- TR1
+- TR2
+- TR3
+- TRAIL_DIFF
+- TRANSECT
+- TREATMENTOFFSITE
+- TREATMENTONSITE
+- TREES_CAP
+- TREES_P_AC
+- TREE_PCT
+- TRIBE
+- TRICHEMICALCOMPOUNDID
+- TRIFD
+- TU1_DRIVER
+- TU1_DRIV_1
+- TU1_PEDEST
+- TU1_TRAVEL
+- TU1_VEHICL
+- TU1_VEHI_1
+- TU2_DRIVER
+- TU2_DRIV_1
+- TU2_PEDEST
+- TU2_TRAVEL
+- TU2_VEHICL
+- TU2_VEHI_1
+- TURNOUT %
+- TYPENAME
+- TYPE_CATEG
+- TYPE_CLASS
+- TYPOLOGY
+- Tank Capacity
+- Tank Corrosion Protection Method
+- Tank Material
+- Tank Name
+- Tank Release Detection Method (Primary)
+- Tank Release Detection Method (Secondary)
+- Tank Status
+- Tank Tag
+- Tank Type
+- Tank Wall Type
+- Tax Rate
+- Tax Rate Footnote
+- Technical Contact and Phone
+- Technical Documentation
+- There are lots of ways around any problem that I am facing now.
+- There is destructive competition within my local community.
+- Thornton
+- Thornton Blank Code
+- Time Period
+- Times
+- Tipped Employee Wage
+- Title 1 Instances of Mobility
+- Title 1 Mobile Student Count
+- Title 1 Mobility Incidence Rate
+- Title 1 Pupil Count
+- Title 1 Pupil Stability Rate
+- Title 1 Stable Student Count
+- Title 1 Student Mobility Rate
+- Title No
+- To get along in the local community I have to hide aspects of my identity that are important to me.
+- To what degree was your business affected by shifting economic conditions in the last 12 months?
+- To what degree was your business affected by shifting economic conditions in the last 12 months? Additional Text
+- Tobacco Products
+Excise Tax ³
+- Tofu
+- Topography Back
+- Topography Front
+- Topography Middle
+- Total 
+- Total American Indian or Alaska Native Instances Of Mobility
+- Total American Indian or Alaska Native Mobile Student Count
+- Total American Indian or Alaska Native Mobility Incidence Rate
+- Total American Indian or Alaska Native Pupil Count
+- Total American Indian or Alaska Native Stability Rate
+- Total American Indian or Alaska Native Stable Student Count
+- Total American Indian or Alaska Native Student Mobility Rate
+- Total Asian Instances Of Mobility
+- Total Asian Mobile Student Count
+- Total Asian Mobility Incidence Rate
+- Total Asian Pupil Count
+- Total Asian Stability Rate
+- Total Asian Stable Student Count
+- Total Asian Student Mobility Rate
+- Total Black or African American Instances Of Mobility
+- Total Black or African American Mobile Student Count
+- Total Black or African American Mobility Incidence Rate
+- Total Black or African American Pupil Count
+- Total Black or African American Stability Rate
+- Total Black or African American Stable Student Count
+- Total Black or African American Student Mobility Rate
+- Total Columns at Recent Update
+- Total Crime
+- Total Crime Rate
+- Total Female Instances Of Mobility
+- Total Female Mobile Student Count
+- Total Female Mobility Incidence Rate
+- Total Female Pupil Count
+- Total Female Stability Rate
+- Total Female Stable Student Count
+- Total Female Student Mobility Rate
+- Total Foodborne Illness Risk Violations
+- Total Good Retail Practices Violations
+- Total Hispanic or Latino Instances Of Mobility
+- Total Hispanic or Latino Mobile Student Count
+- Total Hispanic or Latino Mobility Incidence Rate
+- Total Hispanic or Latino Pupil Count
+- Total Hispanic or Latino Stability Rate
+- Total Hispanic or Latino Stable Student Count
+- Total Hispanic or Latino Student Mobility Rate
+- Total Instances Of Mobility
+- Total Instances of Mobility (All students)
+- Total Male Instances Of Mobility
+- Total Male Mobile Student Count
+- Total Male Mobility Incidence Rate
+- Total Male Pupil Count
+- Total Male Stability Rate
+- Total Male Stable Student Count
+- Total Male Student Mobility Rate
+- Total Mobile Student Count
+- Total Mobile Student Count (All students)
+- Total Mobility Incidence Rate
+- Total Mobility Incidence Rate (All students)
+- Total Native Hawaiian or Other Pacific Islander Instances Of Mobility
+- Total Native Hawaiian or Other Pacific Islander Mobile Student Count
+- Total Native Hawaiian or Other Pacific Islander Mobility Incidence Rate
+- Total Native Hawaiian or Other Pacific Islander Pupil Count
+- Total Native Hawaiian or Other Pacific Islander Stability Rate
+- Total Native Hawaiian or Other Pacific Islander Stable Student Count
+- Total Native Hawaiian or Other Pacific Islander Student Mobility Rate
+- Total Pupil Count
+- Total Pupil Count (All students)
+- Total Records at Initial Publish
+- Total Records at Recent Update
+- Total Ridership
+- Total Stability Rate
+- Total Stability Rate (All Students)
+- Total Stable Pupil Count (All Students)
+- Total Stable Student Count
+- Total Student Mobility Rate
+- Total Student Mobility Rate (All students)
+- Total Taxes
+- Total Taxes & Fees
+- Total Two or More Races Instances Of Mobility
+- Total Two or More Races Mobile Student Count
+- Total Two or More Races Mobility Incidence Rate
+- Total Two or More Races Pupil Count
+- Total Two or More Races Stability Rate
+- Total Two or More Races Stable Student Count
+- Total Two or More Races Student Mobility Rate
+- Total Volumetric Limit
+- Total White Instances Of Mobility
+- Total White Mobile Student Count
+- Total White Mobility Incidence Rate
+- Total White Pupil Count
+- Total White Stability Rate
+- Total White Stable Student Count
+- Total White Student Mobility Rate
+- Total cases
+- Total deaths
+- TotalCH4t
+- TotalFieldCapacity(Mcf)
+- Total_kWh
+- Town Distance
+- Trade Name
+- Transaction_Amount
+- Transaction_Date
+- Transfusion
+- Transfusion Error/Reaction
+- Transportation services
+- Trees
+- Tuberculosis (Incidence rates per 100,000 population)
+- Type of entity 
+- U ID
+- U.S. Average
+- U.S. Rank
+- UACE10
+- UATYP10
+- UMT y
+- UNCLASSIFIED
+- UNDERGROUND
+- UNDERGROUNDCIIV
+- UNDERGROUNDCLI
+- UNIT
+- UNITOFMEASURE
+- UNITTYPE
+- UNIT_ALIAS
+- UNIT_IDENT
+- UNIT_TYPE
+- UPDATEDATE
+- UPDATE_DAT
+- UPDATE_MET
+- UPDATE_USE
+- UR10
+- USER_TYPE
+- USGS Site ID
+- USNG
+- UT UTM East
+- UT UTM North
+- UTM X
+- UTM Y
+- Unintended pregnancy
+- Unit
+- Unit of Analysis
+- UnitNumber
+- UnitType
+- Update Frequency
+- Update Method
+- Update Schedule
+- Update Type
+- Upper Terminus
+- UrbanWood
+- Use Code
+- Use Tax (paid to city or county) applies to:
+- Use Tax Applies
+- Use Tax Rate Footnote
+- Use1
+- Use2
+- User Association
+- Utilities Electric
+- Utilities Natural Gas
+- Utilities Sewer
+- Utilities Water
+- V7D10Y
+- V7D2Y
+- V7D50Y
+- VMT
+- Variable
+- Vegetables
+- Vendor
+- Veteran
+- Viewer
+- Violent Crime Rate
+- Violent Crime Rate (per 100,000)
+- Violent Crime Total
+- Violent Crime rate
+- Violent crime total
+- Visits
+- Volume in AF
+- Voting Method
+- WARNINGMSG
+- WATER_PCT
+- WENDI_name
+- WIC
+- WICcash
+- WIDTH_FT
+- WPC
+- WWTPCH4t
+- Water District
+- Water Level Depth
+- Water Level Elevation
+- Water Right Name
+- Waterbody Name
+- Waterbody Type
+- Watershed
+- Web Display Coordinate System
+- Weight
+- WeightCode
+- Weld
+- Weld Blank Code
+- Well Constructed
+- Well Plugged
+- Westminster
+- Westminster Blank Code
+- What is your monthly spend for your website and
+digital solutions regarding Employee Recruitment?
+- What is your monthly spend for your website and
+digital solutions regarding Online/Digital Security?
+- What is your monthly spend for your website and
+digital solutions regarding Point of Sale Solutions?
+- What is your monthly spend for your website and
+digital solutions regarding Website Design and Maintenance?
+- What is your monthly spend for your website and
+digital solutions regarding operational efficiency?
+- What is your monthly spend for your website and
+digital solutions? Additional Text
+- What is your monthly spend for your website and digital solutions for other?
+- What is your monthly spend for your website and digital solutions regarding customer growth?
+- What would help make your business more resilient to changes and/or disruptions?
+- Which elements of online/digital security are you currently implementing for the safety and health of your business? - Additional Text
+- Which elements of online/digital security are you currently implementing for the safety and health of your business? - Backing up business data and information
+- Which elements of online/digital security are you currently implementing for the safety and health of your business? - Making sure website has an HTTPS domain
+- Which elements of online/digital security are you currently implementing for the safety and health of your business? - Securely storing business documents on a cloud server
+- Which elements of online/digital security are you currently implementing for the safety and health of your business? - Training employees on phishing emails and cyber security
+- Which elements of online/digital security are you currently implementing for the safety and health of your business? - Using 2-factor authentication for online/digital services
+- Which elements of online/digital security are you currently implementing for the safety and health of your business? - Using anti-malware/virus software on all computers used for my business
+- Which elements of online/digital security are you currently implementing for the safety and health of your business? - Using online security software or plugins to secure my website, in addition to what is provided by website provider
+- Which elements of online/digital security are you currently implementing for the safety and health of your business? - Using secure online banking
+- Which elements of online/digital security are you currently implementing for the safety and health of your business? Changing passwords every 3-6 months
+- WildHarvested
+- Wine
+- Women 40+ who have not had a mammogram in last 2 years
+- Women reporting 3 or more stressors during pregnancy
+- Women who drank during last three months of pregnancy
+- Women who have not had a pap test in last 3 years
+- Women who smoked during last three months of pregnancy
+- WorkingGasCapacity(Mcf)
+- X_LONG
+- YEAR
+- YEAR_REHAB
+- Y_LAT
+- Year (YEAR)
+- Year Completed
+- Yes or No
+- Yield
+- Yr_Range
+- ZCASE
+- ZCASE2
+- ZCOND
+- ZCTA5CE00
+- ZIP4
+- ZIP5
+- ZIPCODE4
+- ZONE
+- ZONETYPE_O
+- ZONE_10
+- ZONE_CODE_
+- ZONE_ID
+- ZONINGOLD
+- ZONING_CLA
+- ZONING_C_1
+- ZONING_NM
+- ZTYPE
+- ZipCode
+- Zipcode
+- abbreviation
+- accessCode
+- accessDaysTime
+- accessDetailCode
+- accountingRecordsAddress
+- accountingRecordsCity
+- accountingRecordsState
+- accountingRecordsZipCode
+- acctPd
+- actionRefId
+- actionType
+- actionTypeCode
+- activity
+- activityDate
+- activityFlag
+- activityormissiondesc
+- actualFinancialsProvided
+- additionalDebtorId
+- additionalDebtors
+- additionalFarmProduct
+- additionalcollateraldescription
+- addressLine1
+- addressLine2
+- addressNumber
+- addressZip
+- address_line_1
+- address_line_2
+- addresss
+- adsuppwstmngmremserv
+- adultCount
+- affiliation
+- agency_name
+- agency_type_name
+- agentFirstName
+- agentLastName
+- agentMailingAddress1
+- agentMailingAddress2
+- agentMailingCity
+- agentMailingCountry
+- agentMailingState
+- agentMailingZipCode
+- agentMiddleName
+- agentOrganizationName
+- agentPrincipalAddress1
+- agentPrincipalAddress2
+- agentPrincipalCity
+- agentPrincipalCountry
+- agentPrincipalState
+- agentPrincipalZipCode
+- agentSuffix
+- agentfirstname
+- agentlastname
+- agentmailingaddress1
+- agentmailingaddress2
+- agentmailingcity
+- agentmailingcountry
+- agentmailingstate
+- agentmailingzipcode
+- agentmiddlename
+- agentorganizationname
+- agentprincipaladdress1
+- agentprincipaladdress2
+- agentprincipalcity
+- agentprincipalcountry
+- agentprincipalstate
+- agentprincipalzipcode
+- agentsuffix
+- aggravatedAssault
+- agriculture
+- airTemperature
+- albedo
+- albedoLI200
+- albedoPSP
+- albedoQuantumLI190
+- allGradesGasPrice
+- allOtherOffensesExceptTraffic
+- allindustries
+- allothercontributionsamt
+- allowOthersToQuery
+- allstatescd
+- amend
+- amendeddate
+- amendmentDocumentID
+- amendmentEntityId
+- amendmentId
+- amendmentIdVerbatim
+- amountPaidtoSubcontractor
+- anticipatedPavementTreatment
+- ap
+- ap_nf
+- api_endpoint
+- archiveddate
+- areaDescription
+- areaName
+- areaOfLot
+- areaType
+- areadesc
+- arson
+- artexhibition_assetsincludedamt
+- artexhibition_revenuesincludedamt
+- artsentertainment
+- assetAmt
+- assetCd
+- assignee
+- assignor
+- atmosNetInfrared
+- atmosNetInfraredPIR
+- authorizedOfficer
+- authorizedOfficerName
+- authorizedOfficerSignedDate
+- authorizedSoliciting
+- ave_dni
+- avgWindDirection10m
+- avgWindDirection22ft
+- avgWindDirection42ft
+- avgWindDirectionStdDev10m
+- avgWindSpeed10ft
+- avgWindSpeed10m
+- avgWindSpeed22ft
+- avgWindSpeed42ft
+- avgWindSpeedStdDev10m
+- avgemp
+- avgwinddirection2m
+- avgwinddirection80m
+- avgwinddirectionstddev2m
+- avgwinddirectionstddev80m
+- avgwindshear
+- avgwindspeed2m
+- avgwindspeed80m
+- avgwindspeedstddev2m
+- avgwindspeedstddev80m
+- avgwkwage
+- b1AltId
+- b1AppTypeAlias
+- b1ApplStatus
+- b1UnitStart
+- b_elem
+- b_high
+- b_mid
+- baCode
+- backgroundColor
+- bdBlends
+- bedrooms
+- benefitspaidtoorformembersamt
+- blade_l
+- blankKey
+- bldgnursery
+- board_dist
+- bookkeeper
+- bookkeeperAddress
+- bookkeeperCity
+- bookkeeperState
+- bookkeeperZipCode
+- broadbandTurbidity
+- burglary
+- businessAssociatedWithLegislation
+- businessHours
+- businessOrIndividual
+- business_interferences
+- business_name
+- business_trade_name
+- business_zip_code
+- campaignCommencementDate
+- campaignConclusionDate
+- campaignDateFiled
+- campaignReportId
+- canModifyLayer
+- canScaleSymbols
+- capabilities
+- cardsAccepted
+- category
+- categoryOfFacility
+- cbBuildingPermit
+- cenCty
+- cenState
+- center_slo
+- ceoNames
+- cfoName
+- cfoSignedDate
+- charityControlsFunds
+- charityEntityID
+- charityOfficerName
+- checksum
+- cip
+- cip2
+- cityGatePrice
+- citySalesTaxRate
+- citySalesTaxRateFootnote
+- city_name
+- cityname
+- cl_re_date
+- class
+- clear_sp_1
+- clear_spac
+- clientAddress
+- clientBeginDate
+- clientCity
+- clientEndDate
+- clientPhone
+- clientState
+- clientStatus
+- clothing
+- cngDispenserNum
+- cngFillTypeCode
+- cngOnSiteRenewableSource
+- cngPSI
+- cngStationSellsRenewableNatrualGas
+- cngStorageCapacity
+- cngTotalCompressionCapacity
+- cngVehicleClass
+- cntrctrcvdgreaterthan100kcnt
+- collateraldescription
+- collateralid
+- collectionsofartind
+- collectionusedotherpurposesind
+- collectionusedpreservationind
+- collectionusedpubexhibitionind
+- collusedloanorexchprogind
+- collusedscholarlyrsrchind
+- comCust
+- comPrice
+- comRev
+- comSales
+- comment
+- commercialCapacityAll
+- commercialCapacityOther
+- commercialCapacityPhotovoltaic
+- commercialCapacityWind
+- commercialCustomerAll
+- commercialCustomerOther
+- commercialCustomerPhotovoltaic
+- commercialCustomerWind
+- commercialCustomers
+- commercialFromCO
+- commercialNotPairedBattery
+- commercialNotPairedEnergy
+- commercialNotPairedInstallations
+- commercialPairedBattery
+- commercialPairedEnergy
+- commercialPairedInstallations
+- commercialRevenue
+- commercialSales
+- commercialSoldBackAll
+- commercialSoldBackOther
+- commercialSoldBackPhotovoltaic
+- commercialSoldBackWind
+- commercialStorageCapacityPhotovoltaic
+- commercialStorageCustomerPhotovoltaic
+- commercialVirtualCapacityPhotovoltaic
+- commercialVirtualCustomerPhotovoltaic
+- commissionExpire
+- commissionStart
+- communicationType
+- companyName
+- company_zip
+- compcurrentofcrdirectorsgrp_fundraisingamt
+- compcurrentofcrdirectorsgrp_managementandgeneralamt
+- compcurrentofcrdirectorsgrp_programservicesamt
+- compcurrentofcrdirectorsgrp_totalamt
+- compensationprocessceoind
+- compensationprocessotherind
+- comstyl
+- conf_attr
+- conf_loc
+- conflictOfInterest
+- conflictOfInterestAffirmation
+- conflictofinterestpolicyind
+- conservationeasementsind
+- consolidatedRegistrationStatement
+- consolidatedauditfinclstmtind
+- constraine
+- construction
+- continuation
+- contractEffectiveDate
+- contractSigner1FirstName
+- contractSigner1LastName
+- contractSigner1Organization
+- contractSigner1Title
+- contractSigner2FirstName
+- contractSigner2LastName
+- contractSigner2Organization
+- contractSigner2Title
+- contractSigner3FirstName
+- contractSigner3LastName
+- contractSigner3Organization
+- contractSigner3Title
+- contractSigner4FirstName
+- contractSigner4LastName
+- contractSigner4Organization
+- contractSigner4Title
+- contractTerminationDate
+- contract_employees
+- contrib
+- copyrightText
+- counter__1
+- counter_sl
+- counties
+- country_code
+- countyCityIsLocated
+- countyFips
+- county_name
+- countyid
+- cpi
+- cpiSourceDescription
+- createdAt
+- cropYear
+- crops
+- curb_ram_1
+- curb_ramp1
+- curb_ramp_
+- curbrampla
+- curfewLoiteringLawViolations
+- currentStatus
+- currentVersion
+- current_config
+- custodyOfContributions
+- custodyOfFinancialRecords
+- cybenefitspaidtomembersamt
+- cycontributionsgrantsamt
+- cygrantsandsimilarpaidamt
+- cyinvestmentincomeamt
+- cyotherexpensesamt
+- cyotherrevenueamt
+- cyprogramservicerevenueamt
+- cyrevenueslessexpensesamt
+- cysalariescompempbnftpaidamt
+- cytotalexpensesamt
+- cytotalfundraisingexpenseamt
+- cytotalproffndrsngexpnsamt
+- cytotalrevenueamt
+- dataCollected
+- dataDate
+- dataRegion
+- dataSource 
+- data_provided_by
+- dateAdded
+- dateCreated
+- dateDisclosureFiled
+- dateDisclosureLastModified
+- dateFirstUsed
+- dateFormed
+- dateIncomeReceived
+- date_assigned
+- date_posted
+- date_received
+- dates
+- day
+- dayOfWeek
+- debtorAddress
+- debtorId
+- debtorName
+- debtordescription
+- debtorid
+- deckDryBulbTemp
+- deckRelHumidity
+- deckTemp
+- deductibility
+- deductiblenoncashcontriind
+- defaultVisibility
+- degrees
+- deltaT
+- descr
+- description_en
+- deviceNetOp
+- deviceNetType
+- deviceNetworkType
+- deviceRoaming
+- deviceSignalStrength
+- deviceSimOp
+- dewpoint
+- dewpointtemp
+- diffuse848Vent
+- diffuseCM22Vent
+- diffuseHorizontal
+- diffusePSPVent
+- diffusePSPcorr
+- digital_security_measures
+- directCH1
+- directCUVA2
+- directCUVB2
+- directNIP
+- directNIPRG780
+- directNormal
+- directTUVR
+- direction
+- disorderlyConduct
+- displayField
+- dlIdxanything
+- dmname
+- dni_apr
+- dni_aug
+- dni_dec
+- dni_feb
+- dni_jan
+- dni_jul
+- dni_jun
+- dni_mar
+- dni_may
+- dni_nov
+- dni_oct
+- dni_sep
+- documentType
+- documentretentionpolicyind
+- donationsTaxDeductible
+- downloadSpeed
+- downloadStatus
+- downwellingIRCG3
+- downwellingIRCG4Vent
+- downwellingIRPIRVent
+- drivingUnderTheInfluence
+- drugAbuseViolationsGrandTotal
+- drunkenness
+- dwellingType
+- dws_calc
+- dws_contra
+- dws_depth
+- dws_presen
+- dws_width
+- e85BlenderPump
+- e85OtherEthanolBlends
+- earnings
+- earningsallwrkr
+- education
+- effectiveDate
+- effectivedate
+- efsuniqueid
+- electappl
+- electricPowerConsumersPrice
+- elem
+- embezzlement
+- empFlag
+- emp_nf
+- empces
+- empcount
+- empfemale
+- emplab
+- empprodwrk
+- enacteddate
+- endOfYearAssests
+- endOfYearAssestsMinusLiabilities
+- endOfYearTotalLiabilities
+- endRefpt
+- end_date
+- engagedinexcessbenefittransind
+- engineerName
+- engineeringFirm
+- enotary
+- enrollmentClassification
+- entityformdate
+- entityname
+- entitystatus
+- entitytype
+- entrywg
+- epctrelerr
+- est
+- estab
+- estimatedPercentofGrossRevenue
+- evConnectorTypes
+- evDCFastCount
+- evLevel1EVSENum
+- evLevel2EVSENum
+- evNetwork
+- evNetworkWeb
+- evOnSiteRenewableSource
+- evPricing
+- evWorkplaceCharging
+- event
+- eventDate
+- eventDescription
+- eventLocation
+- eventNameVenue
+- exemptions
+- expenditureAmount
+- expenditureDate
+- expenditureForMediaFlag
+- expenditureName
+- expenditurePurpose
+- expenseAuditoriumRental
+- expenseEventFee
+- expenseEventOther
+- expenseEventPrinting
+- expenseOfficeExpenses
+- expenseOfficeRental
+- expensePostage
+- expensePrinting
+- expenseSalaryCommision
+- expenseTelephone
+- expenseTotal
+- expensesAffiliates
+- expensesDividedByContributions
+- expensesFromAdministrativeOther
+- expensesFromProgramServices
+- expensesFundraising
+- expensesOther
+- expensesOtherComment
+- expensesTotal
+- expensesincurredenforcementamt
+- experience
+- expireddate
+- extendedDueDate
+- extensionFiled
+- extensionRequestReason
+- extension_through
+- facebook
+- facilityName
+- facilityType
+- fafsaComplete
+- farmProduct
+- farmProductDescription
+- farmproductallyears
+- farmproductendyear
+- farmproductflag
+- farmproductstartyear
+- fatpc_calc
+- feature1
+- federaloriginalsubmissioniddt
+- federatedcampaignsamt
+- feesandotherpymttoindcntrctamt
+- femalePopulation
+- festivalLicenseNumber
+- festivalLocationCity
+- festivalLocationCounty
+- festivalLocationStreet
+- festivalName
+- file_name
+- filing
+- filingReqCd
+- final_config
+- financialStatementType
+- financialinsurance
+- finish
+- fipState
+- fips
+- fipsCode
+- fipsCty
+- firms
+- first_city
+- firstname
+- fiscalYearEndDate
+- fiscalYearStartDate
+- fiscalYearend
+- fiscalYearsRegistered
+- flag icon
+- flare_sl_1
+- flare_sl_2
+- flare_sl_3
+- flare_slop
+- foodbeverage
+- foodservices
+- foreigngrantsgrp_programservicesamt
+- foreigngrantsgrp_totalamt
+- forest
+- forgeryAndCounterfeiting
+- form8868Filed
+- form990TCorporation
+- form990providedtogvrnbodyind
+- formationyr
+- foundation
+- fraud
+- fuelTypeCode
+- full_time_employees
+- fundraisingamt
+- furniture
+- gamblingTotal
+- gasstations
+- genmerchandise
+- geoFips
+- geoLocation
+- geoReference
+- geocoded address
+- geometry
+- geometryType
+- geonum_1
+- gis_inspec
+- gisjoin
+- globablPSP40South
+- global501A
+- global90NorthLI200
+- global90SouthLI200
+- global90WestLI200
+- globalCM3
+- globalCM6b
+- globalCUVA1
+- globalCUVB1
+- globalHorizontal
+- globalLI200
+- globalLI20040South
+- globalMS210W
+- globalNormalCM21
+- globalPSP
+- globalPSP90East
+- globalPSP90North
+- globalPSP90South
+- globalPSP90West
+- globalPSPRG780
+- globalPSPVent
+- globalQuantumLI190
+- globalSPLite
+- globalSecondary
+- globalTSP1
+- globalTSP700Vent
+- globalTUVR
+- globalUVB1
+- globalUVSAT
+- globalUVSBT
+- goodServiceClass
+- goodServiceDetail
+- government
+- governmentgrantsamt
+- grade_br_1
+- grade_brea
+- grade_flus
+- grantsandsimilaramountspaidamt
+- grantstodomesticindividualsgrp_programservicesamt
+- grantstodomesticindividualsgrp_totalamt
+- grantstodomesticorgsgrp_programservicesamt
+- grantstodomesticorgsgrp_totalamt
+- grossAdvertisingSales
+- grossContributions
+- grossInKind
+- grossOther
+- grossTicketSales
+- grossTotal
+- group
+- groupsWithAccessCode
+- groupsWithAccessCodeFrench
+- hasAttachments
+- hasLabels
+- health
+- healthcare
+- heater_permit
+- heldworks_assetsincludedamt
+- heldworks_revenuesincludedamt
+- high
+- historiclandareaind
+- historicstrctreasementsaftrcnt
+- historicstructureeasementscnt
+- historicstructureind
+- historydes
+- horiz_gap
+- horiz_gap_
+- hourearn
+- hourearnallwrkr
+- hours
+- hoursallwrkr
+- householdPopulation
+- hr00
+- hr01
+- hr02
+- hr03
+- hr04
+- hr05
+- hr06
+- hr07
+- hr08
+- hr09
+- hr10
+- hr11
+- hr12
+- hr13
+- hr14
+- hr15
+- hr16
+- hr17
+- hr18
+- hr19
+- hr20
+- hr21
+- hr22
+- hr23
+- hrlyEarningsAll
+- hrlyEarningsProd
+- htmlPopupType
+- huc02
+- humanTraffickingCommercialSexActs
+- humanTraffickingInvoluntaryServitude
+- ico
+- image_name
+- image_year
+- improved_process_2020
+- inBusiness
+- inKindDescription
+- incdesc
+- incentivecategories
+- income
+- incomeAmount
+- incomeAmt
+- incomeCd
+- incrank
+- incsource
+- incsrcdesc
+- inctype
+- indCust
+- indPrice
+- indRev
+- indSales
+- indcodetitle
+- independentauditfinclstmtind
+- indivrcvdgreaterthan100kcnt
+- industrialCapacityAll
+- industrialCapacityOther
+- industrialCapacityPhotovoltaic
+- industrialCapacityWind
+- industrialCustomerAll
+- industrialCustomerOther
+- industrialCustomerPhotovoltaic
+- industrialCustomerWind
+- industrialCustomers
+- industrialFromCO
+- industrialNotPairedBattery
+- industrialNotPairedEnergy
+- industrialNotPairedInstallations
+- industrialPairedBattery
+- industrialPairedEnergy
+- industrialPairedInstallations
+- industrialRevenue
+- industrialSales
+- industrialSoldBackAll
+- industrialSoldBackOther
+- industrialSoldBackPhotovoltaic
+- industrialSoldBackWind
+- industrialStorageCapacityPhotovoltaic
+- industrialStorageCustomerPhotovoltaic
+- industrialVirtualCapacityPhotovoltaic
+- industrialVirtualCustomerPhotovoltaic
+- information
+- initialIssuanceDate
+- insertTs
+- inspectionDate
+- inspectionScore
+- inspectionType
+- installerName
+- installingFirm
+- instname1
+- instowndes
+- insttydesc
+- irsRequires990
+- isFinancialLocalOnly
+- isLatency
+- isParentOrganization
+- isSubcontractor
+- is_prote_1
+- is_protect
+- isrecent
+- itemDescription
+- jointcostsind
+- jurisdictonOfFormation
+- jurisdictonofformation
+- juvenileCount
+- landfill
+- lapseDate
+- larcenyTheft
+- lastVerifiedDate
+- lastname
+- lat_DD
+- latencyAverage
+- latencyStatus
+- lawid
+- left_flare
+- legalBusinessFormation
+- legaldomicilecountrycd
+- legaldomicilestatecd
+- legendColor
+- lgbtq
+- licenseCategory
+- licenseExpireDate
+- licenseNum
+- licenseStartDate
+- licenseStatusDescription
+- license_no
+- licensedstatescd
+- licenseeDba
+- limitingLayer
+- link
+- linkToVerifyLicense
+- linkToViewHealthcareProfile
+- liquorLaws
+- lng
+- lngStationSellsRenewableNatrualGas
+- lngVehicleClass
+- lobbyingHours
+- lobbyingactivitiesind
+- lobbyistClient
+- lobbyistType
+- locationDescription
+- locationType
+- lodging
+- long_DD
+- lpgNozzleTypes
+- lpgPrimary
+- mailZipCode
+- mailingProvince
+- mailingZipcode
+- mailingaddress1
+- mailingaddress2
+- mailingcity
+- mailingcountry
+- mailingstate
+- mailingzipcode
+- malType
+- malePopulation
+- manslaughterByNegligence
+- manufac
+- manufacturedHomeTransactions
+- manufacturerKeys
+- manufacturing
+- manure
+- mapped_acr
+- masterDocumentId
+- masterTrademarkId
+- masterTradenameId
+- materialdiversionormisuseind
+- max
+- maxRecordCount
+- maxScale
+- maximumVehicleClass
+- mean
+- mediaKeys
+- median
+- membershipduesamt
+- mid
+- mid_block
+- middlename
+- midgradeGasPrice
+- min
+- minScale
+- minimumPercentageOfGrossReceiptsRemitted
+- minimumPercentageSaleRemitted
+- mining
+- misappropriation of property
+- miscstores
+- missiondesc
+- mnth1emp
+- mnth2emp
+- mnth3emp
+- model
+- modifiedeasementscnt
+- motorVehicleTheft
+- msa_name
+- murderAndNonnegligentManslaughter
+- mvparts
+- mw
+- mwh01
+- mwh02
+- mwh03
+- mwh04
+- mwh05
+- mwh06
+- mwh07
+- mwh08
+- mwh09
+- mwh10
+- mwh11
+- mwh12
+- mwhyr
+- n1000
+- n1000_1
+- n1000_2
+- n1000_3
+- n1000_4
+- n100_249
+- n10_19
+- n20_49
+- n250_499
+- n500_999
+- n50_99
+- n5_9
+- n<5
+- naics22
+- naicsIndustry
+- name1
+- nationalIndustry
+- netRadiationCNR1
+- netRadiationEppley
+- netassetsorfundbalancesboyamt
+- netassetsorfundbalanceseoyamt
+- nextRenewalRegistrationDate
+- ngFillTypeCode
+- ngPSI
+- ngVehicleClass
+- noncashcontributionsamt
+- nonstore
+- notaryId
+- npsUnitName
+- nteeCd
+- numberOfFbiCritical
+- number_locations
+- number_of_contractors_1099
+- number_of_fullTime_employees
+- number_of_locations
+- number_of_partTime_employees
+- number_of_retailers
+- number_of_returns
+- objectID
+- obs_date
+- obs_datetime
+- obs_time
+- observationDate
+- obstruct_1
+- obstructio
+- occcode
+- occodetydesc
+- occodetype
+- occupancyrentutltsandmaintamt
+- occupiedHousingUnits
+- offense_group
+- offensesAgainstTheFamilyAndChildren
+- officerInBusiness
+- officerTitle
+- on_year
+- opaqueCloudCover
+- openDate
+- ord_num
+- order
+- orgName
+- organization
+- organizationid
+- organizationjurisdiction
+- organizationname
+- organizationtype
+- ori
+- otherCustomers
+- otherName
+- otherNamesOfOrganization
+- otherPrice
+- otherRevenue
+- otherSales
+- otherSocialMedia
+- otherexpensestotalamt
+- otherorganizationdsc
+- otherpurposesdesc
+- otherservices
+- outsideProfessionalFundraiserFees
+- ownerTypeCode
+- owner_uid
+- ownertitle
+- paidSolicitorEntityId
+- panelcode
+- par_ramp_c
+- part
+- part_time_employees
+- participatingLicenseNumber
+- participatingLicensee
+- paymentKeys
+- pbcAnnualBenefitReport
+- pbcBenefitReportSent
+- pbcPromotedBenefit
+- pbcRecordingMethod
+- pct10
+- pct25
+- pct75
+- pct90
+- pe
+- peDesc
+- peakWindSpeed10ft
+- peakWindSpeed10m
+- peakWindSpeed22ft
+- peakWindSpeed42ft
+- peakwindspeed2m
+- peakwindspeed80m
+- ped_signal
+- pen_class
+- pen_head_f
+- pen_power_
+- pending
+- percentChangeMonth
+- percentChangeYear
+- percentageBasedContract
+- percentageEventPriceRemitted
+- performedAddress
+- performedCity
+- performedState
+- performedZipCode
+- periodType
+- periodTypeDescription
+- periodYear
+- permanentlyRestrictedAssets
+- permitIssueDate
+- personType
+- personsPerHousehold
+- pfFilingReqCd
+- placeFips
+- placeFormed
+- point
+- popsource
+- popsrcdesc
+- position
+- post_note
+- postal_code
+- ppb_2ppb_c
+- ppb_access
+- ppb_aps
+- ppb_button
+- ppb_distan
+- ppb_landin
+- ppb_locati
+- ppb_mounti
+- ppb_orient
+- ppb_req
+- ppb_side_r
+- prcp
+- premiumGasPrice
+- preservationopenspaceind
+- preservationpublicuseind
+- primary_county
+- primmill
+- principalAddress1
+- principalCounty
+- principalProvince
+- principalZipcode
+- principaladdress1
+- principaladdress2
+- principalcity
+- principalcountry
+- principalstate
+- principalzipcode
+- printingpublicationspostageamt
+- proceedsNet
+- proceedsPercentToCharity
+- professionalfundraisingind
+- professionaltechnical
+- progdesc
+- program
+- programIdentifier
+- programName
+- programServiceRatio
+- programServiceRevenue
+- progtitle
+- proj_numbe
+- project_ty
+- prostitutionAndCommercializedVice
+- protectionnaturalhabitatind
+- provenance
+- province
+- prowag_cal
+- pub_agency_name
+- publicBenefitCorporation
+- publicFundsExpended
+- publicNotes
+- pybenefitspaidtomembersamt
+- pycontributionsgrantsamt
+- pygrantsandsimilarpaidamt
+- pyinvestmentincomeamt
+- pyotherexpensesamt
+- pyotherrevenueamt
+- pyprogramservicerevenueamt
+- pyrevenueslessexpensesamt
+- pysalariescompempbnftpaidamt
+- pytotalexpensesamt
+- pytotalproffndrsngexpnsamt
+- pytotalrevenueamt
+- qp1
+- qp1_nf
+- ramp_apex
+- ramp_lengt
+- ramp_photo
+- ramp_width
+- rampleng_1
+- ramplength
+- rampwidth1
+- rampwidth2
+- rape
+- ratetydesc
+- ratetype
+- realestate
+- rec_num
+- receiveddate
+- recordCountyFiling
+- recordCountyFilingId
+- recordIdDate
+- recordIdVerbatim
+- recordStatus
+- recordStatusCd
+- references
+- refpt
+- registrantOrganization
+- registrantTypeAbbr
+- registrationApprovedDate
+- registrationDate
+- registrationStatus
+- registrationStatusId
+- registrationYears
+- regularGasPrice
+- regulationcategories
+- relHumidity
+- relatedOrganizationTaxExempt
+- relatedOrganizationsName
+- relatedToOtherOrganization
+- relatedorganizationsamt
+- remoteNotary
+- renewalCycle
+- renewalExpirationDate
+- repealeddate
+- reportingPeriodBegin
+- reportingPeriodEnd
+- requestNo
+- resCust
+- resPrice
+- resRev
+- resSales
+- residentialCapacityAll
+- residentialCapacityOther
+- residentialCapacityPhotovoltaic
+- residentialCapacityWind
+- residentialCounty
+- residentialCustomerAll
+- residentialCustomerOther
+- residentialCustomerPhotovoltaic
+- residentialCustomerWind
+- residentialCustomers
+- residentialFromCO
+- residentialNotPairedBattery
+- residentialNotPairedEnergy
+- residentialNotPairedInstallations
+- residentialPairedBattery
+- residentialPairedEnergy
+- residentialPairedInstallations
+- residentialRevenue
+- residentialSales
+- residentialSoldBackAll
+- residentialSoldBackOther
+- residentialSoldBackPhotovoltaic
+- residentialSoldBackWind
+- residentialStorageCapacityPhotovoltaic
+- residentialStorageCustomerPhotovoltaic
+- residentialVirtualCapacityPhotovoltaic
+- residentialVirtualCustomerPhotovoltaic
+- respectiveObligations
+- response
+- restrictedAccess
+- retailtrades
+- returnstype
+- returntypecd
+- revenueAmt
+- revenueFromContibutions
+- revenueFromGovernment
+- revenueFromInvestments
+- revenueFromOther
+- revenueFromSales
+- revenueFromSpecialEvents
+- revenueTotal
+- right_flar
+- roadTypeId
+- road_ped_1
+- road_ped_x
+- robbery
+- rotor_dia
+- rotor_s_a
+- routeId
+- routeNumber
+- route_prim
+- route_seco
+- row_required
+- ruling
+- runLengthFrom
+- runLengthTo
+- runslope1
+- runslope2
+- runslope3
+- runslope4
+- runslope_c
+- salariesothercompemplbnftamt
+- schnum
+- school_level
+- school_name
+- sdoBuildingPermit
+- seaLevelPressure
+- secmill
+- section170hrqrstsfdind
+- sector
+- securedParty
+- segmID
+- sequencenumber
+- serialNumber
+- series
+- seriescode
+- seriesdesc
+- seriesttls
+- service fee footnote
+- serviceDesc
+- serviceFeeAllowed
+- serviceFeeAllowedFootnote
+- serviceType
+- sex
+- sexOffensesExceptRapeAndProstitutionAndCommercializedVice
+- signAdopt
+- signAlignmentId
+- signCodeDesc
+- signCountyId
+- signDateCreated
+- signDirectionId
+- signDistancePrevPost
+- signFusePlateIn
+- signId
+- signIsFolding
+- signLatitude
+- signLocationDateUpdated
+- signLocationInactive
+- signLocationInactiveDate
+- signLocationValidateDate
+- signLongMile
+- signLongitude
+- signMilePost
+- signNumPosts
+- signOwnerId
+- signPanelChangeDate
+- signPanelClassId
+- signPanelCluster
+- signPanelCode
+- signPanelCodeId
+- signPanelColorId
+- signPanelComments
+- signPanelCondition
+- signPanelDateCreated
+- signPanelDateUpdated
+- signPanelDirection
+- signPanelExists
+- signPanelGUId
+- signPanelHeight
+- signPanelId
+- signPanelInactive
+- signPanelInactiveDate
+- signPanelLegend
+- signPanelLegendColorId
+- signPanelNotes
+- signPanelNum
+- signPanelSpecLegend
+- signPanelStickerDate
+- signPanelStkMth
+- signPanelStkYr
+- signPanelStopXSt
+- signPanelValidateDate
+- signPanelWidth
+- signPanelZBar
+- signPositionId
+- signPostBaseQty
+- signPostBaseTypeId
+- signPostBrown
+- signPostComment
+- signPostCondition
+- signPostDateCreated
+- signPostDateUpdated
+- signPostExists
+- signPostGUId
+- signPostId
+- signPostInactive
+- signPostInactiveDate
+- signPostQty
+- signPostSupportFt
+- signPostSupportTypeId
+- signPostValidateDate
+- signTotalPnls
+- significantupdatedate
+- simpleAssault
+- snowdepth
+- snowdepthswe
+- snowfall
+- snowfallswe
+- solicitationAddress
+- solicitationApprovedDate
+- solicitationCity
+- solicitationNoticeType
+- solicitationState
+- solicitationType
+- solicitationUsedPhoneNumber
+- solicitationZipCode
+- solicitedNonTaxDeductibleGifts
+- solicitedassetssaleind
+- solicitorCompensationAssumptions
+- solicitorCompensationPercentageBased
+- solicitorEntityId
+- solicitorSignedDate
+- sortName
+- source_link
+- spId
+- specialty
+- specifiedPercentageGrossRevenueReceivedBySolicitor
+- sportshobbies
+- sqmi
+- st
+- st_name
+- st_num
+- staffhoursspentenforcementcnt
+- start
+- start_date
+- stateAbbreviation
+- stateFips
+- stateMinimumWageRate
+- stateOfficialFirstName
+- stateOfficialLastName
+- stateOfficialMiddleName
+- stateOfficialSection
+- stateOfficialTitle
+- state_name
+- statedGiftNotTaxDeductible
+- statementOfPurpose
+- stateseasementsheldcnt
+- stationId
+- stationName
+- stationPhone
+- statusCode
+- statusDate
+- stolenPropertyBuyingReceivingPossessing
+- stop_yie_1
+- stop_yield
+- streetNumber
+- streetSuffix
+- streetType
+- streetUnit
+- subCategory
+- subType
+- subcontractor
+- subcontractorName
+- subcontractorPaidDate
+- subcontractorPrimaryID
+- subcontractorZip
+- subsection
+- subsector
+- sumFederalLoans
+- sumFederalPLUS
+- sumFederalPell
+- sumOtherFederal
+- sumOtherLoans
+- sumOtherScholarships
+- sumStateAid
+- superSector
+- suppfem
+- supphe
+- suppheallwrkr
+- supplierId
+- supplierName
+- supportTypeDesc
+- supportedQueryFormats
+- supportsAdvancedQueries
+- supportsStatistics
+- supppw
+- supprecord
+- surface_fl
+- survey_date
+- suspicion
+- tax type
+- tax type name
+- taxExemptCode
+- taxExemptStatus
+- taxPeriod
+- taxexemptcode
+- taxperiodbegindt
+- taxperiodenddt
+- taxwage
+- technologycategories
+- temp2m
+- temp50m
+- temp80m
+- temporarilyRestrictedAssets
+- terminationFlag
+- text
+- thousandsDollars
+- title_en
+- tollCharged
+- tollType
+- topempav
+- topic
+- total
+- totalCapacityAll
+- totalCapacityOther
+- totalCapacityPhotovoltaic
+- totalCapacityWind
+- totalCloudCover
+- totalContributionsRaisedPreviousYear
+- totalCritical
+- totalCust
+- totalCustomerAll
+- totalCustomerOther
+- totalCustomerPhotovoltaic
+- totalCustomerWind
+- totalCustomers
+- totalExpensesPlusManagementGeneralDividedByContributions
+- totalFundraisingExpensesPreviousYear
+- totalHousingUnits
+- totalManagementGeneralExpensesPreviousYear
+- totalMonthlyExpenditures
+- totalMonthlyIncome
+- totalNonCritical
+- totalNotPairedBattery
+- totalNotPairedEnergy
+- totalNotPairedInstallations
+- totalPairedBattery
+- totalPairedEnergy
+- totalPairedInstallations
+- totalRev
+- totalRevenue
+- totalSoldBackAll
+- totalSoldBackOther
+- totalSoldBackPhotovoltaic
+- totalSoldBackWind
+- totalStorageCapacityPhotovoltaic
+- totalStorageCustomerPhotovoltaic
+- totalVirtualCapacityPhotovoltaic
+- totalVirtualCustomerPhotovoltaic
+- total_ht
+- totalacreagecnt
+- totalassetsboyamt
+- totalassetseoyamt
+- totaleasementscnt
+- totalemployeecnt
+- totalexpensesamt
+- totalfunctionalexpensesgrp_fundraisingamt
+- totalfunctionalexpensesgrp_managementandgeneralamt
+- totalfunctionalexpensesgrp_programservicesamt
+- totalfunctionalexpensesgrp_totalamt
+- totaljointcostsgrp_fundraisingamt
+- totaljointcostsgrp_managementandgeneralamt
+- totaljointcostsgrp_programservicesamt
+- totaljointcostsgrp_totalamt
+- totalliabilitiesboyamt
+- totalliabilitieseoyamt
+- totalrevenueamt
+- totalvolunteerscnt
+- totwage
+- towerDewPoint
+- towerDryBulbTemp
+- towerRelHumidity
+- towerTemp
+- towerWetBulbTemp
+- towerWindChill
+- tower_h
+- trademarkForm
+- tradenameDescription
+- tradenameForm
+- transCust
+- transPrice
+- transRev
+- transSales
+- transactionId
+- transactionType
+- transactionid
+- transportationCapacityAll
+- transportationCapacityOther
+- transportationCapacityPhotovoltaic
+- transportationCapacityWind
+- transportationCustomerAll
+- transportationCustomerOther
+- transportationCustomerPhotovoltaic
+- transportationCustomerWind
+- transportationCustomers
+- transportationNotPairedBattery
+- transportationNotPairedEnergy
+- transportationNotPairedInstallations
+- transportationPairedBattery
+- transportationPairedEnergy
+- transportationPairedInstallations
+- transportationPrice
+- transportationRevenue
+- transportationSales
+- transportationSoldBackAll
+- transportationSoldBackOther
+- transportationSoldBackPhotovoltaic
+- transportationSoldBackWind
+- transportationStorageCapacityPhotovoltaic
+- transportationStorageCustomerPhotovoltaic
+- transportationVirtualCapacityPhotovoltaic
+- transportationVirtualCustomerPhotovoltaic
+- transwrhse
+- treatmentDepth
+- turbulenceintensity10m
+- turbulenceintensity2m
+- turbulenceintensity80m
+- turning__1
+- turning__2
+- turning__3
+- turning__4
+- turning__5
+- turning__6
+- turning__7
+- turning__8
+- turning_sp
+- twitter
+- typeOfFacility
+- typeOfSystem
+- type_tower
+- typeoforganizationassocind
+- typeoforganizationcorpind
+- typeoforganizationotherind
+- typeoforganizationtrustind
+- udpct
+- udpctwage
+- udrnghipct
+- udrnglopct
+- udrngmean
+- unemprate
+- unique_id
+- unrestrictedAssests
+- updateTs
+- uploadSpeed
+- uploadStatus
+- upweallingIRCG3
+- upwellingIRPIR
+- upwellingQuantumLI190
+- upwellingShortwaveCM3
+- upwellingShortwaveLI200
+- upwellingShortwavePSP
+- urban
+- url
+- usdaFmid
+- useStandardizedQueries
+- useTaxAppliesTo
+- useTaxRate
+- usercategories
+- utilities
+- vacantHousingUnits
+- vagrancy
+- vandalism
+- variance_d
+- verifyLicense
+- verticalWindShear
+- violation
+- violationCode
+- violationPoints
+- violationStatus
+- violationType
+- votingmembersgoverningbodycnt
+- votingmembersindependentcnt
+- wagesource
+- wagesrdesc
+- water
+- weaponsCarryingPossessingEtc
+- whistleblowerpolicyind
+- wholesale
+- windSpeed
+- windchill
+- windchilltemp
+- winddirectionpkws
+- winddirectionpkws10m
+- winddirectionpkws2m
+- winddirectionpkws80m
+- wklyEarningsAll
+- wklyEarningsProd
+- wklyHrsAll
+- wklyHrsProd
+- wpctrelerr
+- writtenpolicymonitoringind
+- xslope1
+- xslope2
+- xslope_cal
+- youtube
+- zipCode4
+
+TOP 20 MOST FREQUENT PARAMETERS (EXCLUDING COMMON GROUPS):
+----------------------------------------
+1. the_geom: 266
+2. emp: 87
+3. laborforce: 78
+4. unemp: 78
+5. OBJECTID: 73
+6. Counties: 70
+7. County: 69
+8. r600t799: 65
+9. r400t599: 65
+10. geonum: 61
+11. Year: 56
+12. geoname: 55
+13. civ_ni_p: 52
+14. NAME: 44
+15. year: 42
+16. BLACK_NH: 39
+17. WHITE_NH: 39
+18. FEMALE: 39
+19. OTHER_NH: 39
+20. AGE65PLUS: 39

@@ -128,7 +128,8 @@ def extract_soda_parameters(json_file):
         with open(json_file, 'r') as f:
             data = json.load(f)
         
-        parameters = []
+        # Use a set to ensure unique parameters per file
+        unique_parameters = set()
         dataset_id = data.get('dataset_id', 'unknown')
         domain = data.get('domain', 'unknown')
         
@@ -139,7 +140,8 @@ def extract_soda_parameters(json_file):
             for column in data['columns']:
                 if isinstance(column, dict) and 'name' in column:
                     param_name = column['name']
-                    parameters.append(param_name)
+                    # Add to set instead of list to ensure uniqueness
+                    unique_parameters.add(param_name)
                     param_sources[param_name].append({
                         'dataset': dataset_id,
                         'domain': domain,
@@ -149,6 +151,9 @@ def extract_soda_parameters(json_file):
                     })
                     
                     logging.debug(f"Extracted parameter '{param_name}' from dataset {dataset_id} on domain {domain}")
+        
+        # Convert set to list for further processing
+        parameters = list(unique_parameters)
         
         # Log parameters that appear frequently
         param_count = Counter(parameters)
@@ -180,7 +185,8 @@ def extract_soda_parameters(json_file):
 
 def extract_arcgis_parameters(json_file):
     """Extract parameter names from ArcGIS metadata JSON file."""
-    parameters = []
+    # Use a set to ensure unique parameters per file
+    unique_parameters = set()
     try:
         with open(json_file, 'r') as f:
             data = json.load(f)
@@ -199,12 +205,15 @@ def extract_arcgis_parameters(json_file):
                         if 'name' in field and 'type' in field:
                             param_name = field['name']
                             param_type = field['type']
-                            parameters.append(param_name)
-                            logging.info(f"Extracted ArcGIS parameter: {param_name} ({param_type}) from {os.path.basename(json_file)}")
+                            # Add to set instead of list to ensure uniqueness
+                            unique_parameters.add(param_name)
+                            logging.debug(f"Found parameter: {param_name} ({param_type}) in {os.path.basename(json_file)}")
     except Exception as e:
         logging.error(f"Error extracting parameters from {json_file}: {str(e)}")
     
-    logging.info(f"Extracted {len(parameters)} total parameters from {os.path.basename(json_file)}")
+    # Convert set to list for return
+    parameters = list(unique_parameters)
+    logging.info(f"Extracted {len(parameters)} unique parameters from {os.path.basename(json_file)}")
     return parameters
 
 def analyze_folder(folder, extract_func, folders, api_type):
@@ -247,26 +256,29 @@ def analyze_folder(folder, extract_func, folders, api_type):
 
 def generate_visualizations(param_counts, folders, api_type):
     """Generate visualizations for parameter analysis."""
-    # Save all parameters to CSV
+    # Convert to DataFrame and exclude parameters with exactly 83 occurrences
     all_params_df = pd.DataFrame(param_counts.items(), columns=['Parameter', 'Count'])
-    all_params_df = all_params_df.sort_values('Count', ascending=False)
+    filtered_params_df = all_params_df[all_params_df['Count'] != 83].sort_values('Count', ascending=False)
+    
+    # Save all parameters to CSV
     all_params_csv = os.path.join(folders['data'], f"all_{api_type.lower()}_parameters.csv")
     all_params_df.to_csv(all_params_csv, index=False)
     logging.info(f"Saved all parameters to {all_params_csv}")
     
-    # Generate word cloud
-    wordcloud = WordCloud(width=1200, height=800, background_color='white', max_words=300).generate_from_frequencies(param_counts)
+    # Generate word cloud (using filtered parameters)
+    filtered_param_counts = dict(zip(filtered_params_df['Parameter'], filtered_params_df['Count']))
+    wordcloud = WordCloud(width=1200, height=800, background_color='white', max_words=300).generate_from_frequencies(filtered_param_counts)
     plt.figure(figsize=(12, 8))
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis('off')
-    plt.title(f'Most Common {api_type} Parameters')
+    plt.title(f'Most Common {api_type} Parameters (Excluding 83-Occurrence Parameters)')
     wordcloud_file = os.path.join(folders['visualizations'], f"{api_type.lower()}_parameter_wordcloud.png")
     plt.savefig(wordcloud_file, dpi=300, bbox_inches='tight')
     plt.close()
     logging.info(f"Saved word cloud to {wordcloud_file}")
     
-    # Generate bar chart for top 30 parameters
-    top_params = all_params_df.head(30)
+    # Generate bar chart for top 30 parameters (using filtered parameters)
+    top_params = filtered_params_df.head(30)
     top_params_csv = os.path.join(folders['data'], f"top_{api_type.lower()}_parameters.csv")
     top_params.to_csv(top_params_csv, index=False)
     logging.info(f"Saved top 30 parameters to {top_params_csv}")
@@ -274,7 +286,7 @@ def generate_visualizations(param_counts, folders, api_type):
     # Create bar chart
     plt.figure(figsize=(12, 10))
     ax = sns.barplot(x='Count', y='Parameter', data=top_params, palette='viridis')
-    plt.title(f'Top 30 {api_type} Parameters')
+    plt.title(f'Top 30 {api_type} Parameters (Excluding 83-Occurrence Parameters)')
     plt.xlabel('Frequency')
     plt.ylabel('Parameter Name')
     plt.tight_layout()
@@ -286,7 +298,7 @@ def generate_visualizations(param_counts, folders, api_type):
     # Create interactive bar chart with Plotly
     try:
         fig = px.bar(top_params, x='Count', y='Parameter', 
-                    title=f'Top 30 {api_type} Parameters',
+                    title=f'Top 30 {api_type} Parameters (Excluding 83-Occurrence Parameters)',
                     labels={'Count': 'Frequency', 'Parameter': 'Parameter Name'},
                     color='Count', color_continuous_scale='Viridis')
         fig.update_layout(yaxis={'categoryorder': 'total ascending'})
@@ -299,9 +311,9 @@ def generate_visualizations(param_counts, folders, api_type):
     
     # Create horizontal bar chart for parameter distribution
     plt.figure(figsize=(12, 8))
-    counts = [count for param, count in param_counts.most_common(100)]
+    counts = filtered_params_df['Count'].values[:100]  # Use filtered parameters
     plt.hist(counts, bins=30, color='skyblue', edgecolor='black')
-    plt.title(f'{api_type} Parameter Distribution')
+    plt.title(f'{api_type} Parameter Distribution (Excluding 83-Occurrence Parameters)')
     plt.xlabel('Frequency')
     plt.ylabel('Number of Parameters')
     plt.grid(axis='y', alpha=0.75)
@@ -312,12 +324,12 @@ def generate_visualizations(param_counts, folders, api_type):
     
     # Create treemap visualization
     plt.figure(figsize=(12, 8))
-    top_params_for_treemap = all_params_df.head(50)
+    top_params_for_treemap = filtered_params_df.head(50)  # Use filtered parameters
     squarify.plot(sizes=top_params_for_treemap['Count'], 
                   label=top_params_for_treemap['Parameter'], 
                   alpha=0.8, color=plt.cm.viridis(np.linspace(0, 1, len(top_params_for_treemap))))
     plt.axis('off')
-    plt.title(f'Top 50 {api_type} Parameters Treemap')
+    plt.title(f'Top 50 {api_type} Parameters Treemap (Excluding 83-Occurrence Parameters)')
     treemap_file = os.path.join(folders['visualizations'], f"{api_type.lower()}_parameter_treemap.png")
     plt.savefig(treemap_file, dpi=300, bbox_inches='tight')
     plt.close()
@@ -326,7 +338,7 @@ def generate_visualizations(param_counts, folders, api_type):
     # Create interactive treemap with Plotly
     try:
         fig = px.treemap(top_params_for_treemap, path=['Parameter'], values='Count',
-                        title=f'Top 50 {api_type} Parameters Treemap',
+                        title=f'Top 50 {api_type} Parameters Treemap (Excluding 83-Occurrence Parameters)',
                         color='Count', color_continuous_scale='RdBu')
         interactive_treemap_file = os.path.join(folders['interactive'], f"{api_type.lower()}_parameter_treemap_interactive.html")
         fig.write_html(interactive_treemap_file)
@@ -337,12 +349,21 @@ def generate_visualizations(param_counts, folders, api_type):
 
 def generate_report(param_counter, file_count, folders, api_type):
     """Generate a markdown report summarizing the analysis."""
-    # Get top 100 parameters for the report
-    top_params = pd.DataFrame(param_counter.most_common(100), columns=['Parameter', 'Count'])
+    # Get parameters for the report
+    all_params = pd.DataFrame(param_counter.most_common(), columns=['Parameter', 'Count'])
     total_count = sum(param_counter.values())
     
     # Add percentage column
-    top_params['Percentage'] = (top_params['Count'] / total_count * 100).round(2)
+    all_params['Percentage'] = (all_params['Count'] / len(param_counter) * 100).round(2)
+    
+    # Find frequencies with 10 or more parameters
+    frequency_groups = all_params.groupby('Count')['Parameter'].agg(list).reset_index()
+    frequency_groups['param_count'] = frequency_groups['Parameter'].apply(len)
+    large_groups = frequency_groups[frequency_groups['param_count'] >= 10].sort_values('Count', ascending=False)
+    
+    # Remove parameters that are in large groups from the main table
+    excluded_counts = set(large_groups['Count'].values)
+    other_params = all_params[~all_params['Count'].isin(excluded_counts)].copy()
     
     # Create markdown report
     report_file = os.path.join(folders['reports'], f"{api_type.lower()}_parameter_report.md")
@@ -353,7 +374,35 @@ def generate_report(param_counter, file_count, folders, api_type):
         f.write(f"- Total parameters found: {total_count:,}\n")
         f.write(f"- Unique parameter names: {len(param_counter):,}\n\n")
         
-        f.write(f"## Visualizations\n\n")
+        # Add sections for large frequency groups
+        if not large_groups.empty:
+            f.write(f"## Parameter Groups with Common Frequencies\n\n")
+            for _, group in large_groups.iterrows():
+                count = group['Count']
+                params = group['Parameter']
+                param_count = len(params)
+                
+                f.write(f"### Parameters Occurring Exactly {count} Times ({param_count} parameters)\n\n")
+                f.write("| Parameter | Count | Percentage |\n")
+                f.write("|-----------|-------|------------|\n")
+                
+                percentage = round((count / total_count * 100), 2)
+                for param in sorted(params):
+                    f.write(f"| {param} | {count:,} | {percentage}% |\n")
+                
+                f.write("\n")
+        
+        f.write(f"## Top 20 Most Frequent Parameters (Excluding Common Groups)\n\n")
+        f.write("| Rank | Parameter | Count | Percentage |\n")
+        f.write("|------|-----------|-------|------------|\n")
+        
+        # Write top 20 parameters (excluding those in large groups)
+        for i, (param, count, percentage) in enumerate(zip(other_params['Parameter'][:20], 
+                                                         other_params['Count'][:20], 
+                                                         other_params['Percentage'][:20]), 1):
+            f.write(f"| {i} | {param} | {count:,} | {percentage}% |\n")
+        
+        f.write(f"\n## Visualizations\n\n")
         f.write(f"The following visualizations were generated:\n\n")
         f.write(f"- Word Cloud: `../visualizations/{api_type.lower()}_parameter_wordcloud.png`\n")
         f.write(f"- Top Parameters Bar Chart: `../visualizations/{api_type.lower()}_top_parameters.png`\n")
@@ -363,16 +412,9 @@ def generate_report(param_counter, file_count, folders, api_type):
         f.write(f"## Interactive Visualizations\n\n")
         f.write(f"Interactive versions of the visualizations are available at:\n\n")
         f.write(f"- Interactive Bar Chart: `../interactive/{api_type.lower()}_top_parameters_interactive.html`\n")
-        f.write(f"- Interactive Treemap: `../interactive/{api_type.lower()}_parameter_treemap_interactive.html`\n\n")
-        
-        f.write(f"## Top 100 Parameters\n\n")
-        f.write("| Rank | Parameter | Count | Percentage |\n")
-        f.write("|------|-----------|-------|------------|\n")
-        
-        for i, (param, count, percentage) in enumerate(zip(top_params['Parameter'], top_params['Count'], top_params['Percentage']), 1):
-            f.write(f"| {i} | {param} | {count:,} | {percentage}% |\n")
+        f.write(f"- Interactive Treemap: `../interactive/{api_type.lower()}_parameter_treemap_interactive.html`\n")
     
-    # Create a summary text file with the top 100 parameters
+    # Create a summary text file
     summary_file = os.path.join(folders['reports'], f"{api_type.lower()}_parameter_summary.txt")
     with open(summary_file, 'w') as f:
         f.write(f"{api_type} API PARAMETER ANALYSIS SUMMARY\n")
@@ -381,11 +423,22 @@ def generate_report(param_counter, file_count, folders, api_type):
         f.write(f"Total parameters found: {total_count:,}\n")
         f.write(f"Unique parameter names: {len(param_counter):,}\n\n")
         
-        f.write("TOP 100 PARAMETERS:\n")
-        f.write("-" * 40 + "\n\n")
+        if not large_groups.empty:
+            f.write("PARAMETER GROUPS WITH COMMON FREQUENCIES:\n")
+            f.write("-" * 40 + "\n")
+            for _, group in large_groups.iterrows():
+                count = group['Count']
+                params = group['Parameter']
+                param_count = len(params)
+                f.write(f"\nParameters occurring {count} times ({param_count} parameters):\n")
+                for param in sorted(params):
+                    f.write(f"- {param}\n")
+            f.write("\n")
         
-        for i, (param, count, percentage) in enumerate(zip(top_params['Parameter'], top_params['Count'], top_params['Percentage']), 1):
-            f.write(f"{i}. {param}: {count:,} ({percentage}%)\n")
+        f.write("TOP 20 MOST FREQUENT PARAMETERS (EXCLUDING COMMON GROUPS):\n")
+        f.write("-" * 40 + "\n")
+        for i, (param, count) in enumerate(zip(other_params['Parameter'][:20], other_params['Count'][:20]), 1):
+            f.write(f"{i}. {param}: {count:,}\n")
     
     logging.info(f"Generated report files: {report_file}, {summary_file}")
 
