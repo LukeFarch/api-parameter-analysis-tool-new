@@ -15,6 +15,10 @@ A comprehensive tool for analyzing parameters from SODA and ArcGIS APIs, extract
   - [ArcGIS API Analysis](#arcgis-api-analysis)
   - [Parameter Frequency Analysis](#parameter-frequency-analysis)
 - [Visualizations](#visualizations)
+- [Top 50 Parameters](#top-50-parameters)
+- [Generated Reports](#generated-reports)
+  - [How to View Reports](#how-to-view-reports)
+  - [Report Locations](#report-locations)
 
 ## Overview
 
@@ -72,6 +76,14 @@ The API Parameter Analysis Tool is designed to help developers and analysts unde
    
    # Analyze and visualize
    python analyze_apis.py
+   ```
+
+3. View generated reports:
+   ```bash
+   # Open markdown reports in your preferred markdown viewer
+   # For example, using VS Code:
+   code output/soda/reports/soda_parameter_analysis.md
+   code output/arcgis/reports/arcgis_parameter_analysis.md
    ```
 
 ## Project Structure
@@ -448,4 +460,31 @@ The above visualization shows the distribution of naming conventions (PascalCase
 | POP100 | 5 |
 | HU100 | 5 |
 | REGION | 5 |
-| Mile_Post | 5 | 
+| Mile_Post | 5 |
+
+## Generated Reports
+
+The tool generates comprehensive markdown (.md) reports that provide detailed analysis of the API parameters. These reports contain:
+
+- **Statistical Summaries**: Overview of parameter counts, frequencies, and distributions
+- **Parameter Frequency Tables**: Detailed tables showing the most common parameters
+- **Naming Convention Analysis**: Breakdown of parameter naming patterns (snake_case, camelCase, etc.)
+- **Data Type Analysis**: Distribution of parameter data types
+- **Parameter Co-occurrence Patterns**: Groups of parameters that frequently appear together
+
+### How to View Reports
+
+The markdown reports can be viewed in several ways:
+
+1. **Text Editor**: Any text editor can open the .md files, but formatting will be plain text
+2. **Markdown Viewers**: Applications like VS Code, Typora, or GitHub's web interface provide formatted views
+3. **Convert to HTML**: Use tools like `pandoc` to convert to HTML for browser viewing:
+   ```bash
+   pandoc output/soda/reports/soda_parameter_analysis.md -o soda_report.html
+   ```
+4. **GitHub**: If you push the reports to a GitHub repository, they will be automatically rendered with proper formatting
+
+### Report Locations
+
+- SODA API Reports: `output/soda/reports/`
+- ArcGIS API Reports: `output/arcgis/reports/` 
