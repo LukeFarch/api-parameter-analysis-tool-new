@@ -323,8 +323,22 @@ These visualizations show the distribution of different naming conventions (came
 #### SODA Parameters
 ![SODA Parameter Patterns](output/soda/visualizations/soda_parameter_patterns.png)
 
+The above visualization shows the distribution of data types in SODA parameters.
+
+#### SODA Naming Conventions
+![SODA Naming Conventions](output/soda/visualizations/soda_naming_conventions.png)
+
+The above visualization shows the distribution of naming conventions (snake_case, camelCase, UPPERCASE, etc.) in SODA parameters.
+
 #### ArcGIS Parameters
 ![ArcGIS Parameter Patterns](output/arcgis/visualizations/arcgis_parameter_patterns.png)
+
+The above visualization shows the distribution of data types in ArcGIS parameters.
+
+#### ArcGIS Naming Conventions
+![ArcGIS Naming Conventions](output/arcgis/visualizations/arcgis_naming_conventions.png)
+
+The above visualization shows the distribution of naming conventions (PascalCase, UPPERCASE, snake_case, etc.) in ArcGIS parameters.
 
 ## Appendix: Top 100 Parameters
 
