@@ -83,7 +83,7 @@ The API Parameter Analysis Tool is designed to help developers and analysts unde
 ├── MetaDataArcGis/            # Extracted ArcGIS metadata
 ├── output/                    # Analysis output
 │   ├── soda/                  # SODA analysis results
-│   └── arcgis/                # ArcGIS analysis results
+│   └── arcgis/               # ArcGIS analysis results
 ├── scripts/
 │   ├── soda.py               # SODA data collection
 │   ├── arcgis.py             # ArcGIS data collection
@@ -100,8 +100,11 @@ The API Parameter Analysis Tool is designed to help developers and analysts unde
 - Total SODA metadata files analyzed: 676
 - Total parameters found: 29,477
 - Unique parameter names: 6,161
+- Average parameters per API: 43.6
+- Most common parameter: "the_geom" (found in 266 APIs)
+- Geographic data presence: 39.3% of APIs include geographic parameters
 
-#### Top 20 SODA Parameters
+#### Top 50 SODA Parameters
 | Rank | Parameter | Count | Percentage |
 |------|-----------|-------|------------|
 | 1 | the_geom | 266 | 0.90% |
@@ -124,6 +127,36 @@ The API Parameter Analysis Tool is designed to help developers and analysts unde
 | 18 | vac_hu | 83 | 0.28% |
 | 19 | owned | 83 | 0.28% |
 | 20 | rented | 83 | 0.28% |
+| 21 | pop25plus | 83 | 0.28% |
+| 22 | nohsdipl | 83 | 0.28% |
+| 23 | hsgrad_sc | 83 | 0.28% |
+| 24 | bachl_hghr | 83 | 0.28% |
+| 25 | med_hh_inc | 83 | 0.28% |
+| 26 | med_fam_in | 83 | 0.28% |
+| 27 | per_cap_in | 83 | 0.28% |
+| 28 | med_c_rent | 83 | 0.28% |
+| 29 | med_g_rent | 83 | 0.28% |
+| 30 | rnt_occ_hu | 83 | 0.28% |
+| 31 | rntl400 | 83 | 0.28% |
+| 32 | r800t999 | 83 | 0.28% |
+| 33 | r1000t1249 | 83 | 0.28% |
+| 34 | r1250t1499 | 83 | 0.28% |
+| 35 | r1500t1999 | 83 | 0.28% |
+| 36 | r2000pl | 83 | 0.28% |
+| 37 | rnocshr | 83 | 0.28% |
+| 38 | citz_birth | 83 | 0.28% |
+| 39 | citz_nat | 83 | 0.28% |
+| 40 | not_citz | 83 | 0.28% |
+| 41 | born_in_co | 83 | 0.28% |
+| 42 | brn_oth_st | 83 | 0.28% |
+| 43 | ntv_b_o_us | 83 | 0.28% |
+| 44 | foreign_b | 83 | 0.28% |
+| 45 | pop_1p | 83 | 0.28% |
+| 46 | same_house | 83 | 0.28% |
+| 47 | same_cnty | 83 | 0.28% |
+| 48 | same_state | 83 | 0.28% |
+| 49 | diff_state | 83 | 0.28% |
+| 50 | frm_abroad | 83 | 0.28% |
 
 ### ArcGIS API Analysis
 
@@ -131,8 +164,11 @@ The API Parameter Analysis Tool is designed to help developers and analysts unde
 - Total ArcGIS metadata files analyzed: 151
 - Total parameters found: 7,367
 - Unique parameter names: 2,851
+- Average parameters per API: 48.8
+- Most common parameter: "Shape__Length" (found in 511 APIs)
+- Geographic data presence: 98.7% of APIs include shape parameters
 
-#### Top 20 ArcGIS Parameters
+#### Top 50 ArcGIS Parameters
 | Rank | Parameter | Count | Percentage |
 |------|-----------|-------|------------|
 | 1 | Shape__Length | 511 | 6.94% |
@@ -155,6 +191,36 @@ The API Parameter Analysis Tool is designed to help developers and analysts unde
 | 18 | COMMENTS | 29 | 0.39% |
 | 19 | SOURCE | 25 | 0.34% |
 | 20 | CITY | 23 | 0.31% |
+| 21 | GlobalID | 21 | 0.29% |
+| 22 | POPULATION | 19 | 0.26% |
+| 23 | Species | 19 | 0.26% |
+| 24 | SQMI | 18 | 0.24% |
+| 25 | TAG_VALUE | 18 | 0.24% |
+| 26 | OWNER | 17 | 0.23% |
+| 27 | AcresGISCa | 14 | 0.19% |
+| 28 | SqMilesGIS | 14 | 0.19% |
+| 29 | POP_SQMI | 14 | 0.19% |
+| 30 | tile | 14 | 0.19% |
+| 31 | path | 14 | 0.19% |
+| 32 | STATE_ABBR | 13 | 0.18% |
+| 33 | STATE_FIPS | 13 | 0.18% |
+| 34 | FIPS | 13 | 0.18% |
+| 35 | info_ | 13 | 0.18% |
+| 36 | GEOID | 12 | 0.16% |
+| 37 | url | 12 | 0.16% |
+| 38 | lastupdate | 11 | 0.15% |
+| 39 | SHAPE__Area | 11 | 0.15% |
+| 40 | SHAPE__Length | 11 | 0.15% |
+| 41 | FUNCSTAT | 10 | 0.14% |
+| 42 | STATE_NAME | 10 | 0.14% |
+| 43 | COUNTY_FIPS | 10 | 0.14% |
+| 44 | lgid | 10 | 0.14% |
+| 45 | lgname | 10 | 0.14% |
+| 46 | lgtypeid | 10 | 0.14% |
+| 47 | lgstatusid | 10 | 0.14% |
+| 48 | source | 10 | 0.14% |
+| 49 | mail_address | 10 | 0.14% |
+| 50 | alt_address | 10 | 0.14% |
 
 ## Visualizations
 
@@ -165,10 +231,6 @@ The tool generates several types of visualizations to help understand parameter 
 #### Word Clouds
 ![SODA Parameter Word Cloud](example_visuals/soda_parameter_wordcloud.png)
 ![ArcGIS Parameter Word Cloud](example_visuals/arcgis_parameter_wordcloud.png)
-
-#### Parameter Distribution
-![SODA Parameter Distribution](example_visuals/soda_parameter_distribution.png)
-![ArcGIS Parameter Distribution](example_visuals/arcgis_parameter_distribution.png)
 
 #### Top Parameters
 ![SODA Top Parameters](example_visuals/soda_top_parameters.png)
