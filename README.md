@@ -107,7 +107,8 @@ The API Parameter Analysis Tool is designed to help developers and analysts unde
 #### Note on Parameter Filtering
 During the analysis, we identified two significant groups of parameters that appeared with unusually high frequencies (83 and 77 occurrences). These parameters represent standardized demographic, housing, income, and age-related fields that are consistently used across multiple datasets. By filtering out these common groups from our top parameters table, we can better highlight the diverse and unique parameters that characterize different types of datasets. This approach prevents these standardized fields from dominating the frequency analysis and allows us to surface other important parameters that might otherwise be obscured.
 
-#### Top 20 Most Frequent Parameters (Excluding Parameters with 83 and 77 Occurrences)
+#### Top Parameters Analysis
+##### Frequency Table
 | Parameter | Count | % of Total |
 |-----------|-------|------------|
 | the_geom | 266 | 4.32% |
@@ -131,12 +132,12 @@ During the analysis, we identified two significant groups of parameters that app
 | date | 68 | 1.10% |
 | category | 67 | 1.09% |
 
-#### Top 30 Parameters Visualization
+##### Visualization
 ![Top 30 SODA Parameters (Excluding 83/77 Occurrences)](output/soda/visualizations/soda_top_parameters.png)
 
 The bar chart above visualizes the top 30 most frequent parameters in the SODA API datasets, excluding parameters that occur exactly 83 or 77 times. This visualization helps highlight the diverse range of commonly used parameters across different datasets while filtering out the standardized demographic and socioeconomic parameters.
 
-#### Parameters with Common Frequencies
+#### Parameter Groups Analysis
 
 #### Parameters Occurring 83 Times
 The following parameters each appear exactly 83 times, representing 1.35% of all parameters:
@@ -210,14 +211,15 @@ The following parameters each appear exactly 77 times, representing 1.25% of all
 
 ### ArcGIS API Analysis
 
-### Overview
+#### Overview
 - Total parameters analyzed: 3,715
 - Unique parameter names: 2,851
 - Average occurrences per parameter: 1.3
 - Median occurrences: 1
 - Mode (most common frequency): 1
 
-### Top 20 Most Frequent Parameters
+#### Top Parameters Analysis
+##### Frequency Table
 | Parameter | Count | % of Total |
 |-----------|-------|------------|
 | OBJECTID | 94 | 3.30% |
@@ -241,7 +243,12 @@ The following parameters each appear exactly 77 times, representing 1.25% of all
 | Highway | 8 | 0.28% |
 | EndRefPoint | 8 | 0.28% |
 
-### Parameter Groups with Common Frequencies
+##### Visualization
+![ArcGIS Top Parameters](output/arcgis/visualizations/arcgis_top_parameters.png)
+
+The bar chart above shows the distribution of the most frequent parameters in the ArcGIS API datasets. Note that ArcGIS parameters tend to be more standardized across datasets, with geometric and identification parameters being the most common.
+
+#### Parameter Groups Analysis
 
 The following section shows groups of parameters that frequently appear together in the same datasets. An important note about the counts:
 
@@ -278,28 +285,34 @@ Location and population statistics that appear together:
 
 This grouping helps identify standardized parameter sets that are commonly used together in ArcGIS datasets. The higher total occurrence counts are due to these parameters appearing in multiple layers within each dataset, which is a common practice in GIS data where the same schema is applied to different geographic levels or views of the data.
 
-## Visualizations
+## Additional Visualizations
 
-The tool generates several types of visualizations to help understand parameter usage patterns:
+### Word Clouds
+These word clouds provide a visual representation of parameter frequency across all datasets:
 
-### Static Visualizations
+#### SODA Parameters
+![SODA Parameter Word Cloud](output/soda/visualizations/soda_parameter_wordcloud.png)
 
-#### Word Clouds
-![SODA Parameter Word Cloud](example_visuals/soda_parameter_wordcloud.png)
-![ArcGIS Parameter Word Cloud](example_visuals/arcgis_parameter_wordcloud.png)
+#### ArcGIS Parameters
+![ArcGIS Parameter Word Cloud](output/arcgis/visualizations/arcgis_parameter_wordcloud.png)
 
-#### Top Parameters
-![SODA Top Parameters](example_visuals/soda_top_parameters.png)
-![ArcGIS Top Parameters](example_visuals/arcgis_top_parameters.png)
+### Parameter Distribution Treemaps
+These treemaps show the hierarchical distribution of parameter frequencies:
 
-#### Parameter Treemaps
-![SODA Parameter Treemap](example_visuals/soda_parameter_treemap.png)
-![ArcGIS Parameter Treemap](example_visuals/arcgis_parameter_treemap.png)
+#### SODA Parameters
+![SODA Parameter Treemap](output/soda/visualizations/soda_parameter_treemap.png)
+
+#### ArcGIS Parameters
+![ArcGIS Parameter Treemap](output/arcgis/visualizations/arcgis_parameter_treemap.png)
 
 ### Interactive Visualizations
 
-The tool also generates interactive visualizations that can be found in the `output/interactive` directory after running the analysis:
+The tool also generates interactive versions of these visualizations that can be found in the following directories:
 
+- SODA Interactive Visualizations: `output/soda/interactive/`
+- ArcGIS Interactive Visualizations: `output/arcgis/interactive/`
+
+These interactive visualizations include:
 - Interactive Bar Charts
 - Interactive Treemaps
 - Parameter Relationship Networks 
