@@ -17,7 +17,7 @@ import os
 import json
 import pandas as pd
 import matplotlib.pyplot as plt
-from collections import Counter
+from collections import Counter, defaultdict
 from wordcloud import WordCloud
 import seaborn as sns
 import logging
@@ -62,25 +62,121 @@ logging.basicConfig(
     ]
 )
 
-def extract_soda_parameters(json_file):
-    """Extract parameter names from SODA metadata JSON file."""
-    parameters = []
+def test_soda_metadata_structure(json_file):
+    """Test and log the structure of SODA metadata files."""
     try:
         with open(json_file, 'r') as f:
             data = json.load(f)
+        
+        # Log basic file info
+        logging.info(f"\nAnalyzing structure of {os.path.basename(json_file)}")
+        logging.info("=" * 50)
+        
+        # Check metadata structure
+        if not isinstance(data, dict):
+            logging.error(f"Invalid root structure in {json_file}. Expected dict, got {type(data)}")
+            return False
             
-        # Check if 'columns' exists and is a list
+        # Check for required fields
+        required_fields = ['file_path', 'base_url', 'dataset_id', 'domain', 'metadata']
+        missing_fields = [field for field in required_fields if field not in data]
+        if missing_fields:
+            logging.error(f"Missing required fields in {json_file}: {missing_fields}")
+            return False
+        
+        # Check columns structure
+        if 'columns' not in data:
+            logging.error(f"No 'columns' field found in {json_file}")
+            return False
+            
+        if not isinstance(data['columns'], list):
+            logging.error(f"'columns' is not a list in {json_file}")
+            return False
+        
+        # Analyze column structure
+        param_count = 0
+        column_issues = []
+        
+        for i, column in enumerate(data['columns']):
+            if not isinstance(column, dict):
+                column_issues.append(f"Column {i} is not a dictionary")
+                continue
+                
+            if 'name' not in column:
+                column_issues.append(f"Column {i} missing 'name' field")
+            else:
+                param_count += 1
+                
+            # Log column details for debugging
+            logging.debug(f"Column {i} structure: {list(column.keys())}")
+        
+        # Log findings
+        logging.info(f"Total parameters found: {param_count}")
+        if column_issues:
+            logging.warning(f"Column structure issues in {json_file}:")
+            for issue in column_issues:
+                logging.warning(f"- {issue}")
+        
+        return True
+    except Exception as e:
+        logging.error(f"Error analyzing {json_file}: {str(e)}")
+        return False
+
+def extract_soda_parameters(json_file):
+    """Extract parameters from SODA API metadata."""
+    try:
+        with open(json_file, 'r') as f:
+            data = json.load(f)
+        
+        parameters = []
+        dataset_id = data.get('dataset_id', 'unknown')
+        domain = data.get('domain', 'unknown')
+        
+        # Track parameter sources for debugging
+        param_sources = defaultdict(list)
+        
         if 'columns' in data and isinstance(data['columns'], list):
             for column in data['columns']:
-                if 'name' in column:
+                if isinstance(column, dict) and 'name' in column:
                     param_name = column['name']
                     parameters.append(param_name)
-                    logging.info(f"Extracted SODA parameter: {param_name} from {os.path.basename(json_file)}")
+                    param_sources[param_name].append({
+                        'dataset': dataset_id,
+                        'domain': domain,
+                        'field_type': column.get('dataTypeName', 'unknown'),
+                        'description': column.get('description', 'none'),
+                        'position': column.get('position', 0)
+                    })
+                    
+                    logging.debug(f"Extracted parameter '{param_name}' from dataset {dataset_id} on domain {domain}")
+        
+        # Log parameters that appear frequently
+        param_count = Counter(parameters)
+        frequent_params = {p: c for p, c in param_count.items() if c >= 80}  # Track params appearing 80+ times
+        if frequent_params:
+            logging.info(f"Frequent parameters in {dataset_id} ({domain}):")
+            for param, count in frequent_params.items():
+                logging.info(f"  - {param}: {count} occurrences")
+        
+        # Save parameter sources for analysis
+        output_dir = os.path.join('output', 'soda', 'parameter_sources')
+        os.makedirs(output_dir, exist_ok=True)
+        
+        for param, sources in param_sources.items():
+            if len(sources) >= 80:  # Track sources for frequently occurring parameters
+                source_file = os.path.join(output_dir, f"{param.replace('/', '_')}_sources.json")
+                with open(source_file, 'w') as f:
+                    json.dump({
+                        'parameter': param,
+                        'occurrence_count': len(sources),
+                        'sources': sources
+                    }, f, indent=2)
+                logging.info(f"Saved source information for frequent parameter '{param}' to {source_file}")
+        
+        return parameters
     except Exception as e:
-        logging.error(f"Error extracting parameters from {json_file}: {str(e)}")
-    
-    logging.info(f"Extracted {len(parameters)} total parameters from {os.path.basename(json_file)}")
-    return parameters
+        logging.error(f"Error processing {json_file}: {str(e)}")
+        return []
 
 def extract_arcgis_parameters(json_file):
     """Extract parameter names from ArcGIS metadata JSON file."""
@@ -425,6 +521,64 @@ def analyze_url_patterns(metadata_folder, folders, api_type):
     
     logging.info(f"Saved URL patterns to {url_patterns_file}")
 
+def analyze_parameter_frequency(param_counter, folders, api_type):
+    """Analyze and log the frequency distribution of parameters."""
+    # Get frequency distribution
+    frequencies = Counter(param_counter.values())
+    
+    # Sort by frequency count (how many parameters have each occurrence count)
+    sorted_freq = sorted(frequencies.items(), key=lambda x: x[1], reverse=True)
+    
+    # Create frequency analysis report
+    report_file = os.path.join(folders['reports'], f"{api_type.lower()}_frequency_analysis.md")
+    with open(report_file, 'w') as f:
+        f.write(f"# {api_type} Parameter Frequency Analysis\n\n")
+        f.write("## Frequency Distribution\n\n")
+        f.write("This analysis shows how many parameters appear a certain number of times.\n\n")
+        f.write("| Occurrence Count | Number of Parameters | Example Parameters |\n")
+        f.write("|-----------------|---------------------|-------------------|\n")
+        
+        for occur_count, param_count in sorted_freq[:20]:  # Show top 20 frequencies
+            # Find example parameters with this occurrence count
+            examples = [param for param, count in param_counter.items() if count == occur_count][:3]
+            examples_str = ", ".join(examples)
+            f.write(f"| {occur_count} | {param_count} | {examples_str} |\n")
+        
+        # Additional statistics
+        total_params = sum(param_counter.values())
+        unique_params = len(param_counter)
+        avg_occurrences = total_params / unique_params if unique_params > 0 else 0
+        
+        f.write(f"\n## Statistics\n\n")
+        f.write(f"- Total parameter occurrences: {total_params:,}\n")
+        f.write(f"- Unique parameters: {unique_params:,}\n")
+        f.write(f"- Average occurrences per parameter: {avg_occurrences:.2f}\n")
+        f.write(f"- Number of different occurrence counts: {len(frequencies)}\n")
+        
+        # Analyze parameters with exactly 83 occurrences
+        if 83 in frequencies:
+            params_83 = [param for param, count in param_counter.items() if count == 83]
+            f.write(f"\n## Analysis of Parameters with 83 Occurrences\n\n")
+            f.write(f"There are {len(params_83)} parameters that appear exactly 83 times:\n\n")
+            
+            # Group parameters by potential categories
+            demographic_params = [p for p in params_83 if any(term in p.lower() for term in ['age', 'race', 'gender', 'ethnic', 'population'])]
+            housing_params = [p for p in params_83 if any(term in p.lower() for term in ['house', 'home', 'rent', 'housing'])]
+            income_params = [p for p in params_83 if any(term in p.lower() for term in ['income', 'earnings', 'salary'])]
+            other_params = [p for p in params_83 if p not in demographic_params + housing_params + income_params]
+            
+            f.write("### Demographic Parameters\n")
+            f.write("- " + "\n- ".join(sorted(demographic_params)) + "\n\n")
+            f.write("### Housing Parameters\n")
+            f.write("- " + "\n- ".join(sorted(housing_params)) + "\n\n")
+            f.write("### Income Parameters\n")
+            f.write("- " + "\n- ".join(sorted(income_params)) + "\n\n")
+            f.write("### Other Parameters\n")
+            f.write("- " + "\n- ".join(sorted(other_params)) + "\n")
+    
+    logging.info(f"Generated frequency analysis report: {report_file}")
+    return frequencies
+
 def main():
     """Main function to run the analysis."""
     # Clear output folder if it exists
@@ -447,11 +601,12 @@ def main():
         "SODA"
     )
     
-    # Generate SODA visualizations
+    # Generate SODA visualizations and analysis
     generate_visualizations(soda_counter, get_api_folders("SODA"), "SODA")
     generate_report(soda_counter, soda_file_count, get_api_folders("SODA"), "SODA")
     analyze_parameter_patterns(soda_counter, get_api_folders("SODA"), "SODA")
     analyze_url_patterns(METADATA_SODA_FOLDER, get_api_folders("SODA"), "SODA")
+    analyze_parameter_frequency(soda_counter, get_api_folders("SODA"), "SODA")  # Added frequency analysis
     
     # Analyze ArcGIS parameters
     arcgis_counter, arcgis_file_count = analyze_folder(

@@ -13,6 +13,7 @@ A comprehensive tool for analyzing parameters from SODA and ArcGIS APIs, extract
 - [Analysis Results](#analysis-results)
   - [SODA API Analysis](#soda-api-analysis)
   - [ArcGIS API Analysis](#arcgis-api-analysis)
+  - [Parameter Frequency Analysis](#parameter-frequency-analysis)
 - [Visualizations](#visualizations)
 
 ## Overview
@@ -221,6 +222,53 @@ The API Parameter Analysis Tool is designed to help developers and analysts unde
 | 48 | source | 10 | 0.14% |
 | 49 | mail_address | 10 | 0.14% |
 | 50 | alt_address | 10 | 0.14% |
+
+### Parameter Frequency Analysis
+
+#### SODA API Frequency Distribution
+- Total parameters analyzed: 29,477
+- Unique parameter names: 6,161
+- Average occurrences per parameter: 4.8
+- Median occurrences: 1
+- Mode (most common frequency): 1
+
+##### Parameters with 83 Occurrences
+A significant number of parameters appear exactly 83 times across the datasets. These parameters can be categorized as follows:
+
+**Demographic Parameters**
+- Population characteristics: `hispanic`, `white_nh`, `black_nh`, `ntvam_nh`, `asian_nh`, `hawpi_nh`, `other_nh`, `twoplus_nh`
+- Gender: `male`, `female`
+- Age groups: `ageless18`, `age18_24`, `med_age`
+- Citizenship: `citz_birth`, `citz_nat`, `not_citz`
+- Birth location: `born_in_co`, `brn_oth_st`, `ntv_b_o_us`, `foreign_b`
+
+**Housing Parameters**
+- Units: `housing_un`, `occ_hu`, `vac_hu`, `owned`, `rented`, `rnt_occ_hu`
+- Rent ranges: `rntl400`, `r800t999`, `r1000t1249`, `r1250t1499`, `r1500t1999`, `r2000pl`, `rnocshr`
+- Median values: `med_c_rent`, `med_g_rent`
+
+**Income Parameters**
+- Household: `med_hh_inc`, `med_fam_in`, `per_cap_in`
+- Education: `pop25plus`, `nohsdipl`, `hsgrad_sc`, `bachl_hghr`
+
+**Other Parameters**
+- Mobility: `pop_1p`, `same_house`, `same_cnty`, `same_state`, `diff_state`, `frm_abroad`
+
+#### ArcGIS API Frequency Distribution
+- Total parameters analyzed: 7,367
+- Unique parameter names: 2,851
+- Average occurrences per parameter: 2.6
+- Median occurrences: 1
+- Mode (most common frequency): 1
+
+##### Most Frequent Parameters
+1. Shape__Length (511 occurrences)
+2. Shape__Area (469 occurrences)
+3. FID (336 occurrences)
+4. INPUT_DATE (333 occurrences)
+5. EDIT_DATE (331 occurrences)
+6. ACTIVITYCO (311 occurrences)
+7. OBJECTID (247 occurrences)
 
 ## Visualizations
 
