@@ -19,6 +19,10 @@ A comprehensive tool for analyzing parameters from SODA and ArcGIS APIs, extract
 - [Generated Reports](#generated-reports)
   - [How to View Reports](#how-to-view-reports)
   - [Report Locations](#report-locations)
+- [Filter Categorization and Prioritization](#filter-categorization-and-prioritization)
+- [API Schema Templates](#api-schema-templates)
+  - [SODA API Schema](#soda-api-schema)
+  - [ArcGIS API Schema](#arcgis-api-schema)
 
 ## Overview
 
@@ -671,3 +675,427 @@ The implementation of these filters depends on:
 5. **User Research**: Validation of these filter priorities through user testing and feedback
 
 This comprehensive approach to filter categorization and prioritization will ensure the Sustainability Hub provides an intuitive, powerful search experience while accommodating the diverse parameter structures I identified in my API analysis. 
+
+## API Schema Templates
+
+Based on the parameter analysis, I've created standardized URL templates for both SODA and ArcGIS APIs in OpenAPI/Swagger format. These templates can be used as a reference for implementing API clients and standardizing data access across different sources.
+
+### SODA API Schema
+
+The SODA API schema template includes the most common parameters identified in the analysis:
+
+```json
+{
+  "paths": {
+    "/soda": {
+      "get": {
+        "summary": "SODA API Template",
+        "parameters": [
+          {
+            "name": "dataset_id",
+            "in": "path",
+            "required": true,
+            "description": "Unique identifier for the dataset"
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Fields to include in the response",
+            "example": "the_geom,name,address,city,state,zip,phone,website,email,description,id,type,county,status,latitude,longitude,date,category"
+          },
+          {
+            "name": "$where",
+            "in": "query",
+            "description": "Filter conditions",
+            "example": "state='CA' AND city='San Francisco'"
+          },
+          {
+            "name": "$order",
+            "in": "query",
+            "description": "Sort order",
+            "example": "date DESC"
+          },
+          {
+            "name": "$limit",
+            "in": "query",
+            "description": "Maximum number of records to return",
+            "example": 100
+          },
+          {
+            "name": "$offset",
+            "in": "query",
+            "description": "Number of records to skip",
+            "example": 0
+          },
+          {
+            "name": "$$app_token",
+            "in": "query",
+            "description": "Application token for authentication"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "the_geom": {
+                        "description": "Geographic information (most common parameter)"
+                      },
+                      "name": {
+                        "type": "string",
+                        "description": "Name of the entity"
+                      },
+                      "address": {
+                        "type": "string",
+                        "description": "Street address"
+                      },
+                      "city": {
+                        "type": "string",
+                        "description": "City name"
+                      },
+                      "state": {
+                        "type": "string",
+                        "description": "State or province"
+                      },
+                      "zip": {
+                        "type": "string",
+                        "description": "ZIP or postal code"
+                      },
+                      "phone": {
+                        "type": "string",
+                        "description": "Contact phone number"
+                      },
+                      "website": {
+                        "type": "string",
+                        "description": "Website URL"
+                      },
+                      "email": {
+                        "type": "string",
+                        "description": "Contact email"
+                      },
+                      "description": {
+                        "type": "string",
+                        "description": "Descriptive text"
+                      },
+                      "id": {
+                        "type": "string",
+                        "description": "Unique identifier"
+                      },
+                      "type": {
+                        "type": "string",
+                        "description": "Type or category"
+                      },
+                      "status": {
+                        "type": "string",
+                        "description": "Current status"
+                      },
+                      "latitude": {
+                        "type": "number",
+                        "description": "Latitude coordinate"
+                      },
+                      "longitude": {
+                        "type": "number",
+                        "description": "Longitude coordinate"
+                      },
+                      "date": {
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "Date information"
+                      },
+                      "category": {
+                        "type": "string",
+                        "description": "Category classification"
+                      },
+                      "demographic_data": {
+                        "type": "object",
+                        "description": "Demographic information",
+                        "properties": {
+                          "hispanic": { "type": "number" },
+                          "white_nh": { "type": "number" },
+                          "black_nh": { "type": "number" },
+                          "asian_nh": { "type": "number" },
+                          "other_nh": { "type": "number" },
+                          "mult_race": { "type": "number" }
+                        }
+                      },
+                      "housing_data": {
+                        "type": "object",
+                        "description": "Housing information",
+                        "properties": {
+                          "total_households": { "type": "number" },
+                          "owner_occupied": { "type": "number" },
+                          "renter_occupied": { "type": "number" },
+                          "vacant_housing": { "type": "number" },
+                          "median_rent": { "type": "number" },
+                          "median_home_value": { "type": "number" }
+                        }
+                      },
+                      "employment_data": {
+                        "type": "object",
+                        "description": "Employment statistics",
+                        "properties": {
+                          "emp": { "type": "number" },
+                          "unemp": { "type": "number" },
+                          "laborforce": { "type": "number" }
+                        }
+                      },
+                      "transportation_data": {
+                        "type": "object",
+                        "description": "Transportation statistics",
+                        "properties": {
+                          "commute_drive_alone": { "type": "number" },
+                          "commute_carpool": { "type": "number" },
+                          "commute_transit": { "type": "number" },
+                          "commute_walk": { "type": "number" },
+                          "commute_other": { "type": "number" },
+                          "commute_work_at_home": { "type": "number" }
+                        }
+                      },
+                      "geometry_alternatives": {
+                        "description": "Alternative geometry representations",
+                        "oneOf": [
+                          { "type": "object", "description": "the_geom format" },
+                          { "type": "object", "description": "geom format" },
+                          { "type": "object", "description": "geometry format" }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+### ArcGIS API Schema
+
+The ArcGIS API schema template includes the most common parameters identified in the analysis:
+
+```json
+{
+  "paths": {
+    "/arcgis": {
+      "get": {
+        "summary": "ArcGIS API Template",
+        "parameters": [
+          {
+            "name": "service_name",
+            "in": "path",
+            "required": true,
+            "description": "Name of the service"
+          },
+          {
+            "name": "layer_id",
+            "in": "path",
+            "required": true,
+            "description": "ID of the layer"
+          },
+          {
+            "name": "f",
+            "in": "query",
+            "required": true,
+            "description": "Format of the response",
+            "example": "json"
+          },
+          {
+            "name": "where",
+            "in": "query",
+            "description": "SQL-like where clause",
+            "example": "STATE = 'CA' AND COUNTY = 'San Francisco'"
+          },
+          {
+            "name": "outFields",
+            "in": "query",
+            "description": "Fields to include in the response",
+            "example": "OBJECTID,Shape__Length,Shape__Area,NAME,STATE,GlobalID,url,COUNTY,lastupdate,CITY,Longitude,Latitude,FIPS"
+          },
+          {
+            "name": "returnGeometry",
+            "in": "query",
+            "description": "Whether to include geometry in the response",
+            "example": true
+          },
+          {
+            "name": "geometryType",
+            "in": "query",
+            "description": "Type of geometry",
+            "example": "esriGeometryPolygon"
+          },
+          {
+            "name": "spatialRel",
+            "in": "query",
+            "description": "Spatial relationship",
+            "example": "esriSpatialRelIntersects"
+          },
+          {
+            "name": "resultOffset",
+            "in": "query",
+            "description": "Offset for pagination"
+          },
+          {
+            "name": "resultRecordCount",
+            "in": "query",
+            "description": "Maximum number of records to return"
+          },
+          {
+            "name": "token",
+            "in": "query",
+            "description": "Authentication token"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "features": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "attributes": {
+                            "type": "object",
+                            "properties": {
+                              "OBJECTID": {
+                                "type": "integer",
+                                "description": "Object identifier (most common parameter)"
+                              },
+                              "Shape__Length": {
+                                "type": "number",
+                                "description": "Length of the shape"
+                              },
+                              "Shape__Area": {
+                                "type": "number",
+                                "description": "Area of the shape"
+                              },
+                              "NAME": {
+                                "type": "string",
+                                "description": "Name of the feature"
+                              },
+                              "STATE": {
+                                "type": "string",
+                                "description": "State name"
+                              },
+                              "GlobalID": {
+                                "type": "string",
+                                "description": "Global identifier"
+                              },
+                              "url": {
+                                "type": "string",
+                                "description": "URL reference"
+                              },
+                              "COUNTY": {
+                                "type": "string",
+                                "description": "County name"
+                              },
+                              "lastupdate": {
+                                "type": "string",
+                                "format": "date-time",
+                                "description": "Last update timestamp"
+                              },
+                              "CITY": {
+                                "type": "string",
+                                "description": "City name"
+                              },
+                              "Longitude": {
+                                "type": "number",
+                                "description": "Longitude coordinate"
+                              },
+                              "Latitude": {
+                                "type": "number",
+                                "description": "Latitude coordinate"
+                              },
+                              "FIPS": {
+                                "type": "string",
+                                "description": "FIPS code"
+                              },
+                              "population_data": {
+                                "type": "object",
+                                "description": "Population statistics",
+                                "properties": {
+                                  "POPULATION": { "type": "integer" },
+                                  "SQMI": { "type": "number" },
+                                  "POP_SQMI": { "type": "number" },
+                                  "POPULATION_2020": { "type": "integer" },
+                                  "POP20_SQMI": { "type": "number" }
+                                }
+                              },
+                              "highway_data": {
+                                "type": "object",
+                                "description": "Highway information",
+                                "properties": {
+                                  "Highway": { "type": "string" },
+                                  "Direction": { "type": "string" },
+                                  "EndRefPoint": { "type": "string" },
+                                  "HighwayNumber": { "type": "string" },
+                                  "Mile_Post": { "type": "string" }
+                                }
+                              },
+                              "case_variations": {
+                                "description": "Parameters with case variations",
+                                "oneOf": [
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "CITY": { "type": "string" },
+                                      "City": { "type": "string" },
+                                      "STATE": { "type": "string" },
+                                      "State": { "type": "string" },
+                                      "COUNTY": { "type": "string" },
+                                      "County": { "type": "string" }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          "geometry": {
+                            "type": "object",
+                            "description": "Geometry information"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+These enhanced schema templates provide a more comprehensive standardized way to access both SODA and ArcGIS APIs, incorporating the most common parameters and parameter groups identified in our analysis. The templates now include:
+
+1. **For SODA API**:
+   - Core location and contact parameters
+   - Demographic data groups
+   - Housing data groups
+   - Employment statistics
+   - Transportation statistics
+   - Alternative geometry representations
+
+2. **For ArcGIS API**:
+   - Core identification and geometry parameters
+   - Population statistics
+   - Highway-related parameters
+   - Case variations for common parameters
+   - Enhanced spatial query parameters
+
+The full schema definitions are available in the `api_schemas.json` file. 
