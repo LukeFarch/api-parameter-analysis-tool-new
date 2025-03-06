@@ -206,67 +206,72 @@ The following parameters each appear exactly 77 times, representing 1.25% of all
 ### ArcGIS API Analysis
 
 ### Overview
-- Total parameters analyzed: 7,367
+- Total parameters analyzed: 3,715
 - Unique parameter names: 2,851
-- Average occurrences per parameter: 2.6
+- Average occurrences per parameter: 1.3
 - Median occurrences: 1
 - Mode (most common frequency): 1
 
 ### Top 20 Most Frequent Parameters
 | Parameter | Count | % of Total |
 |-----------|-------|------------|
-| OBJECTID | 48 | 1.68% |
-| Shape__Area | 42 | 1.47% |
-| Shape__Length | 42 | 1.47% |
-| POPULATION | 38 | 1.33% |
-| STATE | 36 | 1.26% |
-| COUNTY | 34 | 1.19% |
-| POP_SQMI | 32 | 1.12% |
-| SQMI | 32 | 1.12% |
-| NAME | 28 | 0.98% |
-| POPULATION_2020 | 24 | 0.84% |
-| POP20_SQMI | 24 | 0.84% |
-| STATE_ABBR | 24 | 0.84% |
-| STATE_FIPS | 24 | 0.84% |
-| COUNTY_FIPS | 22 | 0.77% |
-| FIPS | 22 | 0.77% |
-| STATE_NAME | 20 | 0.70% |
-| AREALAND | 18 | 0.63% |
-| AREAWATER | 18 | 0.63% |
-| BASENAME | 16 | 0.56% |
-| FUNCSTAT | 16 | 0.56% |
+| OBJECTID | 94 | 3.30% |
+| Shape__Length | 63 | 2.21% |
+| Shape__Area | 47 | 1.65% |
+| NAME | 21 | 0.74% |
+| STATE | 15 | 0.53% |
+| GlobalID | 14 | 0.49% |
+| url | 12 | 0.42% |
+| FID | 11 | 0.39% |
+| COUNTY | 11 | 0.39% |
+| lastupdate | 11 | 0.39% |
+| SHAPE__Area | 11 | 0.39% |
+| SHAPE__Length | 11 | 0.39% |
+| CITY | 9 | 0.32% |
+| Direction | 9 | 0.32% |
+| Longitude | 8 | 0.28% |
+| Latitude | 8 | 0.28% |
+| FIPS | 8 | 0.28% |
+| City | 8 | 0.28% |
+| Highway | 8 | 0.28% |
+| EndRefPoint | 8 | 0.28% |
 
 ### Parameter Groups with Common Frequencies
 
-The following section shows groups of parameters that frequently appear together in the same datasets. While the table above shows total occurrences across all datasets, this section highlights parameters that consistently appear as a group in the same datasets:
+The following section shows groups of parameters that frequently appear together in the same datasets. An important note about the counts:
+
+1. **Total Occurrences** (shown in the table above): This counts every time a parameter appears, including multiple occurrences within different layers of the same dataset.
+2. **Dataset Co-occurrences** (shown below): This counts the number of unique datasets where these parameters appear together as a group.
+
+For example, when a parameter appears "in 6 datasets", it means it's found in 6 different metadata files, but might appear multiple times within each file due to multiple data layers.
 
 #### Parameters Co-occurring in 15 Datasets
 Administrative identifiers:
-- OBJECTID (appears in 15 identical datasets, while having 48 total occurrences overall)
+- OBJECTID (found in 15 unique datasets, appearing 94 times total across all layers)
 
 #### Parameters Co-occurring in 9 Datasets
 Geographic measurements that appear together:
-- Shape__Area (appears in 9 identical datasets, while having 42 total occurrences overall)
-- Shape__Length (appears in 9 identical datasets, while having 42 total occurrences overall)
+- Shape__Area (found in 9 unique datasets, appearing 47 times total across all layers)
+- Shape__Length (found in 9 unique datasets, appearing 63 times total across all layers)
 
 #### Parameters Co-occurring in 8 Datasets
 Geographic and demographic parameters that appear as a group:
-- STATE (appears in 8 identical datasets, while having 36 total occurrences overall)
-- COUNTY (appears in 8 identical datasets, while having 34 total occurrences overall)
-- POPULATION (appears in 8 identical datasets, while having 38 total occurrences overall)
-- SQMI (appears in 8 identical datasets, while having 32 total occurrences overall)
+- STATE (found in 8 unique datasets, appearing 15 times total across all layers)
+- COUNTY (found in 8 unique datasets, appearing 11 times total across all layers)
+- POPULATION (found in 8 unique datasets, appearing 38 times total across all layers)
+- SQMI (found in 8 unique datasets, appearing 32 times total across all layers)
 
 #### Parameters Co-occurring in 6 Datasets
 Location and population statistics that appear together:
-- POP_SQMI (appears in 6 identical datasets, while having 32 total occurrences overall)
-- POPULATION_2020 (appears in 6 identical datasets, while having 24 total occurrences overall)
-- POP20_SQMI (appears in 6 identical datasets, while having 24 total occurrences overall)
-- STATE_ABBR (appears in 6 identical datasets, while having 24 total occurrences overall)
-- STATE_FIPS (appears in 6 identical datasets, while having 24 total occurrences overall)
-- COUNTY_FIPS (appears in 6 identical datasets, while having 22 total occurrences overall)
-- FIPS (appears in 6 identical datasets, while having 22 total occurrences overall)
+- POP_SQMI (found in 6 unique datasets, appearing 32 times total across all layers)
+- POPULATION_2020 (found in 6 unique datasets, appearing 24 times total across all layers)
+- POP20_SQMI (found in 6 unique datasets, appearing 24 times total across all layers)
+- STATE_ABBR (found in 6 unique datasets, appearing 24 times total across all layers)
+- STATE_FIPS (found in 6 unique datasets, appearing 24 times total across all layers)
+- COUNTY_FIPS (found in 6 unique datasets, appearing 22 times total across all layers)
+- FIPS (found in 6 unique datasets, appearing 22 times total across all layers)
 
-This grouping helps identify standardized parameter sets that are commonly used together in ArcGIS datasets, even though their total occurrence counts may be higher due to their appearance in other datasets as well.
+This grouping helps identify standardized parameter sets that are commonly used together in ArcGIS datasets. The higher total occurrence counts are due to these parameters appearing in multiple layers within each dataset, which is a common practice in GIS data where the same schema is applied to different geographic levels or views of the data.
 
 ## Visualizations
 
