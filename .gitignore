@@ -1,0 +1,7 @@
+# Ignore JSON files in data directories
+Soda/*.json
+ArcGis/*.json
+MetaDataSoda/*.json
+MetaDataArcGis/*.json
+# Ignore contents of output directory while preserving structure
+output/**/*
