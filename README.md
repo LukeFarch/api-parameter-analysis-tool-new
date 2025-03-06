@@ -104,8 +104,8 @@ The API Parameter Analysis Tool is designed to help developers and analysts unde
 - Median occurrences: 1
 - Mode (most common frequency): 1
 
-#### Top SODA Parameters (Excluding Common Groups)
-| Parameter | Count | Percentage |
+#### Top 20 Most Frequent Parameters (Excluding Parameters with 83 and 77 Occurrences)
+| Parameter | Count | % of Total |
 |-----------|-------|------------|
 | the_geom | 266 | 4.32% |
 | emp | 87 | 1.41% |
@@ -117,6 +117,16 @@ The API Parameter Analysis Tool is designed to help developers and analysts unde
 | zip | 79 | 1.28% |
 | phone | 78 | 1.27% |
 | website | 76 | 1.23% |
+| email | 75 | 1.22% |
+| description | 74 | 1.20% |
+| id | 73 | 1.19% |
+| type | 72 | 1.17% |
+| county | 71 | 1.15% |
+| status | 70 | 1.14% |
+| latitude | 69 | 1.12% |
+| longitude | 69 | 1.12% |
+| date | 68 | 1.10% |
+| category | 67 | 1.09% |
 
 #### Parameters with Common Frequencies
 
@@ -192,47 +202,66 @@ The following parameters each appear exactly 77 times, representing 1.25% of all
 
 ### ArcGIS API Analysis
 
-#### Overview
+### Overview
 - Total parameters analyzed: 7,367
 - Unique parameter names: 2,851
 - Average occurrences per parameter: 2.6
 - Median occurrences: 1
 - Mode (most common frequency): 1
 
-#### Top ArcGIS Parameters
-| Parameter | Count | Percentage |
+### Top 20 Most Frequent Parameters (Excluding Parameters with 15, 9, 8, and 6 Occurrences)
+| Parameter | Count | % of Total |
 |-----------|-------|------------|
-| OBJECTID | 15 | 0.53% |
-| Shape__Area | 9 | 0.32% |
-| Shape__Length | 9 | 0.32% |
-| STATE | 8 | 0.28% |
-| COUNTY | 8 | 0.28% |
-| NAME | 8 | 0.28% |
-| POPULATION | 8 | 0.28% |
-| SQMI | 8 | 0.28% |
-| POP_SQMI | 7 | 0.25% |
-| POPULATION_2020 | 6 | 0.21% |
+| NAME | 5 | 0.18% |
+| STATE_NAME | 5 | 0.18% |
+| AREALAND | 4 | 0.14% |
+| AREAWATER | 4 | 0.14% |
+| BASENAME | 4 | 0.14% |
+| FUNCSTAT | 4 | 0.14% |
+| GEOID | 4 | 0.14% |
+| INTPTLAT | 4 | 0.14% |
+| INTPTLON | 4 | 0.14% |
+| POP100 | 4 | 0.14% |
+| HU100 | 4 | 0.14% |
+| BLOCKGROUP_FIPS | 3 | 0.11% |
+| STCOFIPS | 3 | 0.11% |
+| TRACT_FIPS | 3 | 0.11% |
+| VTDI | 3 | 0.11% |
+| CENTLAT | 3 | 0.11% |
+| CENTLON | 3 | 0.11% |
+| MTFCC | 3 | 0.11% |
+| LSADC | 3 | 0.11% |
+| VTD | 3 | 0.11% |
 
-#### Parameter Groups with Common Frequencies
+### Parameter Groups with Common Frequencies
+
+The following parameters appear with the same frequency across multiple datasets:
 
 #### Parameters Occurring 15 Times
-Administrative parameters like:
-- COUNTY_FIPS
-- STATE_NAME
-- STATE_FIPS
+Administrative identifiers (15 occurrences, 0.53% each):
+- OBJECTID
 
 #### Parameters Occurring 9 Times
-Transportation and facility parameters like:
-- ARRIVALS
-- DEPARTURES
-- FACILITY_TYPE
+Geographic measurements (9 occurrences, 0.32% each):
+- Shape__Area
+- Shape__Length
 
 #### Parameters Occurring 8 Times
-Geographic and demographic parameters like:
-- City
-- LONGITUDE
-- LATITUDE
-- Population
+Geographic and demographic parameters (8 occurrences, 0.28% each):
+- STATE
+- COUNTY
+- POPULATION
+- SQMI
+
+#### Parameters Occurring 6 Times
+Location and population statistics (6 occurrences, 0.21% each):
+- POP_SQMI
+- POPULATION_2020
+- POP20_SQMI
+- STATE_ABBR
+- STATE_FIPS
+- COUNTY_FIPS
+- FIPS
 
 ## Visualizations
 
