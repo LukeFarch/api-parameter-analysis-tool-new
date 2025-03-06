@@ -525,11 +525,11 @@ The markdown reports can be viewed in several ways:
 ### Report Locations
 
 - SODA API Reports: `output/soda/reports/`
-  - Main report: `soda_parameter_analysis.md`
+  - Main report: `soda_parameter_analysis.md` - [View on GitHub](https://github.com/lukefx/Parsers/blob/main/output/soda/reports/soda_parameter_analysis.md)
   - Supplementary reports: `soda_naming_conventions.md`, `soda_data_types.md`
   
 - ArcGIS API Reports: `output/arcgis/reports/`
-  - Main report: `arcgis_parameter_analysis.md`
+  - Main report: `arcgis_parameter_analysis.md` - [View on GitHub](https://github.com/lukefx/Parsers/blob/main/output/arcgis/reports/arcgis_parameter_analysis.md)
   - Supplementary reports: `arcgis_naming_conventions.md`, `arcgis_data_types.md`
 
 ### Customizing Reports
@@ -540,4 +540,134 @@ To regenerate reports with custom templates:
 
 ```bash
 python scripts/generate_reports.py --custom-template my_template.md
-``` 
+```
+
+## Filter Categorization and Prioritization
+
+Based on my analysis of the API parameters, I've developed a comprehensive approach to categorizing and prioritizing filters for implementation in the Sustainability Hub. This section outlines my findings and recommendations.
+
+### Filter Categories
+
+I've categorized the potential filters into the following groups:
+
+#### Location-Based Filters
+I found that geographic parameters are among the most common in both APIs. These include:
+- **Geographic Coordinates**: latitude, longitude, the_geom
+- **Administrative Boundaries**: state, county, city, zip
+- **Spatial Relationships**: Shape__Area, Shape__Length, FIPS codes
+
+#### Time-Based Filters
+Temporal data is critical for tracking changes and trends:
+- **Temporal Data**: date, year, lastupdate
+- **Time Series**: historical data points, trends over time
+
+#### Attribute-Based Filters
+I identified several key attribute categories:
+- **Demographic Filters**: 
+  - Population characteristics (age groups, race/ethnicity)
+  - Income and education levels
+- **Environmental Metrics**:
+  - Emissions data
+  - Resource consumption
+- **Infrastructure Filters**:
+  - Building types
+  - Transportation networks
+- **Status Filters**: status, type, category
+
+#### Data Source Filters
+I also recognized the importance of filtering by source:
+- **API Source**: SODA vs. ArcGIS
+- **Data Provider**: source, identifier
+- **Data Quality**: completeness, update frequency
+
+### Filter Prioritization
+
+Based on my analysis of user relevance and importance, here's how I would prioritize the filters:
+
+#### High Priority (Essential Filters)
+1. **Location Filters**
+   I found these to be the most common parameters across both APIs:
+   - State/Province
+   - City/Municipality
+   - County/Region
+   - ZIP/Postal Code
+
+2. **Time Period Filters**
+   These are crucial for temporal analysis:
+   - Year
+   - Date Range
+   - Last Updated
+
+3. **Core Attribute Filters**
+   These provide fundamental categorization:
+   - Category/Type
+   - Status (active, completed, planned)
+   - Population Density
+
+#### Medium Priority (Enhanced User Experience)
+1. **Demographic Filters**
+   I noticed these appear frequently in standardized groups:
+   - Income Levels
+   - Education Levels
+   - Age Distribution
+
+2. **Environmental Impact Filters**
+   These are key for sustainability analysis:
+   - Emissions Data
+   - Resource Usage
+   - Sustainability Metrics
+
+3. **Infrastructure Filters**
+   I found these to be important for spatial context:
+   - Building Types
+   - Transportation Access
+   - Land Use
+
+#### Lower Priority (Specialized Use Cases)
+1. **Technical Filters**
+   These are more for advanced users:
+   - Data Source
+   - API Type
+   - Data Format
+
+2. **Advanced Spatial Filters**
+   These provide more sophisticated analysis capabilities:
+   - Radius Search
+   - Polygon Selection
+   - Proximity Analysis
+
+3. **Metadata Filters**
+   I identified these as useful for data quality assessment:
+   - Data Quality Indicators
+   - Update Frequency
+   - Completeness Metrics
+
+### Key Findings and Recommendations
+
+1. **Naming Convention Standardization**: I found significant variation in parameter naming conventions between SODA (predominantly snake_case) and ArcGIS (predominantly UPPERCASE and PascalCase). I recommend that the filter implementation account for these differences by mapping similar parameters across naming conventions.
+
+2. **Common Parameters**: I suggest focusing on the most frequent parameters I identified in my analysis (e.g., geographic identifiers, basic metadata) as they represent the core filtering needs across datasets.
+
+3. **Parameter Co-occurrence**: I recommend leveraging the parameter groups that I found frequently appear together to create intuitive filter combinations that match how the data is naturally structured.
+
+4. **Filter UI Design**: Based on my analysis, I suggest designing the filter interface to prioritize high-frequency parameters while allowing access to more specialized filters through an "Advanced" section.
+
+5. **Adaptive Filtering**: I recommend implementing a system that can dynamically adjust available filters based on the selected dataset's available parameters.
+
+6. **Standardized Access**: I propose using a standardized approach to access different API endpoints, ensuring consistent data retrieval despite API differences.
+
+7. **Data Type Awareness**: My analysis shows variation in how similar concepts are represented across APIs, so I recommend accounting for different data types in filter implementation.
+
+8. **Localization Support**: Given the geographic nature of many parameters I identified, I suggest ensuring filters support various regional formats for coordinates, postal codes, and administrative boundaries.
+
+### Dependencies
+
+The implementation of these filters depends on:
+
+1. **Data Availability**: The presence of these parameters in the datasets being accessed
+2. **API Consistency**: The stability and consistency of the APIs being queried
+3. **UI Framework**: The capabilities of the UI framework being used to implement the filters
+4. **Backend Processing**: The ability to translate filter selections into appropriate API queries
+5. **User Research**: Validation of these filter priorities through user testing and feedback
+
+This comprehensive approach to filter categorization and prioritization will ensure the Sustainability Hub provides an intuitive, powerful search experience while accommodating the diverse parameter structures I identified in my API analysis. 
