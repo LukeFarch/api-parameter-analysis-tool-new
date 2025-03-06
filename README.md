@@ -480,11 +480,11 @@ The tool generates comprehensive markdown (.md) reports that provide detailed an
 ### Report Locations
 
 - SODA API Reports: `output/soda/reports/`
-  - Main report: `soda_parameter_analysis.md` - [View on GitHub](https://github.com/lukefx/Parsers/blob/main/output/soda/reports/soda_parameter_analysis.md)
+  - Main report: `soda_parameter_analysis.md` - [View on GitHub](https://github.com/LukeFarch/api-parameter-analysis-tool-new/blob/main/output/soda/reports/soda_parameter_report.md)
   - Supplementary reports: `soda_naming_conventions.md`, `soda_data_types.md`
   
 - ArcGIS API Reports: `output/arcgis/reports/`
-  - Main report: `arcgis_parameter_analysis.md` - [View on GitHub](https://github.com/lukefx/Parsers/blob/main/output/arcgis/reports/arcgis_parameter_analysis.md)
+  - Main report: `arcgis_parameter_analysis.md` - [View on GitHub](https://github.com/LukeFarch/api-parameter-analysis-tool-new/blob/main/output/arcgis/reports/arcgis_parameter_report.md)
   - Supplementary reports: `arcgis_naming_conventions.md`, `arcgis_data_types.md`
 
 ### Customizing Reports
