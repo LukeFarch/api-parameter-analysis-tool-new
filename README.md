@@ -315,4 +315,86 @@ The tool also generates interactive versions of these visualizations that can be
 These interactive visualizations include:
 - Interactive Bar Charts
 - Interactive Treemaps
-- Parameter Relationship Networks 
+- Parameter Relationship Networks
+
+### Parameter Naming Patterns
+These visualizations show the distribution of different naming conventions (camelCase, UPPERCASE, etc.) across parameters:
+
+#### SODA Parameters
+![SODA Parameter Patterns](output/soda/visualizations/soda_parameter_patterns.png)
+
+#### ArcGIS Parameters
+![ArcGIS Parameter Patterns](output/arcgis/visualizations/arcgis_parameter_patterns.png)
+
+## Appendix: Top 100 Parameters
+
+### SODA Top 100 Parameters
+*Note: Excludes parameters occurring exactly 83 or 77 times*
+
+| Rank | Parameter | Count |
+|------|-----------|-------|
+| 1 | the_geom | 266 |
+| 2 | emp | 87 |
+| 3 | unemp | 78 |
+| 4 | laborforce | 78 |
+| 5 | OBJECTID | 73 |
+| 6 | Counties | 70 |
+| 7 | County | 69 |
+| 8 | r400t599 | 65 |
+| 9 | r600t799 | 65 |
+| 10 | geonum | 61 |
+| 11 | Year | 56 |
+| 12 | geoname | 55 |
+| 13 | civ_ni_p | 52 |
+| 14 | NAME | 44 |
+| 15 | year | 42 |
+| 16 | WHITE_NH | 39 |
+| 17 | ASIAN_NH | 39 |
+| 18 | HISPANIC | 39 |
+| 19 | AGE65PLUS | 39 |
+| 20 | MALE | 39 |
+| 21 | OTHER_NH | 39 |
+| 22 | BLACK_NH | 39 |
+| 23 | FEMALE | 39 |
+| 24 | Shape_Leng | 37 |
+| 25 | ROUTE | 37 |
+| 26 | STATE | 35 |
+| 27 | HOUSEHOLDS | 32 |
+| 28 | MED_AGE | 32 |
+| 29 | HOUSING_UN | 32 |
+| 30 | Shape_Area | 31 |
+
+### ArcGIS Top 100 Parameters
+
+| Rank | Parameter | Count |
+|------|-----------|-------|
+| 1 | OBJECTID | 94 |
+| 2 | Shape__Length | 63 |
+| 3 | Shape__Area | 47 |
+| 4 | NAME | 21 |
+| 5 | STATE | 15 |
+| 6 | GlobalID | 14 |
+| 7 | url | 12 |
+| 8 | lastupdate | 11 |
+| 9 | FID | 11 |
+| 10 | SHAPE__Area | 11 |
+| 11 | COUNTY | 11 |
+| 12 | SHAPE__Length | 11 |
+| 13 | abbrev_name | 10 |
+| 14 | lgid | 10 |
+| 15 | alt_address | 10 |
+| 16 | prev_name | 10 |
+| 17 | lgname | 10 |
+| 18 | lgstatusid | 10 |
+| 19 | mail_city | 10 |
+| 20 | mail_zip | 10 |
+| 21 | source | 10 |
+| 22 | mail_address | 10 |
+| 23 | mail_state | 10 |
+| 24 | lgtypeid | 10 |
+| 25 | CITY | 9 |
+| 26 | Direction | 9 |
+| 27 | FIPS | 8 |
+| 28 | HighwayNumber | 8 |
+| 29 | EndRefPoint | 8 |
+| 30 | City | 8 | 
